@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: /Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.aux
+The style file: plain.bst
+Database file #1: ../citeations.bib
+Repeated entry---line 49 of file ../citeations.bib
+ : @book{michael2005serious
+ :                         ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in yuserious
+Warning--empty year in yuserious
+You've used 6 entries,
+            2118 wiz_defined-function locations,
+            530 strings with 4874 characters,
+and the built_in function-call counts, 1703 in all, are:
+= -- 161
+> -- 70
+< -- 1
++ -- 29
+- -- 22
+* -- 98
+:= -- 291
+add.period$ -- 17
+call.type$ -- 6
+change.case$ -- 26
+chr.to.int$ -- 0
+cite$ -- 8
+duplicate$ -- 77
+empty$ -- 141
+format.name$ -- 22
+if$ -- 355
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 9
+newline$ -- 32
+num.names$ -- 12
+pop$ -- 43
+preamble$ -- 1
+purify$ -- 23
+quote$ -- 0
+skip$ -- 51
+stack$ -- 0
+substring$ -- 82
+swap$ -- 14
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 18
+warning$ -- 2
+while$ -- 17
+width$ -- 7
+write$ -- 61
+(There was 1 error message)
