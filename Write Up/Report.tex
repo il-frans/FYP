@@ -1,5 +1,6 @@
 \documentclass{article}
 
+\usepackage{color}
 \usepackage{cite}
 \usepackage{float}
 \usepackage{graphicx}
@@ -44,8 +45,7 @@ From the above one stands to reason the main contrast between video games and se
 
 Sim racing games such as Asseto Corsa and Project Cars which are consumer available of the shelf, provide a sim racing experience within the average cost of other consumer games. The aim of sim racing games is to replicate real life cars, race car dynamics and track locations with the aim of providing entertainment and amusement to the player. The challenge aspect is achieved by paring the user against other AI players, multiplayer online races played against other human players, or sometimes against ones self. These points make racing games fit the previous definition of what a video game is however, fail to meet the requirements of a serious game, they miss the pedagogy activities. Most of the modern sim racing games do aid the player to improve by means of implementing aids. Such aids might include showing the racing line to which the player is expected to drive on, while also showing the braking and acceleration points. Other aids include anti lock brakes, traction control and stability control. The problem with their implementation is, the fact of them being implemented in a passive way. With the exception of the racing line, the player is not told when and what is being done wrong. The result is, users having to figure their own mistakes out by means of practicing without any guidance or feedback from with the game. This final year project aims to implement a module which is plugged into an off the shelf racing simulator which. This module trains users by letting them know what is being done wrong, when it's being done wrong and most importantly how to avoid making the same mistake.
 
-[Show image of racing line red / green ?]
-[In appendix, we might need to explain what ABS, TCS AND STC are]
+{\color{red}[In appendix, we might need to explain what ABS, TCS AND STC are]}
 
 \subsection{Serious games as a training mechanism}
 
@@ -55,34 +55,43 @@ As mentioned, serious games focus on the pedagogy activities
 
 "A situation in which individuals or groups compete to be first to achieve a particular objective." is what the Oxford dictionary defines a race to be. This can be more specifically defined to describe circuit motorsport races, in which motorised vehicles go round a course called a circuit. Each racing discipline or series has it's own rules however, at the core all disciplines participants aim to complete a full lap of the circuit in the least amount of time. Some disciplines focus on achieving one fast lap, such as time trials, while others focus on achieving the least amount of time across a fixed amount of laps, such as FIA's Formula 1 series.
 
-Moving over to defining the problem which a race driver faces, that of "figure out how to go round a piece of asphalt in the minimum amount of time"\cite{GoingFaster}. In order to do so, the race driver needs to develop techniques which aid in controlling the vehicle which is being raced. Such technique is that of mastering the race line, which is considered the the fundamental skill a race driver must understand and master before moving on to anything else\cite{GoingFaster}. The best path through a corner is said to be one which takes the least time while keeping the higher average speed\cite{beckman1991physics}. The trickiest part of the racing line to master is that of a corner, below a basic understanding of the racing line is given for corner.
+Moving over to defining the problem which a race driver faces, that of "figure out how to go round a piece of asphalt in the minimum amount of time"\cite{GoingFaster}. In order to do so, the race driver needs to develop techniques which aid in controlling the vehicle which is being raced. Such technique is that of mastering the race line, which is considered the the fundamental skill a race driver must understand and master before moving on to anything else\cite{GoingFaster}. The best path through a corner is said to be one which takes the least time while keeping the higher average speed\cite{beckman1991physics}. The trickiest part of the racing line to master is that of a corner, below a basic understanding of the racing line is given for a corner.
 
-\begin{figure}
+Beckman Brian and No Bucks Racing Club do a great job to introduce the physics behind the racing line and why it is proven to be the optimal line. In part 5 "Introduction to the Racing Line" of their book "The Physics of Racing" they cover the basics of how the racing line should be chosen and why it is so important. In this chapter they go on to define a corner and look into its racing line. Figure~\ref{fig:Racing_Corner} shows this corner, it represents an abstract corner such that it represents  any corner which has constant width, any radius, and short straights before and after. As an example they analyse a corner of 75 foot radius and 30 foot width. When the racing line is considered, one must keep in mind that the vehicle tyres must be kept on the asphalt. In order to solve this, Beckman Brian and No Bucks Racing Club consider the centre of gravity of the vehicle, effectively treating the vehicle as a point, and define a narrower course which is the defines the available space.
+	
+\begin{figure}[!htb]
 	\centering
 	\includegraphics[height=5cm]{Racing_Corner.png}
 	\caption{Multiple possible racing lines round a corner}
 	\label{fig:Racing_Corner}
+	
+	\begin{description}
+		{\setlength\itemindent{25pt} \item[r] = radius of corner centre line = 75 feet}
+		{\setlength\itemindent{25pt} \item[W] = width of course = 30 feet}
+		{\setlength\itemindent{25pt} \item[ro] = radius of outer edge = r + ½W = 90 feet}
+		{\setlength\itemindent{25pt} \item[ri] = radius of inner edge = r - ½W = 60 feet}
+		
+		{\setlength\itemindent{25pt} \item[w] = width of car = 6 feet}
+		{\setlength\itemindent{25pt} \item[Ro] = effective outer radius = ro - ½w = 87 feet}
+		{\setlength\itemindent{25pt} \item[Ri] = effective inner radius = ri + ½w = 63 feet}
+		{\setlength\itemindent{25pt} \item[X] = effective width of course = W - w = 24 feet}
+	\end{description}
 \end{figure}
 
-In Figure~\ref{fig:Racing_Corner} actually represents a family of corners with any constant width, any radius, and short straights before and after. First, we go through the entire analysis with a particular corner of 75 foot radius and 30 foot width, then we end up with times for corners of various radii and widths. 
-Let us define the following parameters:
-	r = radius of corner centre line = 75 feet
-	W = width of course = 30 feet
-	ro = radius of outer edge = r + ½W = 90 feet
-	ri = radius of inner edge = r - ½W = 60 feet
-Now, when we drive this corner, we must keep the tyres on the course, otherwise we get a lot of cone penalties (or go into the weeds). It is easiest (though not so realistic) to do the analysis considering the path of the centre of gravity of the car rather than the paths of each wheel. So, we define an effective course, narrower than the real course, down
-which we may drive the centre of the car.
-	w = width of car = 6 feet
-	Ro = effective outer radius = ro - ½w = 87 feet
-	Ri = effective inner radius = ri + ½w = 63 feet
-	X = effective width of course = W - w = 24 feet
+Assuming a maximum centripetal acceleration of 1.10g, which is just within the capability of autocross tyres, the following speeds for the cornering phases ofLines i, o, and m are reported\cite{beckman1991physics}.
 
------------------
-Techniques vary depending on the vehicle, circuit and weather, for the purpose of keeping things simple and focused this thesis will focus on techniques required on tarmac racing in dry weather conditions. A discipline a using a vehicle which isn't hard to control which in turns also the driver the focus on getting the core techniques right.
+\begin{center}
+    \begin{tabular}{ | l | l | l | l | p{5cm} |} \hline
+    & Line i & Line o & Line m \\ \hline
+    avg speed mph & 32.16 & 37.79 & 48.78 \\ \hline
+    time sec & 4.08 & 4.24 & 3.18 \\ \hline
+    & vi & vo & vm \\ \hline
+    \end{tabular}
+\end{center}
 
-This thesis will focus on training an individual to achieve good laps times while also being consistent. This will be carried out by lookin
+{\color{red}[I am not sure how the speeds have been calculated, the book chapter doesn't seem to mention it]}
 
-What is the task of a racing driver ?
+The racing line as shown above is critical to getting a good lap time, ignoring any skill with car control, the driver might already lose almost a second in a corner simply because of a wrong line was driven through a corner. In reality a line not only depends on a corner, but it also depends on what come before or after the corner. Having said that it is much easier for a new comer to focus on getting one corner at a time right and then moving on to connecting a series of corners, finally moving onto treating the circuit as one racing line\cite{beckman1991physics}\cite{GoingFaster}.
 
 
 \subsection{User study}
