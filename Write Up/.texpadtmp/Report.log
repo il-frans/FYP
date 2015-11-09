@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.16)  8 NOV 2015 20:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.16)  9 NOV 2015 14:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -143,10 +143,10 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [3] [4] [5] <Racing_Corner.png, id=23, 501.875pt x 472.76625pt>
+ [3] [4] [5] <Racing_Corner.png, id=24, 501.875pt x 472.76625pt>
 File: Racing_Corner.png Graphic file (type png)
  <use Racing_Corner.png>
-Package pdftex.def Info: Racing_Corner.png used on input line 64.
+Package pdftex.def Info: Racing_Corner.png used on input line 66.
 (pdftex.def)             Requested size: 151.02313pt x 142.26378pt.
 Missing character: There is no ¬ in font cmr10!
 Missing character: There is no Ω in font cmr10!
@@ -157,23 +157,33 @@ Missing character: There is no Ω in font cmr10!
 Missing character: There is no ¬ in font cmr10!
 Missing character: There is no Ω in font cmr10!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 84.
+(Font)              <7> on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 84.
- [6 <./Racing_Corner.png>] [7] [8] (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.bbl) [9] (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.aux) ) 
+(Font)              <5> on input line 86.
+ [6 <./Racing_Corner.png>] <slip_angle.jpg, id=28, 401.5pt x 244.915pt>
+File: slip_angle.jpg Graphic file (type jpg)
+ <use slip_angle.jpg>
+Package pdftex.def Info: slip_angle.jpg used on input line 104.
+(pdftex.def)             Requested size: 233.22548pt x 142.26378pt.
+ [7 <./slip_angle.jpg>] <oversteer.jpg, id=33, 594.22pt x 276.03125pt>
+File: oversteer.jpg Graphic file (type jpg)
+ <use oversteer.jpg>
+Package pdftex.def Info: oversteer.jpg used on input line 113.
+(pdftex.def)             Requested size: 306.267pt x 142.26378pt.
+ [8 <./oversteer.jpg>] [9] [10] [11] (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.bbl) [12] (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.aux) ) 
 Here is how much of TeX's memory you used:
- 1706 strings out of 493089
- 24831 string characters out of 6134841
- 85941 words of memory out of 5000000
- 5181 multiletter control sequences out of 15000+600000
+ 1719 strings out of 493089
+ 25039 string characters out of 6134841
+ 85957 words of memory out of 5000000
+ 5191 multiletter control sequences out of 15000+600000
  8848 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,23p,1628b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,6n,23p,1628b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.pdf" (9 pages, 122523 bytes).
+Output written on "/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.pdf" (12 pages, 246610 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 74 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
