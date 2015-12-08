@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Literature Review}{3}
+\contentsline {subsection}{\numberline {2.1}Video games and Serious Games}{3}
+\contentsline {subsection}{\numberline {2.2}Consumer sim racing games as a serious game}{4}
+\contentsline {subsection}{\numberline {2.3}Racing, getting near the optimal lap time}{4}
+\contentsline {subsection}{\numberline {2.4}User study}{4}
+\contentsline {section}{\numberline {3}Methodology}{5}

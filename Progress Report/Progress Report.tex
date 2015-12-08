@@ -1,0 +1,84 @@
+\documentclass{article}
+
+\usepackage{color}
+\usepackage{cite}
+\usepackage{float}
+\usepackage{graphicx}
+
+\linespread{1.3}
+
+\title{Telemetry-based Optimisation for User Training in Racing Simulators \\ Progress Report}
+
+\author{Francois Buhagiar}
+\date{2015}
+
+\begin{document}
+
+\pagenumbering{roman} 
+
+\maketitle
+
+\pagenumbering{arabic} 
+\setcounter{page}{1}
+
+\newpage
+\begin{abstract}
+\end{abstract}
+
+\newpage
+\section{Introduction}
+
+\section{Motivation}
+
+\section{Why the problem is non-trivial}
+
+Optimisation problem.
+Identifying the relationship between variables and their weight in terms of the final output.
+
+\section{Background Work}
+
+\subsection{Circuit motorsport racing, getting near the optimal lap time}
+
+"A situation in which individuals or groups compete to be first to achieve a particular objective." is definition of a sports race to be. This can be more specifically defined to describe circuit motorsport races, in which motorised vehicles go round a course. Each racing discipline or series has it's own rules however, at the core all disciplines participants aim to complete a full lap of the circuit in the least amount of time. Some disciplines focus on achieving one fast lap, such as time trials, while others focus on achieving the least amount of time across a fixed amount of laps, such as FIA's Formula 1 series. This thesis will focus on confined car racing taking place on smooth asphalt surfaces in purpose built race tracks.
+
+Moving over to defining the problem which a race driver faces, that of "figuring out how to go round a piece of asphalt in the minimum amount of time"\cite{GoingFaster}. In order to do so, the race driver needs to develop techniques which aid in controlling the vehicle which is being raced. Such technique is that of mastering the race line, which is considered the the fundamental skill a race driver must understand and master before moving on to anything else\cite{GoingFaster}. The best path through a corner is said to be one which takes the least time while keeping the higher average speed\cite{beckman1991physics}. The trickiest part of the racing line to master is that of a corner.
+
+\subsection{Video games and Serious Games}
+
+Baranowski and colleagues defined games as “a physical or mental contest with a goal or objective, played according to a framework, or rule, that determines what a player can or cannot do inside a game world”. The definition covers the setup of a game, while "a physical or mental contest, played according to specific rules, with the goal of amusing or rewarding the participant" the reward aspect of games.\cite{yuserious}.
+
+Video games are built on top of these core values with the addition of having the game world confined into some sort of digital media. Video games started with William Higinbotham who created a tennis game to be played on a television set\cite{stanton2015brief}. From the early days of video games, their main aim was always to provide some degree of entertainment. The entertainment value is achieved in various ways depending on the gaming platform, game genre and the target audience. Modern video games are simply made up of three fundamental components, story, art and software\cite{zyda2005visual}.
+
+Moving on to serious games, the definition of serious games has been redefined multiple times. The first formal definition stated a serious game to be simulations and games to improve eduction\cite{abt1970}. Several years later an updated definition on the idea of connecting a serious purpose to knowledge and technologies from the video game industry\cite{michael2005serious}. Modern definitions seem to stem from the original definition\cite{michael2005serious}\cite{zyda2005visual}. The boundaries of serious games are debated, mostly due to the fact that serious games attract multiple domains making it hard to come up with a common boundary. However, the common denominator across all domains seems to be "Serious Game designers use people's interest in video games to capture their attention for a variety of purposes that go beyond pure entertainment"\cite{djaouti2011classifying}.
+
+From the above one stands to reason the main contrast between video games and serious games involve the use of pedagogy activities which aim to educate or instruct knowledge or skill\cite{zyda2005visual} in serious games. These activities are given preference over entertainment value, hence the amusement aspect which are custom to video games might not be found at all in a serious game\cite{zyda2005visual}.
+
+\subsection{Consumer sim racing games as a serious game}
+
+Sim racing games such as Asseto Corsa and Project Cars are consumer available of the shelf. These provide a sim racing experience within the average cost of other consumer games. The aim of sim racing games is to replicate real life cars, race car dynamics and track locations with the aim of providing entertainment and amusement to the player. The challenge aspect is achieved by paring the user against other AI players, multiplayer online races played against other human players, or sometimes against ones self. These points make racing games fit the previous definition of what a video game is however, fail to meet the requirements of a serious game, they miss the pedagogy activities. Most of the modern sim racing games do aid the player to improve by means of implementing aids. Such aids might include showing the racing line while also highlighting the braking and acceleration points. Other aids include anti lock brakes, traction control and stability control. The problem with their implementation is, the fact of them being implemented in a passive way. With the exception of the racing line, the player is not told when and what is being done wrong. This results in users having to figure out their own mistakes by means of practicing without any guidance or feedback from with the game. This final year project aims to implement a module which is plugged into an off the shelf racing simulator which. This module trains users by letting them know what is being done wrong, when it's being done wrong and most importantly how to avoid making the same mistake.
+
+\section{Aims and objectives}
+
+Develop a plug in system which reads telemetry data from a racing simulator. The data is subsequently used to determine which skill the player needs to improve. This will be carried out via a mixture of real-time and offline processing. Once the processing is done, the result will be visualised as an overlay on top of the running racing sim.
+
+\section{Methods and technologies used or planned}
+
+\section{Evaluation strategy}
+
+User study
+Questionares
+Lap time improvement.
+
+\section{Deliverables}
+
+Plugin System
+User study results
+
+\section{Work Plan}
+
+
+\newpage
+\bibliography{citeations}{}
+\bibliographystyle{plain}
+
+\end{document}
