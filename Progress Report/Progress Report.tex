@@ -29,11 +29,10 @@
 \section{Introduction}
 
 \section{Motivation}
+The training process for race drivers has stabilised during the last decade [cite], with rote learning playing a very important part. Starting at an early age, a driver would compete in lower leagues, such as go karting, and undergo training that is mostly founded on trial and error. A mentor, or coach, would correct obvious mistakes and suggest ways for improvement based on experiential knowledge and related literature. The extensive hours of practice serve to hone the skills of a driver and help in the acquisition of the same experiential knowledge of the mentor. Such learning methodology is very resource consuming in that it requires both time and money (justify why); often it is geographically-constrained as well, where no suitable training track is available in the locality of the driver. Although simulators, such as those employed by professional racing teams, have helped mitigating traveling and car setup times, they are inadequate for use in more amateurish environments due to cost and logistical problems: setting up such a simulator requires adequate space seldom available to everyone.This project will look into creating an ecosystem in which the software and hardware used as a backbone will be commercially available off the shelf. Reasoning being, since a racing simulator game is to be used one with simulated hardware once does not need to spend money on a race car and equipment. By keeping costs down learning proper racing techniques and car control will be more accessible to people which will hopefully end up developing the same sixth sense as other race drivers do.
 
 \section{Why the problem is non-trivial}
-
-Optimisation problem.
-Identifying the relationship between variables and their weight in terms of the final output.
+The problem at hand is best described as an optimisation problem. The car provides telemetry data which when analysed can help identify driving patterns. Identifying these patterns is a challenge in its self. The driver could be doing multiple thing wrong at a given instance but it might be overwhelming showing all the data. For this reason, the system needs to identify which mistake is causing the driver to lose the most time while also taking into account how the difficult it is to master the skill which would eradicate the driver error. (I probably should go into more detail, correct?)
 
 \section{Background Work}
 
@@ -59,24 +58,19 @@ Sim racing games such as Asseto Corsa and Project Cars are consumer available of
 
 \section{Aims and objectives}
 
-Develop a plug in system which reads telemetry data from a racing simulator. The data is subsequently used to determine which skills the player needs to improve. This will be carried out via a mixture of real-time and offline processing. Once the processing is done, the result will be visualised as an overlay on top of the running racing sim.
+Train users in handling a racing car on a purpose built tarmac circuit. This is to be achieved by looking into telemetry data from each individual user data which will result into a personalised feedback system. The feedback system’s aim is to let the user know which areas can be improved which should result into lower lap times. The main areas which the feedback system will focus on, are keeping the race line, braking and car control. At the end of each lap a scoring function will be applied to the lap telemetry data which will aid in highlighting if the feedback provided is helping the user or not.
 
 \section{Methods and technologies used or planned}
 
-UDP Client / Server communication.
-Data visualisation
-Fuzzy logic
+Methods and technologies have yet to be researched and confirmed. However, the plan is to use aUDP Client / Server communication to read the telemetry data. Quad trees to represent and query spatial data such as the racing line and the line taking by a user. Multiple interrelated variables need to be analysed in order to determine which area the user should focus on to improve. Fuzzy logic is planned to be used to determine what the user can improve in terms of racing. More importantly fuzzy logic will output the degree of gain the user will get from each minor improvement from which the system can choose which correction the user should be suggested. Data visualisation will also be looked into as the telemetry data in it’s raw form is not easy to understand at a glance. While also the system needs to present the mistakes and corrections to the user in a away which can be easily understood. 
 
 \section{Evaluation strategy}
 
-User study using wheel and pedals for better realism. 
-Questionares
-Statistical analysis of lap time improvement.
+A simulation rig is to be setup in order to provide a sense of realism to the users which will be participating in the tests. The rig will be made of a racing wheel which provides force feedback, a three pedal set and a racing seat. Virtual reality will also be integrated into the system as to provide better sense of immersion. A race track and car will be preselected. This selection will be made based on ease of track layout and ease of car handling characteristics. Users are to be divided into two groups at random. One group of users will be asked to drive around the track without having any feedback provided from the system. This will evaluate how much a user can improve on their own. While the second group will also be asked to drive around, but this time the system will provide feedback on where and how the user can improve. A set of questions will be asked to the user once the test is complete. The questioner is meant to collect data on the user’s racing experience prior to taking the test. Telemetry data will also be collected for both groups. Statistical analysis will be carried to determine if lap times do improve. Though, are questions will also be able to get answered such us, if the second group users did take note of the feedback which was given to them by the system.The result’s aim is to accept or reject the hypothesis of whether or not there is a significant improvement in lap times after a user uses the feedback system to learn racing techniques. 
 
 \section{Deliverables}
 
-Plugin System
-User study results
+A plugin system developed with C\# .Net which is to be run in parallel with an off the self-racing simulator which is not yet confirmed. The system is to be made of three main components. The input interface layer which is used to connect to the racing sim telemetry data and translate it into a format which can be worked with by subsequent modules. The analysing module which takes care of identifying racing patterns and determining which areas the user needs to focus and improve on. The last module is the feedback module which handles the presentation of the results from the analysing module.A user study will be carried out in order to validate the system. The user study reports will be part of the deliverables as well.
 
 \section{Work Plan}
 
