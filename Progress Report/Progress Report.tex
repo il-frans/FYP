@@ -4,6 +4,7 @@
 \usepackage{cite}
 \usepackage{float}
 \usepackage{graphicx}
+\usepackage{pgfgantt}
 
 \linespread{1.3}
 
@@ -17,6 +18,8 @@
 \pagenumbering{roman} 
 
 \maketitle
+\newpage
+\tableofcontents
 
 \pagenumbering{arabic} 
 \setcounter{page}{1}
@@ -27,98 +30,105 @@
 
 \newpage
 \section{Introduction}
-	Race driving, it's training. Some games are being used in eductaion purposes this are called Serous games and how they they are branching into edu and more into racing domain. Our workd will .. Mention which circuit exist and that we will focus on tarmac.
-	Set the base for the motivation
-
-	\emph{To add}
+The gamification of areas of activity such as marketing, problem solving and education \cite{michael2005serious} has validated the use of serious games beyond their initial military use in training strategic skills \cite{djaouti2011classifying}.  Serious games simulate real-world processes designed for the purpose of solving a problem, making their main purpose that of training or educating users. Their popularity has been steadily increasing, as has their adoption, with military \cite{djaouti2011classifying} and emergency service providers (e.g. firefighters \cite{michael2005serious}) employing them to train for specific scenarios that might be encountered on the respective jobs. Motorsports cover a broad range of activities and vehicles, and as with all major forms of sporting activities, require training and dedication, with a pedagogic aspect arising in rote learning and mentoring by experts. The arenas in which motorport events take places are called circuits; there is a large selection of the latter, ranging from purposely built race tracks to public roads to natural formations such as hills and quarries. There is also a diverse selection of vehicles that take part in motorsports, with the greatest demarcation existing between motorbikes and cars. The focus of this dissertation is that of unifying serious games and motorsport racing; specifically, it will try to show whether a serious game is a powerful enough pedagogical tool that can be used to tangibly improve the performance of race drivers. The scope of the project is limited to four-wheeled cars racing on purposely-built confined circuits with a smooth tarmac surface.  
 
 \section{Motivation}
-The training process for race drivers has stabilised during the last decade [cite], with rote learning playing a very important part. Starting at an early age, a driver would compete in lower leagues, such as go karting, and undergo training that is mostly founded on trial and error. A mentor, or coach, would correct obvious mistakes and suggest ways for improvement based on experiential knowledge and related literature. The extensive hours of practice serve to hone the skills of a driver and help in the acquisition of the same experiential knowledge of the mentor. Such learning methodology is very resource consuming in that it requires both time and money (justify why); often it is geographically-constrained as well, where no suitable training track is available in the locality of the driver. Although simulators, such as those employed by professional racing teams, have helped mitigating traveling and car setup times, they are inadequate for use in more amateurish environments due to cost and logistical problems: setting up such a simulator requires adequate space seldom available to everyone. Democratising the learning process such that proper car control and racing techniques can be mastered by a larger demographic an important motivation behind this work.
-
-\emph Might be moved to problem defintion {Remove: This project will look into creating an ecosystem in which the software and hardware used as a backbone will be commercially available off the shelf. Reasoning being, since a racing simulator game is to be used one with simulated hardware once does not need to spend money on a race car and equipment. By keeping costs down learning proper racing techniques and car control will be more accessible to people which will hopefully end up developing the same sixth sense as other race drivers do.} \textbf{COMMANDMENT: 1. Never use sixth sense. 2. Never use ecosystem.}
+The training process for race drivers has stabilised during the last decade, with rote learning playing a very important part. Starting at an early age, a driver would compete in lower leagues, such as go karting, and undergo training that is mostly founded on trial and error. A mentor, or coach, would correct obvious mistakes and suggest ways for improvement based on experiential knowledge and related literature. The extensive hours of practice serve to hone the skills of a driver and help in the acquisition of the same experiential knowledge of the mentor. Such learning methodology is very resource consuming in that it requires both time and money; often it is geographically-constrained as well, where no suitable training track is available in the locality of the driver. Although simulators, such as those employed by professional racing teams, have helped mitigating traveling and car setup times, they are inadequate for use in more amateurish environments due to cost and logistical problems: setting up such a simulator requires adequate space seldom available to everyone. Democratising the learning process such that proper car control and racing techniques can be mastered by a larger demographic an important motivation behind this work.
 
 \section{Why the problem is non-trivial}
-The problem at hand is best described as an optimisation problem. Telemetry data provided by the car instrumentation system can be analysed to help identify driving patterns, specifically car-handling mistakes. The identification of these behaviours, which traditionally employs pattern recognition techniques, represents a challenge in itself. Behaviour recognition is key to providing corrective measures in order to improve the driving performance of a given user. In particular, it is the starting point in building a model which maps telemetry data to corrective measures for presentation to the user in real-time and deferred fashion, where even the visualisation of feedback is critical to the success of such a system. 
-
-\textbf{Not needed: The driver could be making multiple mistakes at a given instance but it might be overwhelming showing all the data. For this reason, the system needs to identify which mistake is causing the driver to lose the most time while also taking into account how the difficult it is to master the skill which would eradicate the driver error. (I probably should go into more detail, correct?)}
+The problem at hand is best described as an optimisation problem. Telemetry data provided by the car instrumentation system can be analysed to help identify driving patterns, specifically car-handling mistakes. The identification of these behaviours, which traditionally employs pattern recognition techniques, represents a challenge in itself. Behaviour recognition is key to providing corrective measures in order to improve the driving performance of a given user. In particular, it is the starting point in building a model which maps telemetry data to corrective measures for presentation to the user in real-time and deferred fashion, where even the visualisation of feedback is critical to the success of such a system.
 
 \section{Background Work}
 
-\subsection{Circuit motorsport racing, getting near the optimal lap time (Change heading)}
+\subsection{Motorsport racing}
 
-A sports race is defined as a situation in which individuals or groups compete to be first to achieve a particular objective \cite{mycitationsuckscock}. In the case of circuit motorsport races, in which motorised vehicles go round a course. Each racing discipline or series has its own rules. However, at the core, all disciplines participants aim to complete a full lap of the circuit in the least amount of time. Some disciplines focus on achieving one fast lap, such as time trials, while others focus on achieving the least amount of time across a fixed amount of laps, such as FIA's Formula 1 series. This dissertation will focus on confined car racing taking place on smooth asphalt surfaces in purpose built race tracks. 
+In sports individuals or groups compete to be first to achieve a particular objective. In the case of circuit motorsport races, in which motorised vehicles go round a course. Each racing discipline or series has its own rules. However, at the core, all disciplines participants aim to complete a full lap of the circuit in the least amount of time. Some disciplines focus on achieving one fast lap, such as time trials, while others focus on achieving the least amount of time across a fixed amount of laps, such as FIA's Formula 1 series. This dissertation will focus on confined car racing taking place on smooth asphalt surfaces in purpose built race tracks. 
 
-\textbf{COMMANDMENT: 3. Do not to use thesis - use dissertation, work or project instead.}
-
-A race driver has to figure out how to go round a piece of asphalt the minimum amount of time \cite{GoingFaster}. In order to do so, he or she needs to develop techniques for more advanced vehicle control. One such technique is that of mastering the \emph{race line}, which is considered the the fundamental skill a race driver must understand and master before moving on to anything else \cite{GoingFaster}. 
-
-\textbf{COMMENT: EXPAND ON BOTH It is not clear whether the tricky part is figuring out the racing line in the corners, or knowing the racing line and following it in the corners.}
-
-The best path through a corner is the one which takes the least time while keeping the higher average speed \cite{beckman1991physics}. The trickiest part of the racing line to master is that of a corner.
+A race driver needs to figure out how to go round a piece of asphalt in the minimum amount of time \cite{GoingFaster}. In order to do so, he or she needs to develop techniques for more advanced vehicle control. One such technique is that of mastering the race line, which is considered the the fundamental skill a race driver must understand and master before moving on to anything else \cite{GoingFaster}. The racing line is the best path through a circuit, it is the one which takes the least time while keeping the higher average speed \cite{beckman1991physics}. The trickiest part of the racing line to master is that of a corner. This is split into two parts, identifying the line which should be taken and staying on the line. The first part refers to being able to visualise the racing line while the later refers to actually being able to control the car so that it stays on the line. 
 
 \subsection{Video games and Serious Games}
-
-\textbf{Commandment: Do not put verbatim quotations in inverted commas - always paraphrase. Even if copied verbatim, do not enclose in quotes - most important thing is the citation following the text.}
 
 Baranowski et al \cite{yuserious} define games as a physical or mental contest with a goal or objective, played according to a framework, or rule, that determines what a player can or cannot do inside a game world. The definition covers the setup of a game, while a physical or mental contest, played according to specific rules, with the goal of amusing or rewarding the participant the reward aspect of games.
 
 Video games are built on top of these core values with the addition of having the game world confined to some sort of digital medium. The first video game was created by William Higinbotham; it was a tennis game to be played on a television set\cite{stanton2015brief}. From the early days of video games, their main aim was always to provide some degree of entertainment. The entertainment value is achieved in various ways depending on the gaming platform, game genre and the target audience. Modern video games are simply made up of three fundamental components: story, art and software \cite{zyda2005visual}.
 
-\textbf {Clean up the following paragraph:}
-
-Serious games, as a term, has been redefined multiple times. The first formal definition stated a serious game to be simulations and games to improve eduction \cite{abt1970}. Several years later an updated definition on the idea of connecting a serious purpose to knowledge and technologies from the video game industry\cite{michael2005serious}. Modern definitions seem to stem from the original definition\cite{michael2005serious}\cite{zyda2005visual}. The boundaries of serious games are debated, mostly due to the fact that serious games attract multiple domains making it hard to come up with a common boundary. However, the common denominator across all domains seems to be "Serious Game designers use people's interest in video games to capture their attention for a variety of purposes that go beyond pure entertainment"\cite{djaouti2011classifying}.
+Moving on to serious games this type of games are considered a mix of simulation and game to improve eduction \cite{abt1970}. The idea behind a serious game is to connect a serious purpose to knowledge and technologies from the video game industry\cite{michael2005serious}. The boundaries of serious games are debated, mostly due to the fact that serious games attract multiple domains making it hard to come up with a common boundary. However, the common denominator across all domains seems to be serious game designers use people's interest in video games to capture their attention for a variety of purposes that go beyond pure entertainment\cite{djaouti2011classifying}.
 
 The main contrast between video games and serious games is the use of pedagogic activities which aim to educate or instruct knowledge or skill \cite{zyda2005visual} in serious games as opposed to the pure leisurely aspects of the video game. Pedagogy is given preference over the amusement value which in some cases might not be found in serious games \cite{zyda2005visual}.
 
-\subsection{Simulation Racing as a Serious Game}
+\subsection{Sim Racing as a Serious Game}
 
-Simulation racing games (sim racing) such as Asseto Corsa \cite{aqqalla1} and Project CARS \cite{aqqalla2}, which are off-the-shelf products, provide a sim racing experience within budget for the average video game consumer. The aim such games is to replicate real life cars, race car dynamics and track locations to amuse and entertain the player. The challenge aspect is achieved by pitting the user against other computer drivers known as AI players, or in multiplayer online races, which are played against other human players. In some cases, a user can compete against oneself by taking on a ghost - a recording of the player's best lap for a particular track. 
-
-\textbf{To clean:}
-
-These points make racing games fit the previous definition of what a video game is however, fail to meet the requirements of a serious game, they miss the pedagogy activities. Most of the modern sim racing games do aid the player to improve by means of implementing aids. Such aids might include showing the racing line while also highlighting the braking and acceleration points. Other aids include anti lock brakes, traction control and stability control. The problem with their implementation is, the fact of them being implemented in a passive way. With the exception of the racing line, the player is not told when and what is being done wrong. This results in users having to figure out their own mistakes by means of practicing without any guidance or feedback from with the game. This final year project aims to implement a module which is plugged into an off the shelf racing simulator which. This module trains users by letting them know what is being done wrong, when it's being done wrong and most importantly how to avoid making the same mistake.
-
-\textbf{Insert other driving serious games from literature (sort of related work)}
+Simulation racing games (sim racing) such as Asseto Corsa \cite{aqqalla1} and Project CARS \cite{aqqalla2}, which are off-the-shelf products, provide a sim racing experience within budget for the average video game consumer. The aim with such games is to replicate real life cars, race car dynamics and track locations to amuse and entertain the player. The challenge aspect is achieved by pitting the user against other computer drivers known as AI players, or in multiplayer online races, which are played against other human players. In some cases, a user can compete against oneself by taking on a ghost - a recording of the player's best lap for a particular track. Sim racing the definition of what a video game is however, they miss the pedagogy activities which would qualify them as serious games. Most of the modern sim racing games do aid the player to improve by means of implementing aids. Such aids might include showing the racing line while also highlighting the braking and acceleration points. Other aids include anti lock brakes, traction control and stability control, these are implemented in a passive way. With the exception of the racing line, the player is not told when and what is being done wrong. This results in users having to figure out their own mistakes by means of practicing without any guidance or feedback from with the game. This final year project aims to implement a module which is plugged into an off the shelf racing simulator which. This module trains users by letting them know what is being done wrong, when it's being done wrong and most importantly how to avoid making the same mistake.
 
 \section{Aims and objectives}
 
-\textbf{Flesh the following more thoroughly. First sentence is the aim, others are objectives. Put objectives in point form and elaborate on each point individually. Make in point for } 
+The aim of this project is that applying serious games in the training of motorsports race drivers; in particular, it aims at testing the hypothesis significant improvement in a driver's lap times can be achieved via a pedagogic feedback system employed to teach the driver and help him or her learn specific racing techniques.
 
-Train users in handling a racing car on a purpose built-tarmac circuit. This is to be achieved by looking into telemetry data from each individual user data which will result into a personalised feedback system. The feedback system’s aim is to let the user know which areas can be improved which should result into lower lap times. The main areas which the feedback system will focus on, are keeping the race line, braking and car control. At the end of each lap a scoring function will be applied to the lap telemetry data which will aid in highlighting if the feedback provided is helping the user or not.
+\begin{itemize}
+  \item Identify a suitable off-the-shelf race driving simulator \\
+  	The simulator will be chosen according to a number of criteria such as simulation realism, visual fidelity and system extensibility.
+
+  \item Identify telemetry information for analysis and feedback system \\
+  	The telemetry information provided by the simulator will be scrutinised and a subset identified; this subset will be used in the acquisition component of the feedback and analysis system to assess player performance.
+
+  \item Research, design and develop the rule-based analysis and feedback system \\
+  	A rule-based analysis system is developed which takes telemetry data as input and outputs possible corrections for improving lap times. The outputs are selectively sorted and filtered in order to present the user with the most effective corrections (greater return on investment per applied correction).
+
+  \item Design user study to test principal hypothesis.
+\end{itemize}
 
 \section{Methods and technologies used or planned}
 
-\textbf{This needs a thorough revision. It does little to help whoever is reading the document to understand anything about the project. To me it seems more like a todo list you wrote for yourself, crumpled into paragraph form.}
+Two components are being designed, the first being a simulation component which will be assembled out of consumer available sim racing rig hardware. The second component is the software aspect of the project. This component is in turn subdivided into smaller modules, one of which is the telemetry module which handles reading the telemetry provided by a racing simulator. As \ref{fig:SystemComponentArchitecture} demonstrates, the telemetry modules connects to the game, parses the data and encodes it into a format which can be easily worked with by subsequent feedback module before relaying back to the game with the UI rendered feedback.
 
-\textbf{Remove: Methods and technologies have yet to be researched and confirmed. Expand on this and explain, include system overview diagram}
-However, the plan is to use a UDP Client / Server communication to read the telemetry data. Quad trees to represent and query spatial data such as the racing line and the line taking by a user. Multiple interrelated variables need to be analysed in order to determine which area the user should focus on to improve. Fuzzy logic is planned to be used to determine what the user can improve in terms of racing. More importantly fuzzy logic will output the degree of gain the user will get from each minor improvement from which the system can choose which correction the user should be suggested. Data visualisation will also be looked into as the telemetry data in it’s raw form is not easy to understand at a glance. While the system needs to present the mistakes and corrections to the user in a away which can be easily understood. 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[height=5cm]{SystemArc}
+	\caption{System Component Architecture}
+	\label{fig:SystemComponentArchitecture}
+\end{figure}
+
+Earlier in this report it was discussed the importance for a race driver to adhere to the racing line. In order to reassure how well a user is adhering to the racing line the system must measure for every telemetry data point, which is the nearest racing line's data point and how far is it. The searching for the nearest data point is handled by a quad tree data structure containing all the racing line's data points. The distance is calculated using basic 2d geometry functions. \ref{fig:QuadTree} illustrates a quad tree generated from a specific racing line. 
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[height=5cm]{QuadTree}
+	\caption{Quad tree visual representation}
+	\label{fig:QuadTree}
+\end{figure}
+
+This project relies heavily on hardware and software components from other third parties. The user study will required a sim racing rig, this is to be made of a mid range sim racing Logitech G25 steering wheel, pedals and shifter in conjunction with a real racing seat and an Oculus Rift virtual reality headset. This hardware choose has been influenced by costs, ease of sourcing, ease of setup and the value the components add to the user study, as individually and collectively. Various racing games have been looked into, iRacing, Project Cars, rFactor and Asseto Corsa are the main ones. Although the implementations differ, all mentioned games do provided the same basic feature required by this project, however, Asseto Corso has been chosen for its ease of integrability, support and documentation. \ref{fig:ProofOfConcept} is a screen shot taken from Assesto corsa with a proof of concept of the system overplayed on top. The overlay is displayed while a user is playing the game, and it is split into two areas. On the left, a map of the circuit is shown with a red circle denoting the car geographical location and in yellow text the distance from the racing line is also shown. On the right side the user is being shown, telemetry values which can let an experienced driver now if corrections are required to the racing style.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[height=5cm]{Proofofconcept}
+	\caption{Proof of concept}
+	\label{fig:ProofOfConcept}
+\end{figure}
+
+Moving on from the proof of concept the system needs to provide more concrete feedback and better visually represent said feedback. The feedback will be improved by means of fuzzy logic which is to determine what the user can improve in terms of racing by analysing multiple data points. More importantly fuzzy logic will output the degree of gain the user will get from each minor improvement from which the system will be able to better choose which correction the user should be suggested. Lastly, data visualisation will also be looked into as the telemetry data which are shown in \ref{fig:ProofOfConcept} are not easy to understand at a glance, the system needs to present the mistakes and corrections to the user in a away which can be easily understood. 
 
 \section{Evaluation strategy}
-Specify that a user study is going to be carried out to evaluate specific aspects of the system (possibly the benefits, etc)
 
-\emph{This is the experiment setup:}
+A user study is to be carried out to address the project's hypothesis which is asking whether or not users can improve their racing skills by using the suggested setup. The evaluation aspects to be examined are the ease of understanding and carrying out the suggested feedback, the rate of learning of test subjects, and the effectiveness of the feedback given.
+
+\subsection{Experiment setup}
 A simulation rig is to be setup in order to provide a sense of realism to the users which will be participating in the tests. The rig will be made of a racing wheel which provides force feedback, a three pedal set and a racing seat. Virtual reality will also be integrated into the system as to provide better sense of immersion. A race track and car will be preselected. This selection will be made based on ease of track layout and ease of car handling characteristics. 
 
-\emph{This is the user study:}
-Users are to be divided into two groups at random. One group of users will be asked to drive around the track without having any feedback provided from the system. This will evaluate how much a user can improve on their own. While the second group will also be asked to drive around, but this time the system will provide feedback on where and how the user can improve. A set of questions will be asked to the user once the test is complete. The questioner is meant to collect data on the users' racing experience prior to taking the test. Telemetry data will also be collected for both groups. Statistical analysis will be carried to determine if lap times do improve. 
-\emph{Not clear what this sentence means:}
-Though, are questions will also be able to get answered such us, if the second group users did take note of the feedback which was given to them by the system.
+\subsection{User study}
+Users are to be divided into two groups at random. One group of users will be asked to drive around the track without having any feedback provided from the system. This will evaluate how much a user can improve on their own. While the second group will also be asked to drive around, but this time the system will provide feedback on where and how the user can improve. A set of questions will be asked to the user once the test is complete. The questioner is meant to collect data on the users' racing experience prior to taking the test. Telemetry data will also be collected for both groups. Statistical analysis will be carried to determine if lap times do improve. From this analysis 
 
-The result’s aim is to accept or reject the hypothesis of whether or not there is a significant improvement in lap times after a user uses the feedback system to learn racing techniques. 
-
-\textbf{Latch this last sentence onto the main premise/aim of the project}
-
-\section{Deliverables} Focus more on user study.
-
-A plugin system developed with C\# .Net which is to be run in parallel with an off the self-racing simulator which is not yet confirmed. The system is to be made of three main components. The input interface layer which is used to connect to the racing sim telemetry data and translate it into a format which can be worked with by subsequent modules. The analysing module which takes care of identifying racing patterns and determining which areas the user needs to focus and improve on. The last module is the feedback module which handles the presentation of the results from the analysing module.
-A user study will be carried out in order to validate the system. The user study reports will be part of the deliverables as well.
+\section{Deliverables}
+A report based on the user study will be produced. The report will contain a summary for each experiment, the summary will contain the test subjects' answers to the questioner, telemetry data and feedback given by the system, From these summaries a another report is to be created containing the finds from the study. The main aim of the report is to outline the validation process used to accept or reject the hypothesis put forward by this project.
 
 \section{Work Plan}
 
-development
-setup of use study
-week user study paralle with write up
-1 month write up
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[height=8cm]{TimeLine}
+	\caption{Time line}
+	\label{fig:Time Line}
+\end{figure}
 
 \newpage
 \bibliography{citeations}{}

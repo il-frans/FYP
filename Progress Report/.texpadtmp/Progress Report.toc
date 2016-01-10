@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Motivation}{3}
+\contentsline {section}{\numberline {3}Why the problem is non-trivial}{4}
+\contentsline {section}{\numberline {4}Background Work}{4}
+\contentsline {subsection}{\numberline {4.1}Motorsport racing}{4}
+\contentsline {subsection}{\numberline {4.2}Video games and Serious Games}{5}
+\contentsline {subsection}{\numberline {4.3}Sim Racing as a Serious Game}{6}
+\contentsline {section}{\numberline {5}Aims and objectives}{6}
+\contentsline {section}{\numberline {6}Methods and technologies used or planned}{7}
+\contentsline {section}{\numberline {7}Evaluation strategy}{9}
+\contentsline {subsection}{\numberline {7.1}Experiment setup}{10}
+\contentsline {subsection}{\numberline {7.2}User study}{10}
+\contentsline {section}{\numberline {8}Deliverables}{10}
+\contentsline {section}{\numberline {9}Work Plan}{10}
