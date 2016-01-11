@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.16)  10 JAN 2016 23:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.16)  11 JAN 2016 01:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -299,18 +299,18 @@ File: pgfcalendar.code.tex 2007/07/23 v3.0.0 (rcs-revision 1.11)
 ) (/Users/Francois/GitHub/FYP/Progress Report/.texpadtmp/Progress Report.aux)
 \openout1 = `"Progress Report.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count123
@@ -361,11 +361,11 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 20.
+(Font)              <12> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 20.
+(Font)              <8> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 20.
+(Font)              <6> on input line 21.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/Francois/GitHub/FYP/Progress Report/.texpadtmp/Progress Report.toc
@@ -377,66 +377,62 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `"Progress Report.toc"'.
 
- [1] [2] [3]
+ [1] [2] [3] [4] [5]
 
-LaTeX Warning: Citation `mycitationsuckscock' on page 4 undefined on input line 45.
-
-[4] [5]
-
-LaTeX Warning: Citation `aqqalla1' on page 6 undefined on input line 61.
+LaTeX Warning: Citation `aqqalla1' on page 6 undefined on input line 63.
 
 
-LaTeX Warning: Citation `aqqalla2' on page 6 undefined on input line 61.
+LaTeX Warning: Citation `aqqalla2' on page 6 undefined on input line 63.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 70.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
- [6] <SystemArc.png, id=34, 620.3175pt x 259.7203pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
+ [6] <SystemArc.png, id=35, 620.3175pt x 259.7203pt>
 File: SystemArc.png Graphic file (type png)
  <use SystemArc.png>
-Package pdftex.def Info: SystemArc.png used on input line 86.
+Package pdftex.def Info: SystemArc.png used on input line 88.
 (pdftex.def)             Requested size: 339.78429pt x 142.26378pt.
- <QuadTree.png, id=36, 690.32906pt x 470.50781pt>
+ <QuadTree.png, id=37, 690.32906pt x 470.50781pt>
 File: QuadTree.png Graphic file (type png)
  <use QuadTree.png>
-Package pdftex.def Info: QuadTree.png used on input line 95.
+Package pdftex.def Info: QuadTree.png used on input line 97.
 (pdftex.def)             Requested size: 208.72247pt x 142.26378pt.
  [7] [8 <./SystemArc.png> <./QuadTree.png>] <Proofofconcept.png, id=46, 1445.4pt x 813.0375pt>
 File: Proofofconcept.png Graphic file (type png)
  <use Proofofconcept.png>
 Package pdftex.def Info: Proofofconcept.png used on input line 106.
 (pdftex.def)             Requested size: 252.90468pt x 142.26378pt.
- [9 <./Proofofconcept.png>] <TimeLine.png, id=50, 511.9125pt x 277.78781pt>
+ [9 <./Proofofconcept.png>] [10] <TimeLine.png, id=53, 511.9125pt x 277.78781pt>
 File: TimeLine.png Graphic file (type png)
  <use TimeLine.png>
-Package pdftex.def Info: TimeLine.png used on input line 130.
+Package pdftex.def Info: TimeLine.png used on input line 132.
 (pdftex.def)             Requested size: 419.47415pt x 227.62204pt.
 
-Overfull \hbox (74.47415pt too wide) in paragraph at lines 130--131
+Overfull \hbox (74.47415pt too wide) in paragraph at lines 132--133
  [][] 
  []
 
-[10] (/Users/Francois/GitHub/FYP/Progress Report/.texpadtmp/Progress Report.bbl [11 <./TimeLine.png>]) [12] (/Users/Francois/GitHub/FYP/Progress Report/.texpadtmp/Progress Report.aux)
+[11 <./TimeLine.png>] (/Users/Francois/GitHub/FYP/Progress Report/.texpadtmp/Progress Report.bbl) [12] (/Users/Francois/GitHub/FYP/Progress Report/.texpadtmp/Progress Report.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13299 strings out of 493089
- 283654 string characters out of 6134841
- 325357 words of memory out of 5000000
- 16519 multiletter control sequences out of 15000+600000
+ 13298 strings out of 493089
+ 283633 string characters out of 6134841
+ 325366 words of memory out of 5000000
+ 16518 multiletter control sequences out of 15000+600000
  8848 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,65p,1706b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "/Users/Francois/GitHub/FYP/Progress Report/.texpadtmp/Progress Report.pdf" (13 pages, 2966319 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "/Users/Francois/GitHub/FYP/Progress Report/.texpadtmp/Progress Report.pdf" (13 pages, 2980711 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

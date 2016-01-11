@@ -11,4 +11,4 @@
 \contentsline {subsection}{\numberline {7.1}Experiment setup}{10}
 \contentsline {subsection}{\numberline {7.2}User study}{10}
 \contentsline {section}{\numberline {8}Deliverables}{10}
-\contentsline {section}{\numberline {9}Work Plan}{10}
+\contentsline {section}{\numberline {9}Work Plan}{11}
