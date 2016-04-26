@@ -4,129 +4,107 @@
 \usepackage{cite}
 \usepackage{float}
 \usepackage{graphicx}
+\usepackage{pgfgantt}
+\usepackage{setspace}
 
-\linespread{1.3}
-
-\title{Telemetry-based Optimisation for User Training in Racing Simulators}
-\author{Francois Buhagiar}
-\date{2015}
-
+\linespread{1.5}
 \begin{document}
+
+\begin{titlepage}
+	\begin{center}
+		\begin{spacing}{1.5}
+			\huge{\textbf{Telemetry-based Optimisation for User Training in Racing Simulators}}
+		\end{spacing}
+		
+		\LARGE{François Buhagiar}
+		\vspace{5mm}\\
+		\includegraphics[scale=4]{images/UOM_Logo}
+		
+		\begin{spacing}{1.5}
+			\huge{\textbf{Department of Computer Information Systems\\
+			\vspace{5mm}
+				University of Malta\\
+				March 2016 }}
+		\end{spacing}
+	
+		\Large \vfill Submitted in partial fulfilment of the requirements for the degree of B.Sc. (Hons.)
+		\clearpage
+	\end{center}
+\end{titlepage}
 
 \pagenumbering{roman} 
 
-\maketitle
-
+\newpage
 \pagenumbering{arabic} 
 \setcounter{page}{1}
 
+\newpage
 \begin{abstract}
+This project will be looking into applying serious games in the training of motorsports race drivers. The goal is to improve a driver's lap times in a simulation race game via a pedagogic feedback system. Researching serious games, techniques employed by racing drivers on track, racing simulation games and hardware, will be the foundations for the user case study which is to be carried to evaluate the effectiveness of the developed system
 \end{abstract}
+
+\newpage
+\section{Acknowledgements}
+
+Luke for racing rig
+
+Keith for PC
+
+\newpage
+\tableofcontents
+
+\newpage
+\section{Other tables and lists}
+
+\newpage
+\section{Table of abbreviations}
 
 \newpage
 \section{Introduction}
 
-\newpage
-\section{Literature Review}
+• Introduce the area and the FYP without assuming that the reader has any special knowledge in the area.
+• The aims and goals of the project.
+• Any non-aims of the project (e.g. in a purely theoretical project, the development of an artifact would not necessarily be an aim).
+• The approach used.
+• Any assumptions.
+• A high level description of the project.
 
-In the following section an explanation will be given for the ground work on which this final year project is based upon. The areas which will be covered include video games and serious games focusing on the differences between the two, which will be used to introduce the idea of using serious games as a training mechanism. Motorsport circuit car racing will also be discussed, describing what it involves from a formal point of view by defining the tasks which a racing driver is required to carry out in order to get a good lap time. 
+The gamification of areas of activity such as marketing, problem solving and education \cite{michael2005serious} has validated the use of serious games beyond their initial military use in training strategic skills \cite{djaouti2011classifying}.  Serious games simulate real-world processes designed for the purpose of solving a problem, making their main purpose that of training or educating users. Their popularity has been steadily increasing, as has their adoption, with military \cite{djaouti2011classifying} and emergency service providers (e.g. firefighters \cite{michael2005serious}) employing them to train for specific scenarios that might be encountered on the respective jobs. Motorsports cover a broad range of activities and vehicles, and as with all major forms of sporting activities, require training and dedication, with a pedagogic aspect arising in rote learning and mentoring by experts. The arenas in which motorport events take places are called circuits; there is a large selection of the latter, ranging from purposely built race tracks to public roads to natural formations such as hills and quarries. There is also a diverse selection of vehicles that take part in motorsports, with the greatest demarcation existing between motorbikes and cars. The focus of this dissertation is that of unifying serious games and motorsport racing; specifically, it will try to show whether a serious game is a powerful enough pedagogical tool that can be used to tangibly improve the performance of race drivers. The scope of the project is limited to four-wheeled cars racing on purposely-built confined circuits with a smooth tarmac surface.  
 
-\subsection{Video games and Serious Games}
+\subsection{Motivation}
+The training process for race drivers has stabilised during the last decade, with rote learning playing a very important part. Starting at an early age, a driver would compete in lower leagues, such as go karting, and undergo training that is mostly founded on trial and error. A mentor, or coach, would correct obvious mistakes and suggest ways for improvement based on experiential knowledge and related literature. The extensive hours of practice serve to hone the skills of a driver and help in the acquisition of the same experiential knowledge of the mentor. Such learning methodology is very resource consuming in that it requires both time and money; often it is geographically-constrained as well, where no suitable training track is available in the locality of the driver. Although simulators, such as those employed by professional racing teams, have helped mitigating traveling and car setup times, they are inadequate for use in more amateurish environments due to cost and logistical problems: setting up such a simulator requires adequate space seldom available to everyone. Democratising the learning process such that proper car control and racing techniques can be mastered by a larger demographic an important motivation behind this work.
 
-Baranowski and colleagues defined games as “a physical or mental contest with a goal or objective, played according to a framework, or rule, that determines what a player can or cannot do inside a game world” the definition covers the setup of a game, while  "a physical or mental contest, played according to specific rules, with the goal of amusing or rewarding the participant"\cite{yuserious}.
-
-Video games are built on top of these core values with the difference of having the game world confined into some sort of digital media. According to historians video games started with William Higinbotham who created a tennis game to be played on a television set\cite{stanton2015brief}. From the early days of video games, their main aim was always to provide some degree of entertainment. The entertainment value is achieved in various ways depending on gaming platform, game genre and the audience the video game is targeted to. According to Electronic Arts chief creative officer at the time, modern video games are simply made up of three fundamental components, story, art and software\cite{zyda2005visual}.
-
-The definition of serious games has been redefined multiple times. The first formal definition appears to have been introduced by Abt in his book from 1970 which stated a serious game to be simulations and games to improve eduction\cite{abt1970}. Several years later, a white paper written by Sawyer in 2002 proposed an updated definition to be based on the idea of connecting a serious purpose to knowledge and technologies from the video game industry\cite{michael2005serious}. Moving on to nowadays definitions such as the ones from Chen and Michael in 2005\cite{michael2005serious} and from Zyda also in 2005\cite{zyda2005visual} seem to stem from Swayer's influence. The boundaries of serious games are debated, mostly due to the fact that serious game attract multiple domains making it hard to come up with a common boundary. However, the common denominator across all domains seems to be "Serious Game designers use people's interest in video games to capture their attention for a variety of purposes that go beyond pure entertainmnet"\cite{djaouti2011classifying}.
-
-From the above one stands to reason the main contrast between video games and serious games involve the use of pedagogy activities that aim to educate or instruct knowledge or skill\cite{zyda2005visual} in serious games. These activities are given preference over entertainment value, hence the amusement aspect which are custom to video games might not be found at all in a serious game\cite{zyda2005visual}. 
-
-\subsection{Consumer sim racing games as a serious game}
-
-Sim racing games such as Asseto Corsa and Project Cars which are consumer available of the shelf, provide a sim racing experience within the average cost of other consumer games. The aim of sim racing games is to replicate real life cars, race car dynamics and track locations with the aim of providing entertainment and amusement to the player. The challenge aspect is achieved by paring the user against other AI players, multiplayer online races played against other human players, or sometimes against ones self. These points make racing games fit the previous definition of what a video game is however, fail to meet the requirements of a serious game, they miss the pedagogy activities. Most of the modern sim racing games do aid the player to improve by means of implementing aids. Such aids might include showing the racing line to which the player is expected to drive on, while also showing the braking and acceleration points. Other aids include anti lock brakes, traction control and stability control. The problem with their implementation is, the fact of them being implemented in a passive way. With the exception of the racing line, the player is not told when and what is being done wrong. The result is, users having to figure their own mistakes out by means of practicing without any guidance or feedback from with the game. This final year project aims to implement a module which is plugged into an off the shelf racing simulator which. This module trains users by letting them know what is being done wrong, when it's being done wrong and most importantly how to avoid making the same mistake.
-
-{\color{red}[In appendix, we might need to explain what ABS, TCS AND STC are]}
-
-\subsection{Serious games as a training mechanism}
-
-As mentioned, serious games focus on the pedagogy activities 
-
-\subsection{Circuit motorsport racing, getting near the optimal lap time}
-
-"A situation in which individuals or groups compete to be first to achieve a particular objective." is what the Oxford dictionary defines a race to be. This can be more specifically defined to describe circuit motorsport races, in which motorised vehicles go round a course called a circuit. Each racing discipline or series has it's own rules however, at the core all disciplines participants aim to complete a full lap of the circuit in the least amount of time. Some disciplines focus on achieving one fast lap, such as time trials, while others focus on achieving the least amount of time across a fixed amount of laps, such as FIA's Formula 1 series.
-
-Moving over to defining the problem which a race driver faces, that of "figure out how to go round a piece of asphalt in the minimum amount of time"\cite{GoingFaster}. In order to do so, the race driver needs to develop techniques which aid in controlling the vehicle which is being raced. Such technique is that of mastering the race line, which is considered the the fundamental skill a race driver must understand and master before moving on to anything else\cite{GoingFaster}. The best path through a corner is said to be one which takes the least time while keeping the higher average speed\cite{beckman1991physics}. The trickiest part of the racing line to master is that of a corner, below a basic understanding of the racing line is given for a corner.
-
-\subsubsection{Racing Line}
-
-Beckman Brian and No Bucks Racing Club do a great job to introduce the physics behind the racing line and why it is proven to be the optimal line. In part 5 "Introduction to the Racing Line" of their book "The Physics of Racing" they cover the basics of how the racing line should be chosen and why it is so important. In this chapter they go on to define a corner and look into its racing line. Figure~\ref{fig:Racing_Corner} shows this corner, it represents an abstract corner such that it represents  any corner which has constant width, any radius, and short straights before and after. As an example they analyse a corner of 75 foot radius and 30 foot width. When the racing line is considered, one must keep in mind that the vehicle tyres must be kept on the asphalt. In order to solve this, Beckman Brian and No Bucks Racing Club consider the centre of gravity of the vehicle, effectively treating the vehicle as a point, and define a narrower course which is the defines the available space.
-	
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[height=5cm]{slip_angle.jpg}}
-	\caption{Multiple possible racing lines round a corner}
-	\label{fig:Racing_Corner}
-	
-	\begin{description}
-		{\setlength\itemindent{25pt} \item[r] = radius of corner centre line = 75 feet}
-		{\setlength\itemindent{25pt} \item[W] = width of course = 30 feet}
-		{\setlength\itemindent{25pt} \item[ro] = radius of outer edge = r + ½W = 90 feet}
-		{\setlength\itemindent{25pt} \item[ri] = radius of inner edge = r - ½W = 60 feet}
-		
-		{\setlength\itemindent{25pt} \item[w] = width of car = 6 feet}
-		{\setlength\itemindent{25pt} \item[Ro] = effective outer radius = ro - ½w = 87 feet}
-		{\setlength\itemindent{25pt} \item[Ri] = effective inner radius = ri + ½w = 63 feet}
-		{\setlength\itemindent{25pt} \item[X] = effective width of course = W - w = 24 feet}
-	\end{description}
-\end{figure}
-
-Assuming a maximum centripetal acceleration of 1.10g, which is just within the capability of autocross tyres, the following speeds for the cornering phases ofLines i, o, and m are reported\cite{beckman1991physics}.
-
-\begin{center}
-    \begin{tabular}{ | l | l | l | l | p{5cm} |} \hline
-    & Line i & Line o & Line m \\ \hline
-    avg speed mph & 32.16 & 37.79 & 48.78 \\ \hline
-    time sec & 4.08 & 4.24 & 3.18 \\ \hline
-    & vi & vo & vm \\ \hline
-    \end{tabular}
-\end{center}
-
-{\color{red}[I am not sure how the speeds have been calculated, the book chapter doesn't seem to mention it]}
-
-The racing line as shown above is critical to getting a good lap time, ignoring any skill with car control, the driver might already lose almost a second in a corner simply because of a wrong line was driven through a corner. In reality a line not only depends on a corner, but it also depends on what come before or after the corner. Having said that it is much easier for a new comer to focus on getting one corner at a time right and then moving on to connecting a series of corners, finally moving onto treating the circuit as one racing line\cite{beckman1991physics}\cite{GoingFaster}.
-
-{\color{red}(Divide the track into corners and straights. Order corners in importance, by having the most important corner the one which leads to the longest straight. Mistakes include missing the braking point, turn in point and apex point. Symptoms, Road left on the outside. Solution turn in latter. Not enough road and having to tighten. Solution, Turn in earlier. This assuming the adecuate speed is being carried through the corner)}
-
-\subsubsection{Car Control}
-
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[height=5cm]{slip_angle}
-	\caption{Tire optimal grip and slip angle}
-\label{fig:slip_angle}
-\end{figure}
-
-Understeer, when the slip angle of the front tires is greater than 0 degrees. Optimal slip angle depends on the tire being used however, racing tires optimal slip angle is around 8 to 10 degrees. A tire is said to be under used when the slip angle is less than the optimal slip angle, while a tire is said to be over used when the slip angle is greater than the optimal slip angle. There isn't one cure fits all for both of these situations. The driver must be able to figure out why the under user or over use is happening and try to correct these issues. There are two basic cures one can attempt, in case of under use one should try to carry more speed through the corner. On the other hand over use is usually the cause of carrying too much speed through a corner, hence easing off the throttle should be to solve it\cite{GoingFaster}.
-
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[height=5cm]{oversteer}
-	\caption{Stages leading to oversteer}
-\label{fig:oversteer}
-\end{figure}
-
-Oversteer, Lifting off the throttle when the vehicle is close to the limit while tackling a corner results in what is called trailing oversteer. This happens as a result of upsetting the vehicle by having the weight suddenly transferred from he rear tires onto the front tires which makes the rear step out. Power oversteer occurs when tackling a corner and upsetting the car by suddenly applying too much throttle, this makes the rear wheels break traction ending up having the rear step out. Preventing oversteer boils down to good steering and throttle control.
-
-Braking, in order to extract the most out of the braking capabilities of the vehicle and tires, the front tires should have a slip ratio of 15\%. This means the front tires should be going at 85\% the speed of the road going under them. This will avoid locking the tires, which effects negatively the braking distance and vehicle control. In braking there are two main mistakes one can make, the driver either presses the the brake to hard ending locking up, or not pushing hard enough ending taking longer to slow down. Both can be solved with practice by trying to find the limit, ideally one tries to brake harder at every lap, once the tires lock up the driver know that the limit has been passed. Some goes with a corner braking point, the braking point can be found by incrementally delaying the braking point into a corner, until ending up running too wide into a corner which is a good indication of late braking.
-
-
+\subsection{Why the problem is non-trivial}
+The problem at hand is best described as an optimisation problem. Telemetry data provided by the car instrumentation system can be analysed to help identify driving patterns, specifically car-handling mistakes. The identification of these behaviours, which traditionally employs pattern recognition techniques, represents a challenge in itself. Behaviour recognition is key to providing corrective measures in order to improve the driving performance of a given user. In particular, it is the starting point in building a model which maps telemetry data to corrective measures for presentation to the user in real-time and deferred fashion, where even the visualisation of feedback is critical to the success of such a system.
 
 \newpage
-\subsection{User study}
-Maybe write something about how the approach the user study? Maybe find a Literature on how to ask user for their feedback which will be used for the survey after using the system.
+\include{BackgroudAndLiteratureReview}
 
 \newpage
-\section{Methodology}
+\include{Specification_And_Design}
+
+\newpage
+\include{Methodology}
+
+\newpage
+\include{Implementation}
+
+\newpage
+\include{Evaluation}
+
+\newpage
+\include{Future_Work}
+
+At present only negative feedback is given, a good idea would be to look into the benefits of letting the user know when a particular task has been completed correctly.
+
+\newpage
+\include{Conclusion}
+
+\newpage
+\section{Glossary}
+
+\newpage
+\section{Appendices}
 
 \newpage
 \bibliography{citeations}{}

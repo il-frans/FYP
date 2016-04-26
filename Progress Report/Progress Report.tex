@@ -27,7 +27,7 @@ ICT3904}
 
 \newpage
 \begin{abstract}
-This project will be looking into applying serious games in the training of motorsports race drivers. The goal is to improve a driver's lap times in a simulation race game via a pedagogic feedback system. Researching serious games, techniques employed by racing drivers on track, racing simulation; games and hardware, will be the basses for the user case study which is to be carried to evaluate the effectiveness of the developed system
+This project will be looking into applying serious games in the training of motorsports race drivers. The goal is to improve a driver's lap times in a simulation race game via a pedagogic feedback system. Researching serious games, techniques employed by racing drivers on track, racing simulation games and hardware, will be the foundations for the user case study which is to be carried to evaluate the effectiveness of the developed system
 \end{abstract}
 
 \newpage
@@ -60,7 +60,7 @@ The main contrast between video games and serious games is the use of pedagogic 
 
 \subsection{Sim Racing as a Serious Game}
 
-Simulation racing games (sim racing) such as Asseto Corsa \cite{aqqalla1} and Project CARS \cite{aqqalla2}, which are off-the-shelf products, provide a sim racing experience within budget for the average video game consumer. The aim with such games is to replicate real life cars, race car dynamics and track locations to amuse and entertain the player. The challenge aspect is achieved by pitting the user against other computer drivers known as AI players, or in multiplayer online races, which are played against other human players. In some cases, a user can compete against oneself by taking on a ghost - a recording of the player's best lap for a particular track. Sim racing the definition of what a video game is however, they miss the pedagogy activities which would qualify them as serious games. Most of the modern sim racing games do aid the player to improve by means of implementing aids. Such aids might include showing the racing line while also highlighting the braking and acceleration points. Other aids include anti lock brakes, traction control and stability control, these are implemented in a passive way. With the exception of the racing line, the player is not told when and what is being done wrong. This results in users having to figure out their own mistakes by means of practicing without any guidance or feedback from with the game. This final year project aims to implement a module which is plugged into an off the shelf racing simulator which. This module trains users by letting them know what is being done wrong, when it's being done wrong and most importantly how to avoid making the same mistake.
+Simulation racing games (sim racing) such as Asseto Corsa \cite{assestoCorsa} and Project CARS \cite{ProjectCars} , which are off-the-shelf products, provide a sim racing experience within budget for the average video game consumer. The aim with such games is to replicate real life cars, race car dynamics and track locations to amuse and entertain the player. The challenge aspect is achieved by pitting the user against other computer drivers known as AI players, or in multiplayer online races, which are played against other human players. In some cases, a user can compete against oneself by taking on a ghost - a recording of the player's best lap for a particular track. Sim racing the definition of what a video game is however, they miss the pedagogy activities which would qualify them as serious games. Most of the modern sim racing games do aid the player to improve by means of implementing aids. Such aids might include showing the racing line while also highlighting the braking and acceleration points. Other aids include anti lock brakes, traction control and stability control, these are implemented in a passive way. With the exception of the racing line, the player is not told when and what is being done wrong. This results in users having to figure out their own mistakes by means of practicing without any guidance or feedback from with the game. This final year project aims to implement a module which is plugged into an off the shelf racing simulator which. This module trains users by letting them know what is being done wrong, when it's being done wrong and most importantly how to avoid making the same mistake.
 
 \section{Aims and objectives}
 
@@ -81,7 +81,7 @@ The aim of this project is that applying serious games in the training of motors
 
 \section{Methods and technologies used or planned}
 
-Two components are being designed, the first being a simulation component which will be assembled out of consumer available sim racing rig hardware. The second component is the software aspect of the project. This component is in turn subdivided into smaller modules, one of which is the telemetry module which handles reading the telemetry provided by a racing simulator. As \ref{fig:SystemComponentArchitecture} demonstrates, the telemetry modules connects to the game, parses the data and encodes it into a format which can be easily worked with by subsequent feedback module before relaying back to the game with the UI rendered feedback.
+Two components are being designed, the first being a simulation component which will be assembled out of consumer available sim racing rig hardware. The second component is the software aspect of the project. This component is in turn subdivided into smaller modules, one of which is the telemetry module which handles reading the telemetry provided by a racing simulator. As Figure \ref{fig:SystemComponentArchitecture} demonstrates, the telemetry modules connects to the game, parses the data and encodes it into a format which can be easily worked with by subsequent feedback module before relaying back to the game with the UI rendered feedback.
 
 \begin{figure}[!htb]
 	\centering
@@ -90,7 +90,7 @@ Two components are being designed, the first being a simulation component which 
 	\label{fig:SystemComponentArchitecture}
 \end{figure}
 
-Earlier in this report it was discussed the importance for a race driver to adhere to the racing line. In order to reassure how well a user is adhering to the racing line the system must for every telemetry data point, find which is the nearest racing line's data point and how far is it. The searching for the nearest data point is handled by a quad tree data structure containing all the racing line's data points. The distance is calculated using basic 2d geometry functions. \ref{fig:QuadTree} illustrates a quad tree generated from a specific racing line. 
+Earlier in this report it was discussed the importance for a race driver to adhere to the racing line. In order to reassure how well a user is adhering to the racing line the system must for every telemetry data point, find which is the nearest racing line's data point and how far is it. The searching for the nearest data point is handled by a quad tree data structure containing all the racing line's data points. The distance is calculated using basic 2d geometry functions. Figure \ref{fig:QuadTree} illustrates a quad tree generated from a specific racing line. 
 
 \begin{figure}[!htb]
 	\centering
@@ -99,7 +99,7 @@ Earlier in this report it was discussed the importance for a race driver to adhe
 	\label{fig:QuadTree}
 \end{figure}
 
-This project relies heavily on hardware and software components from other third parties. The user study will required a sim racing rig, this is to be made of a mid range sim racing Logitech G25 steering wheel, pedals and shifter in conjunction with a real racing seat and an Oculus Rift virtual reality headset. This hardware choose has been influenced by costs, ease of sourcing, ease of setup and the value the components add to the user study, as individually and collectively. Various racing games have been looked into, iRacing, Project Cars, rFactor and Asseto Corsa are the main ones. Although the implementations differ, all mentioned games do provided the same basic feature required by this project, however, Asseto Corso has been chosen for its ease of integrability, support and documentation. \ref{fig:ProofOfConcept} is a screen shot taken from Assesto corsa with a proof of concept of the system overplayed on top. The overlay is displayed while a user is playing the game, and it is split into two areas. On the left, a map of the circuit is shown with a red circle denoting the car geographical location and in yellow text the distance from the racing line is also shown. On the right side the user is being shown, telemetry values which can let an experienced driver now if corrections are required to the racing style.
+This project relies heavily on hardware and software components from other third parties. The user study will required a sim racing rig, this is to be made of a mid range sim racing Logitech G25 steering wheel, pedals and shifter in conjunction with a real racing seat and an Oculus Rift virtual reality headset. This hardware choose has been influenced by costs, ease of sourcing, ease of setup and the value the components add to the user study, as individually and collectively. Various racing games have been looked into, iRacing, Project Cars, rFactor and Asseto Corsa are the main ones. Although the implementations differ, all mentioned games do provided the same basic feature required by this project, however, Asseto Corso has been chosen for its ease of integrability, support and documentation. Figure \ref{fig:ProofOfConcept} is a screen shot taken from Assesto corsa with a proof of concept of the system overplayed on top. The overlay is displayed while a user is playing the game, and it is split into two areas. On the left, a map of the circuit is shown with a red circle denoting the car geographical location and in yellow text the distance from the racing line is also shown. On the right side the user is being shown, telemetry values which can let an experienced driver now if corrections are required to the racing style.
 
 \begin{figure}[!htb]
 	\centering
@@ -108,7 +108,7 @@ This project relies heavily on hardware and software components from other third
 	\label{fig:ProofOfConcept}
 \end{figure}
 
-Moving on from the proof of concept the system needs to provide more concrete feedback and better visual representation for said feedback. The feedback will be improved by means of fuzzy logic which is to determine what the user can improve in terms of racing by analysing multiple data points. More importantly fuzzy logic will output the degree of gain the user will get from each minor improvement from which the system will be able to better choose which correction the user should be suggested. Finaly, data visualisation will also be looked into as the telemetry data which are shown in \ref{fig:ProofOfConcept} are not easy to understand at a glance, the system needs to present the mistakes and corrections to the user in a away which can be easily understood. 
+Moving on from the proof of concept the system needs to provide more concrete feedback and better visual representation for said feedback. The feedback will be improved by means of fuzzy logic which is to determine what the user can improve in terms of racing by analysing multiple data points. More importantly fuzzy logic will output the degree of gain the user will get from each minor improvement from which the system will be able to better choose which correction the user should be suggested. Finaly, data visualisation will also be looked into as the telemetry data which are shown in Figure \ref{fig:ProofOfConcept} are not easy to understand at a glance, the system needs to present the mistakes and corrections to the user in a away which can be easily understood. 
 
 \section{Evaluation strategy}
 
@@ -125,7 +125,6 @@ A report based on the user study will be produced. The report will contain a sum
 
 \newpage
 \section{Work Plan}
-
 
 \begin{figure}[!htb]
 	\centering

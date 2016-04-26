@@ -1,7 +1,24 @@
-\contentsline {section}{\numberline {1}Introduction}{2}
-\contentsline {section}{\numberline {2}Literature Review}{3}
-\contentsline {subsection}{\numberline {2.1}Video games and Serious Games}{3}
-\contentsline {subsection}{\numberline {2.2}Consumer sim racing games as a serious game}{4}
-\contentsline {subsection}{\numberline {2.3}Racing, getting near the optimal lap time}{4}
-\contentsline {subsection}{\numberline {2.4}User study}{4}
-\contentsline {section}{\numberline {3}Methodology}{5}
+\contentsline {section}{\numberline {1}Acknowledgements}{2}
+\contentsline {section}{\numberline {2}Other tables and lists}{5}
+\contentsline {section}{\numberline {3}Table of abbreviations}{6}
+\contentsline {section}{\numberline {4}Introduction}{7}
+\contentsline {subsection}{\numberline {4.1}Motivation}{7}
+\contentsline {subsection}{\numberline {4.2}Why the problem is non-trivial}{8}
+\contentsline {section}{\numberline {5}Background Work}{9}
+\contentsline {subsection}{\numberline {5.1}Motorsport racing}{9}
+\contentsline {subsection}{\numberline {5.2}Video games and Serious Games}{10}
+\contentsline {subsection}{\numberline {5.3}Sim Racing as a Serious Game}{11}
+\contentsline {section}{\numberline {6}Specification and design}{12}
+\contentsline {section}{\numberline {7}Methodology}{13}
+\contentsline {subsection}{\numberline {7.1}Evaluation}{13}
+\contentsline {subsubsection}{\numberline {7.1.1}Surveys}{13}
+\contentsline {subsubsection}{\numberline {7.1.2}Experiment structure}{13}
+\contentsline {section}{\numberline {8}Implementation}{15}
+\contentsline {section}{\numberline {9}Evaluation}{16}
+\contentsline {section}{\numberline {10}Evaluation strategy}{16}
+\contentsline {subsection}{\numberline {10.1}Experiment setup}{16}
+\contentsline {subsection}{\numberline {10.2}User study}{16}
+\contentsline {section}{\numberline {11}Future Work}{17}
+\contentsline {section}{\numberline {12}Conclusion}{19}
+\contentsline {section}{\numberline {13}Glossary}{20}
+\contentsline {section}{\numberline {14}Appendices}{21}
