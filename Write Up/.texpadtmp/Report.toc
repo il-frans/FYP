@@ -10,15 +10,19 @@
 \contentsline {subsection}{\numberline {5.3}Sim Racing as a Serious Game}{11}
 \contentsline {section}{\numberline {6}Specification and design}{12}
 \contentsline {section}{\numberline {7}Methodology}{13}
-\contentsline {subsection}{\numberline {7.1}Evaluation}{13}
-\contentsline {subsubsection}{\numberline {7.1.1}Surveys}{13}
-\contentsline {subsubsection}{\numberline {7.1.2}Experiment structure}{13}
-\contentsline {section}{\numberline {8}Implementation}{15}
-\contentsline {section}{\numberline {9}Evaluation}{16}
-\contentsline {section}{\numberline {10}Evaluation strategy}{16}
-\contentsline {subsection}{\numberline {10.1}Experiment setup}{16}
-\contentsline {subsection}{\numberline {10.2}User study}{16}
-\contentsline {section}{\numberline {11}Future Work}{17}
-\contentsline {section}{\numberline {12}Conclusion}{19}
-\contentsline {section}{\numberline {13}Glossary}{20}
-\contentsline {section}{\numberline {14}Appendices}{21}
+\contentsline {subsection}{\numberline {7.1}Sim setup}{13}
+\contentsline {subsection}{\numberline {7.2}Feedback System}{13}
+\contentsline {subsection}{\numberline {7.3}Evaluation}{14}
+\contentsline {subsubsection}{\numberline {7.3.1}Experiment structure}{14}
+\contentsline {subsubsection}{\numberline {7.3.2}Surveys}{15}
+\contentsline {subsubsection}{\numberline {7.3.3}Track and Car choice}{15}
+\contentsline {subsubsection}{\numberline {7.3.4}Data Analysis}{16}
+\contentsline {section}{\numberline {8}Implementation}{17}
+\contentsline {section}{\numberline {9}Evaluation}{18}
+\contentsline {section}{\numberline {10}Evaluation strategy}{18}
+\contentsline {subsection}{\numberline {10.1}Experiment setup}{18}
+\contentsline {subsection}{\numberline {10.2}User study}{18}
+\contentsline {section}{\numberline {11}Future Work}{19}
+\contentsline {section}{\numberline {12}Conclusion}{21}
+\contentsline {section}{\numberline {13}Glossary}{22}
+\contentsline {section}{\numberline {14}Appendices}{23}
