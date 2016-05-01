@@ -18,11 +18,14 @@
 \contentsline {subsubsection}{\numberline {7.3.3}Track and Car choice}{15}
 \contentsline {subsubsection}{\numberline {7.3.4}Data Analysis}{16}
 \contentsline {section}{\numberline {8}Implementation}{17}
-\contentsline {section}{\numberline {9}Evaluation}{18}
-\contentsline {section}{\numberline {10}Evaluation strategy}{18}
-\contentsline {subsection}{\numberline {10.1}Experiment setup}{18}
-\contentsline {subsection}{\numberline {10.2}User study}{18}
-\contentsline {section}{\numberline {11}Future Work}{19}
-\contentsline {section}{\numberline {12}Conclusion}{21}
-\contentsline {section}{\numberline {13}Glossary}{22}
-\contentsline {section}{\numberline {14}Appendices}{23}
+\contentsline {subsection}{\numberline {8.1}Supporting tools}{17}
+\contentsline {subsection}{\numberline {8.2}Track Splicer}{17}
+\contentsline {subsection}{\numberline {8.3}Spatial Querying}{19}
+\contentsline {section}{\numberline {9}Evaluation}{21}
+\contentsline {section}{\numberline {10}Evaluation strategy}{21}
+\contentsline {subsection}{\numberline {10.1}Experiment setup}{21}
+\contentsline {subsection}{\numberline {10.2}User study}{21}
+\contentsline {section}{\numberline {11}Future Work}{22}
+\contentsline {section}{\numberline {12}Conclusion}{24}
+\contentsline {section}{\numberline {13}Glossary}{25}
+\contentsline {section}{\numberline {14}Appendices}{26}
