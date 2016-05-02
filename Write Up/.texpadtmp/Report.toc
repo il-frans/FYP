@@ -6,26 +6,28 @@
 \contentsline {subsection}{\numberline {4.2}Why the problem is non-trivial}{8}
 \contentsline {section}{\numberline {5}Background Work}{9}
 \contentsline {subsection}{\numberline {5.1}Motorsport racing}{9}
-\contentsline {subsection}{\numberline {5.2}Video games and Serious Games}{10}
-\contentsline {subsection}{\numberline {5.3}Sim Racing as a Serious Game}{11}
-\contentsline {section}{\numberline {6}Specification and design}{12}
-\contentsline {section}{\numberline {7}Methodology}{13}
-\contentsline {subsection}{\numberline {7.1}Sim setup}{13}
-\contentsline {subsection}{\numberline {7.2}Feedback System}{13}
-\contentsline {subsection}{\numberline {7.3}Evaluation}{14}
-\contentsline {subsubsection}{\numberline {7.3.1}Experiment structure}{14}
-\contentsline {subsubsection}{\numberline {7.3.2}Surveys}{15}
-\contentsline {subsubsection}{\numberline {7.3.3}Track and Car choice}{15}
-\contentsline {subsubsection}{\numberline {7.3.4}Data Analysis}{16}
-\contentsline {section}{\numberline {8}Implementation}{17}
-\contentsline {subsection}{\numberline {8.1}Supporting tools}{17}
-\contentsline {subsection}{\numberline {8.2}Track Splicer}{17}
-\contentsline {subsection}{\numberline {8.3}Spatial Querying}{19}
-\contentsline {section}{\numberline {9}Evaluation}{21}
-\contentsline {section}{\numberline {10}Evaluation strategy}{21}
-\contentsline {subsection}{\numberline {10.1}Experiment setup}{21}
-\contentsline {subsection}{\numberline {10.2}User study}{21}
-\contentsline {section}{\numberline {11}Future Work}{22}
-\contentsline {section}{\numberline {12}Conclusion}{24}
-\contentsline {section}{\numberline {13}Glossary}{25}
-\contentsline {section}{\numberline {14}Appendices}{26}
+\contentsline {section}{\numberline {6}Literature Review}{10}
+\contentsline {subsection}{\numberline {6.1}Video games and Serious Games}{10}
+\contentsline {subsubsection}{\numberline {6.1.1}Pedagogy}{11}
+\contentsline {subsection}{\numberline {6.2}Sim Racing as a Serious Game}{12}
+\contentsline {section}{\numberline {7}Specification and design}{14}
+\contentsline {section}{\numberline {8}Methodology}{15}
+\contentsline {subsection}{\numberline {8.1}Sim setup}{15}
+\contentsline {subsection}{\numberline {8.2}Feedback System}{15}
+\contentsline {subsection}{\numberline {8.3}Evaluation}{16}
+\contentsline {subsubsection}{\numberline {8.3.1}Experiment structure}{16}
+\contentsline {subsubsection}{\numberline {8.3.2}Surveys}{17}
+\contentsline {subsubsection}{\numberline {8.3.3}Track and Car choice}{17}
+\contentsline {subsubsection}{\numberline {8.3.4}Data Analysis}{18}
+\contentsline {section}{\numberline {9}Implementation}{19}
+\contentsline {subsection}{\numberline {9.1}Supporting tools}{19}
+\contentsline {subsection}{\numberline {9.2}Track Splicer}{19}
+\contentsline {subsection}{\numberline {9.3}Spatial Querying}{21}
+\contentsline {section}{\numberline {10}Evaluation}{23}
+\contentsline {section}{\numberline {11}Evaluation strategy}{23}
+\contentsline {subsection}{\numberline {11.1}Experiment setup}{23}
+\contentsline {subsection}{\numberline {11.2}User study}{23}
+\contentsline {section}{\numberline {12}Future Work}{24}
+\contentsline {section}{\numberline {13}Conclusion}{26}
+\contentsline {section}{\numberline {14}Glossary}{27}
+\contentsline {section}{\numberline {15}Appendices}{28}
