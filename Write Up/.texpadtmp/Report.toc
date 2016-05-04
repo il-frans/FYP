@@ -4,30 +4,30 @@
 \contentsline {section}{\numberline {4}Introduction}{7}
 \contentsline {subsection}{\numberline {4.1}Motivation}{7}
 \contentsline {subsection}{\numberline {4.2}Why the problem is non-trivial}{8}
-\contentsline {section}{\numberline {5}Background Work}{9}
-\contentsline {subsection}{\numberline {5.1}Motorsport racing}{9}
-\contentsline {section}{\numberline {6}Literature Review}{10}
-\contentsline {subsection}{\numberline {6.1}Video games and Serious Games}{10}
-\contentsline {subsubsection}{\numberline {6.1.1}Pedagogy}{11}
-\contentsline {subsection}{\numberline {6.2}Sim Racing as a Serious Game}{12}
-\contentsline {section}{\numberline {7}Specification and design}{14}
-\contentsline {section}{\numberline {8}Methodology}{15}
-\contentsline {subsection}{\numberline {8.1}Sim setup}{15}
-\contentsline {subsection}{\numberline {8.2}Feedback System}{15}
-\contentsline {subsection}{\numberline {8.3}Evaluation}{16}
-\contentsline {subsubsection}{\numberline {8.3.1}Experiment structure}{16}
-\contentsline {subsubsection}{\numberline {8.3.2}Surveys}{17}
-\contentsline {subsubsection}{\numberline {8.3.3}Track and Car choice}{17}
-\contentsline {subsubsection}{\numberline {8.3.4}Data Analysis}{18}
-\contentsline {section}{\numberline {9}Implementation}{19}
-\contentsline {subsection}{\numberline {9.1}Supporting tools}{19}
-\contentsline {subsection}{\numberline {9.2}Track Splicer}{19}
-\contentsline {subsection}{\numberline {9.3}Spatial Querying}{21}
-\contentsline {section}{\numberline {10}Evaluation}{23}
-\contentsline {section}{\numberline {11}Evaluation strategy}{23}
-\contentsline {subsection}{\numberline {11.1}Experiment setup}{23}
-\contentsline {subsection}{\numberline {11.2}User study}{23}
-\contentsline {section}{\numberline {12}Future Work}{24}
-\contentsline {section}{\numberline {13}Conclusion}{26}
-\contentsline {section}{\numberline {14}Glossary}{27}
-\contentsline {section}{\numberline {15}Appendices}{28}
+\contentsline {section}{\numberline {5}Literature Review}{9}
+\contentsline {subsection}{\numberline {5.1}Video games and Serious Games}{9}
+\contentsline {subsubsection}{\numberline {5.1.1}Pedagogy}{10}
+\contentsline {subsection}{\numberline {5.2}Sim Racing as a Serious Game}{11}
+\contentsline {section}{\numberline {6}Background Work}{13}
+\contentsline {subsection}{\numberline {6.1}Motorsport racing}{13}
+\contentsline {section}{\numberline {7}Specification and design}{17}
+\contentsline {section}{\numberline {8}Methodology}{18}
+\contentsline {subsection}{\numberline {8.1}Sim setup}{18}
+\contentsline {subsection}{\numberline {8.2}Feedback System}{18}
+\contentsline {subsection}{\numberline {8.3}Evaluation}{19}
+\contentsline {subsubsection}{\numberline {8.3.1}Experiment structure}{19}
+\contentsline {subsubsection}{\numberline {8.3.2}Surveys}{20}
+\contentsline {subsubsection}{\numberline {8.3.3}Track and Car choice}{20}
+\contentsline {subsubsection}{\numberline {8.3.4}Data Analysis}{21}
+\contentsline {section}{\numberline {9}Implementation}{22}
+\contentsline {subsection}{\numberline {9.1}Supporting tools}{22}
+\contentsline {subsection}{\numberline {9.2}Track Splicer}{22}
+\contentsline {subsection}{\numberline {9.3}Spatial Querying}{24}
+\contentsline {section}{\numberline {10}Evaluation}{26}
+\contentsline {section}{\numberline {11}Evaluation strategy}{26}
+\contentsline {subsection}{\numberline {11.1}Experiment setup}{26}
+\contentsline {subsection}{\numberline {11.2}User study}{26}
+\contentsline {section}{\numberline {12}Future Work}{27}
+\contentsline {section}{\numberline {13}Conclusion}{29}
+\contentsline {section}{\numberline {14}Glossary}{30}
+\contentsline {section}{\numberline {15}Appendices}{31}

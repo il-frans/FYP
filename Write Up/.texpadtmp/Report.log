@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.16)  2 MAY 2016 23:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.16)  4 MAY 2016 23:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -383,7 +383,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `Report.toc'.
 
- [4] [5] [6]
+ [4] (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.lof)
+\tf@lof=\write5
+\openout5 = `Report.lof'.
+
+ [5] [6]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
@@ -405,31 +409,45 @@ Missing character: There is no ¢ in font cmr10!
  [7] [8]
 \openout2 = `BackgroudAndLiteratureReview.aux'.
 
- (./BackgroudAndLiteratureReview.tex
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
- [9
+ (./BackgroudAndLiteratureReview.tex [9
 
-] [10] [11] [12]) [13]
+] [10] [11] [12] [13] <images/cornerraceline.png, id=58, 404.26031pt x 213.04594pt>
+File: images/cornerraceline.png Graphic file (type png)
+ <use images/cornerraceline.png>
+Package pdftex.def Info: images/cornerraceline.png used on input line 39.
+(pdftex.def)             Requested size: 377.95062pt x 199.16928pt.
+
+Overfull \hbox (32.95062pt too wide) in paragraph at lines 39--40
+ [][] 
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+[14 <./images/cornerraceline.png>] <images/slipangle.png, id=62, 579.66562pt x 495.35063pt>
+File: images/slipangle.png Graphic file (type png)
+ <use images/slipangle.png>
+Package pdftex.def Info: images/slipangle.png used on input line 50.
+(pdftex.def)             Requested size: 233.06505pt x 199.16928pt.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [15 <./images/slipangle.png>]) [16]
 \openout2 = `Specification_And_Design.aux'.
 
  (./Specification_And_Design.tex
@@ -445,16 +463,16 @@ Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
-) [14
+) [17
 
 
 ]
 \openout2 = `Methodology.aux'.
 
- (./Methodology.tex [15
+ (./Methodology.tex [18
 
 
-] [16] [17]) [18]
+] [19] [20]) [21]
 \openout2 = `Implementation.aux'.
 
  (./Implementation.tex
@@ -499,7 +517,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-[19
+[22
 
 
 ]
@@ -534,21 +552,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--49
 
  []
 
-[20]
+[23]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- <images/tracksplicertool.png, id=81, 882.29625pt x 671.50874pt>
+ <images/tracksplicertool.png, id=92, 882.29625pt x 671.50874pt>
 File: images/tracksplicertool.png Graphic file (type png)
  <use images/tracksplicertool.png>
 Package pdftex.def Info: images/tracksplicertool.png used on input line 54.
 (pdftex.def)             Requested size: 261.68872pt x 199.16928pt.
- [21 <./images/tracksplicertool.png>] <images/QuadTree.png, id=85, 690.32906pt x 470.50781pt>
+ [24 <./images/tracksplicertool.png>] <images/QuadTree.png, id=97, 690.32906pt x 470.50781pt>
 File: images/QuadTree.png Graphic file (type png)
  <use images/QuadTree.png>
 Package pdftex.def Info: images/QuadTree.png used on input line 64.
 (pdftex.def)             Requested size: 292.22202pt x 199.16928pt.
-) [22 <./images/QuadTree.png>]
+) [25 <./images/QuadTree.png>]
 \openout2 = `Evaluation.aux'.
 
  (./Evaluation.tex
@@ -573,38 +591,38 @@ Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
-) [23
+) [26
 
 
 ]
 \openout2 = `Future_Work.aux'.
 
- (./Future_Work.tex) [24
+ (./Future_Work.tex) [27
 
 
-] [25
+] [28
 
 ]
 \openout2 = `Conclusion.aux'.
 
- (./Conclusion.tex) [26
+ (./Conclusion.tex) [29
 
-] [27
+] [30
 
-] [28] (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.bbl [29]) [30] (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.aux (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/BackgroudAndLiteratureReview.aux) (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Specification_And_Design.aux) (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Methodology.aux) (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Implementation.aux) (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Evaluation.aux) (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Future_Work.aux) (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Conclusion.aux)) ) 
+] [31] (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.bbl [32]) [33] (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.aux (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/BackgroudAndLiteratureReview.aux) (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Specification_And_Design.aux) (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Methodology.aux) (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Implementation.aux) (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Evaluation.aux) (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Future_Work.aux) (/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Conclusion.aux)) ) 
 Here is how much of TeX's memory you used:
- 13378 strings out of 493089
- 286445 string characters out of 6134841
- 328366 words of memory out of 5000000
- 16551 multiletter control sequences out of 15000+600000
+ 13394 strings out of 493089
+ 286864 string characters out of 6134841
+ 328388 words of memory out of 5000000
+ 16562 multiletter control sequences out of 15000+600000
  7016 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,65p,2194b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.pdf" (31 pages, 399245 bytes).
+Output written on "/Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.pdf" (34 pages, 482535 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 158 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

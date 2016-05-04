@@ -15,54 +15,54 @@ Repeated entry---line 66 of file ../citeations.bib
  :                         ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "assestoCorsa" isn't style-file defined
---line 151 of file ../citeations.bib
+--line 161 of file ../citeations.bib
 Warning--entry type for "ProjectCars" isn't style-file defined
---line 156 of file ../citeations.bib
+--line 166 of file ../citeations.bib
 Warning--to sort, need author or key in assestoCorsa
 Warning--to sort, need author or key in ProjectCars
 Warning--can't use both author and editor fields in Harteveld2007
 Warning--empty journal in moser2002methodology
 Warning--empty journal in yuserious
 Warning--empty year in yuserious
-You've used 17 entries,
+You've used 18 entries,
             2118 wiz_defined-function locations,
-            601 strings with 7163 characters,
-and the built_in function-call counts, 4821 in all, are:
-= -- 456
-> -- 211
+            606 strings with 7274 characters,
+and the built_in function-call counts, 5084 in all, are:
+= -- 482
+> -- 224
 < -- 3
-+ -- 88
-- -- 68
-* -- 301
-:= -- 800
-add.period$ -- 46
-call.type$ -- 17
-change.case$ -- 79
++ -- 93
+- -- 72
+* -- 314
+:= -- 847
+add.period$ -- 50
+call.type$ -- 18
+change.case$ -- 83
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 201
-empty$ -- 402
-format.name$ -- 68
-if$ -- 1007
+cite$ -- 24
+duplicate$ -- 213
+empty$ -- 424
+format.name$ -- 72
+if$ -- 1064
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 21
-newline$ -- 83
-num.names$ -- 30
-pop$ -- 114
+int.to.str$ -- 18
+missing$ -- 23
+newline$ -- 88
+num.names$ -- 32
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 72
 quote$ -- 0
-skip$ -- 145
+skip$ -- 152
 stack$ -- 0
-substring$ -- 243
-swap$ -- 35
+substring$ -- 248
+swap$ -- 36
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
+type$ -- 58
 warning$ -- 6
-while$ -- 44
-width$ -- 19
-write$ -- 166
+while$ -- 46
+width$ -- 20
+write$ -- 177
 (There was 1 error message)
