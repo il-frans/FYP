@@ -21,21 +21,20 @@
 \contentsline {subsubsection}{\numberline {8.3.4}Data Analysis}{21}
 \contentsline {section}{\numberline {9}Implementation}{22}
 \contentsline {subsection}{\numberline {9.1}Supporting tools}{22}
-\contentsline {subsection}{\numberline {9.2}Track Splicer}{22}
-\contentsline {subsection}{\numberline {9.3}Spatial Querying}{24}
-\contentsline {subsection}{\numberline {9.4}System Architecture}{25}
-\contentsline {subsection}{\numberline {9.5}Sim Racing Rig}{25}
-\contentsline {subsection}{\numberline {9.6}Feedback system}{26}
-\contentsline {subsubsection}{\numberline {9.6.1}Telemetry Input Interface}{27}
-\contentsline {subsubsection}{\numberline {9.6.2}Processing}{28}
-\contentsline {subsubsection}{\numberline {9.6.3}Feedbacks being provided}{28}
-\contentsline {subsubsection}{\numberline {9.6.4}Output module}{28}
-\contentsline {subsubsection}{\numberline {9.6.5}Abstraction}{28}
-\contentsline {section}{\numberline {10}Evaluation}{29}
-\contentsline {section}{\numberline {11}Evaluation strategy}{29}
-\contentsline {subsection}{\numberline {11.1}Experiment setup}{29}
-\contentsline {subsection}{\numberline {11.2}User study}{29}
-\contentsline {section}{\numberline {12}Future Work}{30}
-\contentsline {section}{\numberline {13}Conclusion}{32}
-\contentsline {section}{\numberline {14}Glossary}{33}
-\contentsline {section}{\numberline {15}Appendices}{34}
+\contentsline {subsubsection}{\numberline {9.1.1}Track Splicer}{22}
+\contentsline {subsubsection}{\numberline {9.1.2}Spatial Querying}{24}
+\contentsline {subsection}{\numberline {9.2}System Architecture}{25}
+\contentsline {subsubsection}{\numberline {9.2.1}Sim Racing Rig}{25}
+\contentsline {subsubsection}{\numberline {9.2.2}Feedback system}{26}
+\contentsline {subsubsection}{\numberline {9.2.3}Telemetry Input Interface}{27}
+\contentsline {subsubsection}{\numberline {9.2.4}Processing}{28}
+\contentsline {subsubsection}{\numberline {9.2.5}Feedbacks being provided}{28}
+\contentsline {subsubsection}{\numberline {9.2.6}Output Interface}{29}
+\contentsline {section}{\numberline {10}Evaluation}{30}
+\contentsline {section}{\numberline {11}Evaluation strategy}{30}
+\contentsline {subsection}{\numberline {11.1}Experiment setup}{30}
+\contentsline {subsection}{\numberline {11.2}User study}{30}
+\contentsline {section}{\numberline {12}Future Work}{31}
+\contentsline {section}{\numberline {13}Conclusion}{33}
+\contentsline {section}{\numberline {14}Glossary}{34}
+\contentsline {section}{\numberline {15}Appendices}{35}
