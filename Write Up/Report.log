@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.9)  10 MAY 2016 01:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.9)  13 MAY 2016 17:40
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -477,7 +477,12 @@ File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
 ("D:\Users\Francois\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspa
 ce.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (Report.aux (Implementation.aux))
+) (Report.aux (BackgroudAndLiteratureReview.aux
+
+LaTeX Warning: Label `fig:slipangle' multiply defined.
+
+) (Methodology.aux) (Specification_And_Design.aux) (Implementation.aux)
+(Evaluation.aux) (Future_Work.aux) (Conclusion.aux))
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -508,6 +513,135 @@ LaTeX Font Info:    ... okay on input line 11.
 \makeMPintoPDFobject=\count128
 \everyMPtoPDFconversion=\toks30
 ) ABD: EveryShipout initializing macros
+Missing character: There is no Ã in font cmr17!
+Missing character: There is no § in font cmr17!
+
+<images/UOM_Logo.jpg, id=4, 23.52095pt x 32.05678pt>
+File: images/UOM_Logo.jpg Graphic file (type jpg)
+ <use images/UOM_Logo.jpg>
+Package pdftex.def Info: images/UOM_Logo.jpg used on input line 21.
+(pdftex.def)             Requested size: 94.0835pt x 128.22675pt.
+
+[1
+
+{C:/Users/Francois/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images
+/UOM_Logo.jpg>] [1
+
+] [2] (Report.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 5.
+ [3])
+\tf@toc=\write4
+\openout4 = `Report.toc'.
+
+ [4] (Report.lof)
+\tf@lof=\write5
+\openout5 = `Report.lof'.
+
+ [5] [6]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+ [7]
+[8]
+\openout2 = `BackgroudAndLiteratureReview.aux'.
+
+ (BackgroudAndLiteratureReview.tex [9
+
+]
+<images/cornerraceline.png, id=44, 404.26031pt x 213.04594pt>
+File: images/cornerraceline.png Graphic file (type png)
+
+<use images/cornerraceline.png>
+Package pdftex.def Info: images/cornerraceline.png used on input line 13.
+(pdftex.def)             Requested size: 377.95062pt x 199.16928pt.
+
+Overfull \hbox (32.95062pt too wide) in paragraph at lines 13--14
+ [][] 
+ []
+
+[10 <./images/cornerraceline.png>]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+<images/slipangle.png, id=48, 579.66562pt x 495.35063pt>
+File: images/slipangle.png Graphic file (type png)
+
+<use images/slipangle.png>
+Package pdftex.def Info: images/slipangle.png used on input line 24.
+(pdftex.def)             Requested size: 233.06505pt x 199.16928pt.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [11 <./images/slipangle.png>]
+<images/overundersteer.png, id=52, 319.94531pt x 209.28188pt>
+File: images/overundersteer.png Graphic file (type png)
+
+<use images/overundersteer.png>
+Package pdftex.def Info: images/overundersteer.png used on input line 37.
+(pdftex.def)             Requested size: 304.48332pt x 199.16928pt.
+ [12] [13 <./images/overundersteer.png>]
+[14] [15] [16] [17]) [18
+
+]
+\openout2 = `Methodology.aux'.
+
+ (Methodology.tex [19
+
+] [20] [21]) [22]
+\openout2 = `Specification_And_Design.aux'.
+
+
+(Specification_And_Design.tex
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+) [23
+
+
+]
 \openout2 = `Implementation.aux'.
 
  (Implementation.tex
@@ -535,10 +669,6 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 9.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 9.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -556,10 +686,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-[1
+[24
 
 
-{C:/Users/Francois/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
 
 ("D:\Users\Francois\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -592,25 +722,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--49
 
  []
 
-[2]
+[25]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- <images/tracksplicertool.png, id=15, 882.29625pt x 671.50874pt>
+ <images/tracksplicertool.png, id=101, 882.29625pt x 671.50874pt>
 File: images/tracksplicertool.png Graphic file (type png)
 
 <use images/tracksplicertool.png>
 Package pdftex.def Info: images/tracksplicertool.png used on input line 54.
 (pdftex.def)             Requested size: 261.68872pt x 199.16928pt.
 
-<images/QuadTree.png, id=16, 690.32906pt x 470.50781pt>
+<images/QuadTree.png, id=102, 690.32906pt x 470.50781pt>
 File: images/QuadTree.png Graphic file (type png)
 
 <use images/QuadTree.png>
 Package pdftex.def Info: images/QuadTree.png used on input line 64.
 (pdftex.def)             Requested size: 292.22202pt x 199.16928pt.
- [3 <./images/tracksplicertool.png>]
-<images/SystemArch.png, id=20, 415.5525pt x 371.88937pt>
+ [26 <./images/tracksplicertool.png>]
+<images/SystemArch.png, id=106, 415.5525pt x 371.88937pt>
 File: images/SystemArch.png Graphic file (type png)
 
 <use images/SystemArch.png>
@@ -621,7 +751,7 @@ Overfull \hbox (100.11868pt too wide) in paragraph at lines 73--74
  [][] 
  []
 
-<images/RacingRig.jpg, id=22, 4175.6pt x 3131.7pt>
+<images/RacingRig.jpg, id=107, 4175.6pt x 3131.7pt>
 File: images/RacingRig.jpg Graphic file (type jpg)
  <use images/RacingRig.jpg>
 Package pdftex.def Info: images/RacingRig.jpg used on input line 83.
@@ -631,28 +761,82 @@ Overfull \hbox (34.3558pt too wide) in paragraph at lines 83--84
  [][] 
  []
 
-[4 <./images/QuadTree.png>] [5 <./images/SystemArch.png>] [6 <./images/RacingRi
-g.jpg>] [7]) [8] (Report.bbl [9
+[27 <./images/QuadTree.png>] [28 <./images/SystemArch.png>] [29 <./images/Racin
+gRig.jpg>] [30]) [31] [32
 
-]) [10] (Report.aux (Implementation.aux)) ) 
+]
+\openout2 = `Evaluation.aux'.
+
+ (Evaluation.tex
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+) [33
+
+]
+\openout2 = `Future_Work.aux'.
+
+ (Future_Work.tex) [34
+
+
+]
+[35
+
+]
+\openout2 = `Conclusion.aux'.
+
+ (Conclusion.tex) [36
+
+] [37
+
+] [38] (Report.bbl [39]) [40] (Report.aux
+(BackgroudAndLiteratureReview.aux) (Methodology.aux)
+(Specification_And_Design.aux) (Implementation.aux) (Evaluation.aux)
+(Future_Work.aux) (Conclusion.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 13055 strings out of 493634
- 283003 string characters out of 3134016
- 316871 words of memory out of 3000000
- 16208 multiletter control sequences out of 15000+200000
- 5504 words of font info for 20 fonts, out of 3000000 for 9000
+ 13139 strings out of 493634
+ 284586 string characters out of 3134016
+ 320455 words of memory out of 3000000
+ 16237 multiletter control sequences out of 15000+200000
+ 7016 words of font info for 25 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 62i,6n,65p,1677b,234s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/Users/Francois/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Users/Francois/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/
-Users/Francois/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><D:/Users/Francois/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><D:/Users/Francois/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Report.pdf (10 pages, 1528023 bytes).
+ 62i,6n,65p,2197b,234s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Users/Francois/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb><D:/Users/Francois/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><D:/Users/Francois/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Users/Francois/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Users/Franc
+ois/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<D:/Users/Francois/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr17.pfb><D:/Users/Francois/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr9.pfb><D:/Users/Francois/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Users/Francois/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Report.pdf (41 pages, 1825861 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 185 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
