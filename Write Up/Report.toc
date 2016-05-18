@@ -1,42 +1,47 @@
 \contentsline {section}{\numberline {1}Acknowledgements}{2}
 \contentsline {section}{\numberline {2}Other tables and lists}{5}
-\contentsline {section}{\numberline {3}Table of abbreviations}{6}
-\contentsline {section}{\numberline {4}Introduction}{7}
-\contentsline {subsection}{\numberline {4.1}Motivation}{7}
-\contentsline {subsection}{\numberline {4.2}Why the problem is non-trivial}{8}
-\contentsline {section}{\numberline {5}Background Work}{9}
-\contentsline {subsection}{\numberline {5.1}Motorsport racing}{9}
-\contentsline {subsubsection}{\numberline {5.1.1}Racing Line}{9}
-\contentsline {subsubsection}{\numberline {5.1.2}Cornering and braking}{11}
-\contentsline {section}{\numberline {6}Literature Review}{13}
-\contentsline {subsection}{\numberline {6.1}Video games and Serious Games}{13}
-\contentsline {subsubsection}{\numberline {6.1.1}Pedagogy}{15}
-\contentsline {subsection}{\numberline {6.2}Sim Racing as a Serious Game}{16}
-\contentsline {section}{\numberline {7}Methodology}{19}
-\contentsline {subsection}{\numberline {7.1}Sim setup}{19}
-\contentsline {subsection}{\numberline {7.2}Feedback System}{19}
-\contentsline {subsection}{\numberline {7.3}Evaluation}{20}
-\contentsline {subsubsection}{\numberline {7.3.1}Experiment structure}{20}
-\contentsline {subsubsection}{\numberline {7.3.2}Surveys}{21}
-\contentsline {subsubsection}{\numberline {7.3.3}Track and Car choice}{21}
-\contentsline {subsubsection}{\numberline {7.3.4}Data Analysis}{22}
-\contentsline {section}{\numberline {8}Specification and design}{23}
-\contentsline {section}{\numberline {9}Implementation}{24}
-\contentsline {subsection}{\numberline {9.1}Supporting tools}{24}
-\contentsline {subsubsection}{\numberline {9.1.1}Track Splicer}{24}
-\contentsline {subsubsection}{\numberline {9.1.2}Spatial Querying}{26}
-\contentsline {subsection}{\numberline {9.2}System Architecture}{27}
-\contentsline {subsubsection}{\numberline {9.2.1}Sim Racing Rig}{27}
-\contentsline {subsubsection}{\numberline {9.2.2}Feedback system}{28}
-\contentsline {subsubsection}{\numberline {9.2.3}Telemetry Input Interface}{29}
-\contentsline {subsubsection}{\numberline {9.2.4}Processing}{30}
-\contentsline {subsubsection}{\numberline {9.2.5}Feedbacks being provided}{30}
-\contentsline {subsubsection}{\numberline {9.2.6}Output Interface}{31}
-\contentsline {section}{\numberline {10}Evaluation}{33}
-\contentsline {section}{\numberline {11}Evaluation strategy}{33}
-\contentsline {subsection}{\numberline {11.1}Experiment setup}{33}
-\contentsline {subsection}{\numberline {11.2}User study}{33}
-\contentsline {section}{\numberline {12}Future Work}{34}
-\contentsline {section}{\numberline {13}Conclusion}{36}
-\contentsline {section}{\numberline {14}Glossary}{37}
-\contentsline {section}{\numberline {15}Appendices}{38}
+\contentsline {section}{\numberline {3}Introduction}{6}
+\contentsline {subsection}{\numberline {3.1}Motivation}{6}
+\contentsline {subsection}{\numberline {3.2}Why the problem is non-trivial}{7}
+\contentsline {section}{\numberline {4}Background Work}{8}
+\contentsline {subsection}{\numberline {4.1}Motorsport racing}{8}
+\contentsline {subsubsection}{\numberline {4.1.1}Racing Line}{8}
+\contentsline {subsubsection}{\numberline {4.1.2}Cornering and braking}{10}
+\contentsline {subsection}{\numberline {4.2}Racing Rigs}{12}
+\contentsline {section}{\numberline {5}Literature Review}{14}
+\contentsline {subsection}{\numberline {5.1}Video games and Serious Games}{14}
+\contentsline {subsubsection}{\numberline {5.1.1}Pedagogy}{15}
+\contentsline {subsection}{\numberline {5.2}Sim Racing}{17}
+\contentsline {section}{\numberline {6}Methodology}{18}
+\contentsline {subsubsection}{\numberline {6.0.1}Research methodology}{18}
+\contentsline {subsection}{\numberline {6.1}Experiment Setup}{19}
+\contentsline {subsubsection}{\numberline {6.1.1}Environment}{19}
+\contentsline {subsubsection}{\numberline {6.1.2}Hardware}{19}
+\contentsline {subsubsection}{\numberline {6.1.3}Software}{20}
+\contentsline {subsection}{\numberline {6.2}Feedback System}{21}
+\contentsline {subsection}{\numberline {6.3}Evaluation}{22}
+\contentsline {subsubsection}{\numberline {6.3.1}Experiment structure}{22}
+\contentsline {subsubsection}{\numberline {6.3.2}Track and Car choice}{23}
+\contentsline {subsubsection}{\numberline {6.3.3}Data Collection and Sampling}{24}
+\contentsline {section}{\numberline {7}Specification and design}{26}
+\contentsline {section}{\numberline {8}Implementation}{27}
+\contentsline {subsection}{\numberline {8.1}Supporting tools}{27}
+\contentsline {subsubsection}{\numberline {8.1.1}Track Splicer}{27}
+\contentsline {subsubsection}{\numberline {8.1.2}Spatial Querying}{29}
+\contentsline {subsection}{\numberline {8.2}System Architecture}{30}
+\contentsline {subsubsection}{\numberline {8.2.1}Sim Racing Rig}{30}
+\contentsline {subsubsection}{\numberline {8.2.2}Feedback system}{31}
+\contentsline {subsubsection}{\numberline {8.2.3}Telemetry Input Interface}{32}
+\contentsline {subsubsection}{\numberline {8.2.4}Processing}{33}
+\contentsline {subsubsection}{\numberline {8.2.5}Feedbacks being provided}{33}
+\contentsline {subsubsection}{\numberline {8.2.6}Output Interface}{34}
+\contentsline {section}{\numberline {9}Evaluation}{36}
+\contentsline {section}{\numberline {10}Evaluation strategy}{36}
+\contentsline {subsection}{\numberline {10.1}Experiment setup}{36}
+\contentsline {subsection}{\numberline {10.2}User study}{36}
+\contentsline {subsection}{\numberline {10.3}Sample Demographic}{36}
+\contentsline {subsection}{\numberline {10.4}Data Analysis}{36}
+\contentsline {section}{\numberline {11}Future Work}{39}
+\contentsline {section}{\numberline {12}Conclusion}{41}
+\contentsline {section}{\numberline {13}Glossary}{42}
+\contentsline {section}{\numberline {14}Appendices}{43}

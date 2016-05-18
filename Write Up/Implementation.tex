@@ -3,19 +3,8 @@
 \subsection{Supporting tools}
 
 \subsubsection{Track Splicer}
-This project is designed to work with any race track given specific track meta data is provided to aid the feedback system processing. The meta data is split into two files, ‘raceline.csv’ and ‘sections.csv’. ‘raceline.csv’ is a coma separated file containing a list of records denoting coordinates on track which make up the race. For this particular study the race line files have been generated from an .ai file which is supplied with Assetto Corsa. Each track has an associated 'ideal\_line.ai' file associated with it. The ai file contains raw bytes, which through manual investigation of the file in hex view, it was noted the file is made of a header part of 36 bytes, followed by a sequence of repeating records of 20 bytes each. These records contain four floats and one 32bit integer, storing the data which is required in the ‘raceline.csv’ file. The records in the ai file are read via a custom developed command line tool and translated into the csv format required by the feedback system. 	
-
-\begin{center}
-	\begin{tabular}{ | l | l | p{5cm} |}
-		\hline
-		Field Name & Description \\ \hline
-		ID & Ordered unique ID \\ \hline
-		Distance & The distance from the start of the lap \\ \hline
-		X & X coordinates \\ \hline
-		Y & Y coordinates \\ \hline
-		Z & Z coordinates \\ \hline
-	\end{tabular}
-\end{center}
+This project is designed to work with any race track given specific track meta data is provided to aid the feedback system processing. The meta data is split into two files, the first is the race line file which contains data from which the feedback system can determine the race line a user should stick to. 
+ For this particular study the race line files have been generated from an .ai file which is supplied with Assetto Corsa. Each track has an associated 'ideal\_line.ai' file associated with it. The ai file contains raw bytes, which through manual investigation of the file in hex view, it was noted the file is made of a header part of 36 bytes, followed by a sequence of repeating records of 20 bytes each. These records contain four floats and one 32bit integer, storing the data which is required in the ‘raceline.csv’ file. The records in the ai file are read via a custom developed command line tool and translated into the csv format required by the feedback system. 	
 
 Moving on to the ‘sections.csv’, this file is also a coma separated file containing a sequence of records. These records denote corners and straights which make up the track, and will be used to compute any feedback which is specific to straights or corners. In order to generate this file a tool has been developed which loads the ‘raceline.csv’ and computes the rate of change from one data point to the next. Depending on the rate of change the points are classified as either part of a straight section or as a corner section. This is done by taking three points, p1, p2 and p3 from which two vectors are generated v1 and v2. V1 is the vector from p1 to p2, and v2 is the vector from p2 to p3. Then, v1 and v2 are normalised and the dot product computed which give out the rate of change in radians. The pseudo code for this is shown below.\\
 
