@@ -10,13 +10,14 @@ A level-1 auxiliary file: Conclusion.aux
 The style file: plain.bst
 Database file #1: citeations.bib
 Warning--entry type for "assestoCorsa" isn't style-file defined
---line 162 of file citeations.bib
+--line 183 of file citeations.bib
 Warning--entry type for "ProjectCars" isn't style-file defined
---line 167 of file citeations.bib
+--line 188 of file citeations.bib
 Warning--to sort, need author or key in assestoCorsa
 Warning--to sort, need author or key in ProjectCars
 Warning--can't use both author and editor fields in Harteveld2007
 Warning--empty journal in moser2002methodology
+Warning--empty journal in siegel1956nonparametric
 Warning--empty journal in yuserious
 Warning--empty year in yuserious
-(There were 8 warnings)
+(There were 9 warnings)

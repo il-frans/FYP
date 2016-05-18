@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.9)  18 MAY 2016 02:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.9)  18 MAY 2016 18:26
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -638,21 +638,22 @@ Package pdftex.def Info: images/proracingrig.jpg used on input line 52.
 
 
 ] [19] [20]
-[21] <images/uiPrototype.png, id=88, 1445.4pt x 813.0375pt>
+<images/uiPrototype.png, id=85, 1445.4pt x 813.0375pt>
 File: images/uiPrototype.png Graphic file (type png)
 
 <use images/uiPrototype.png>
-Package pdftex.def Info: images/uiPrototype.png used on input line 33.
+Package pdftex.def Info: images/uiPrototype.png used on input line 32.
 (pdftex.def)             Requested size: 354.07097pt x 199.16928pt.
 
-Overfull \hbox (9.07097pt too wide) in paragraph at lines 33--34
+Overfull \hbox (9.07097pt too wide) in paragraph at lines 32--33
  [][] 
  []
 
-[22 <./images/uiPrototype.png>] [23]) [24] [25]
+[21] [22 <./images/uiPrototype.png>] [23] [24]) [25]
 \openout2 = `Specification_And_Design.aux'.
 
- (Specification_And_Design.tex
+
+(Specification_And_Design.tex
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
@@ -665,8 +666,7 @@ Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
-)
-[26
+) [26
 
 
 ]
@@ -824,10 +824,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13177 strings out of 493634
- 285339 string characters out of 3134016
- 322752 words of memory out of 3000000
- 16263 multiletter control sequences out of 15000+200000
+ 13179 strings out of 493634
+ 285385 string characters out of 3134016
+ 320761 words of memory out of 3000000
+ 16265 multiletter control sequences out of 15000+200000
  7016 words of font info for 25 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,6n,65p,2130b,234s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -842,7 +842,7 @@ s/cm/cmr17.pfb><D:/Users/Francois/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr9.pfb><D:/Users/Francois/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Users/Francois/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Report.pdf (46 pages, 4875180 bytes).
+Output written on Report.pdf (46 pages, 4876268 bytes).
 PDF statistics:
  206 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
