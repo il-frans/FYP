@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.9)  20 MAY 2016 20:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.9)  20 MAY 2016 21:46
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -613,6 +613,9 @@ LaTeX Warning: Label `fig:slipangle' multiply defined.
 LaTeX Warning: Label `fig:slipangle' multiply defined.
 
 ) (LiteratureReview.aux) (Methodology.aux) (Implementation.aux) (Evaluation.aux
+
+LaTeX Warning: Label `fig:chart-KolmogorowSmimov' multiply defined.
+
 ) (Future_Work.aux) (Conclusion.aux) (Appendices.aux))
 \openout1 = `Report.aux'.
 
@@ -669,7 +672,7 @@ LaTeX Info: Redefining \nameref on input line 20.
 Missing character: There is no Ã in font cmr17!
 Missing character: There is no § in font cmr17!
 
-<images/UOM_Logo.jpg, id=162, 23.52095pt x 32.05678pt>
+<images/UOM_Logo.jpg, id=166, 23.52095pt x 32.05678pt>
 File: images/UOM_Logo.jpg Graphic file (type jpg)
 
 <use images/UOM_Logo.jpg>
@@ -721,7 +724,7 @@ Missing character: There is no ¢ in font cmr10!
 (BackgroudWork.tex [8
 
 ]
-<images/cornerraceline.png, id=284, 404.26031pt x 213.04594pt>
+<images/cornerraceline.png, id=295, 404.26031pt x 213.04594pt>
 File: images/cornerraceline.png Graphic file (type png)
 
 <use images/cornerraceline.png>
@@ -737,7 +740,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-<images/slipangle.png, id=291, 579.66562pt x 495.35063pt>
+<images/slipangle.png, id=302, 579.66562pt x 495.35063pt>
 File: images/slipangle.png Graphic file (type png)
 
 <use images/slipangle.png>
@@ -762,7 +765,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
  [10 <./images/slipangle.png>]
-<images/overundersteer.png, id=297, 319.94531pt x 209.28188pt>
+<images/overundersteer.png, id=308, 319.94531pt x 209.28188pt>
 File: images/overundersteer.png Graphic file (type png)
 
 <use images/overundersteer.png>
@@ -773,7 +776,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no ¬ in font cmr10!
  [12 <./images/overundersteer.png>]
-<images/proracingrig.jpg, id=313, 1027.84pt x 661.47125pt>
+<images/proracingrig.jpg, id=324, 1027.84pt x 661.47125pt>
 File: images/proracingrig.jpg Graphic file (type jpg)
 
 <use images/proracingrig.jpg>
@@ -801,7 +804,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 
 ] [19]
-<images/experiment-setup-schematic.png, id=391, 650.43pt x 585.18625pt>
+<images/experiment-setup-schematic.png, id=402, 650.43pt x 585.18625pt>
 File: images/experiment-setup-schematic.png Graphic file (type png)
 
 <use images/experiment-setup-schematic.png>
@@ -876,21 +879,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--38
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-<images/tracksplicertool.png, id=432, 882.29625pt x 671.50874pt>
+<images/tracksplicertool.png, id=443, 882.29625pt x 671.50874pt>
 File: images/tracksplicertool.png Graphic file (type png)
 
 <use images/tracksplicertool.png>
 Package pdftex.def Info: images/tracksplicertool.png used on input line 43.
 (pdftex.def)             Requested size: 261.68872pt x 199.16928pt.
  [27]
-<images/QuadTree.png, id=437, 690.32906pt x 470.50781pt>
+<images/QuadTree.png, id=448, 690.32906pt x 470.50781pt>
 File: images/QuadTree.png Graphic file (type png)
 
 <use images/QuadTree.png>
 Package pdftex.def Info: images/QuadTree.png used on input line 53.
 (pdftex.def)             Requested size: 292.22202pt x 199.16928pt.
 
-<images/SystemArch.png, id=438, 415.5525pt x 371.88937pt>
+<images/SystemArch.png, id=449, 415.5525pt x 371.88937pt>
 File: images/SystemArch.png Graphic file (type png)
 
 <use images/SystemArch.png>
@@ -902,7 +905,7 @@ Overfull \hbox (100.11868pt too wide) in paragraph at lines 62--63
  []
 
 [28 <./images/tracksplicertool.png>]
-<images/RacingRig.jpg, id=443, 4175.6pt x 3131.7pt>
+<images/RacingRig.jpg, id=454, 4175.6pt x 3131.7pt>
 File: images/RacingRig.jpg Graphic file (type jpg)
  <use images/RacingRig.jpg>
 Package pdftex.def Info: images/RacingRig.jpg used on input line 72.
@@ -917,55 +920,85 @@ gRig.jpg>] [32]) [33]
 \openout2 = `Evaluation.aux'.
 
  (Evaluation.tex
-<charts/gamesxp.pdf, id=466, 402.49117pt x 417.08664pt>
+<charts/gamesxp.pdf, id=477, 402.49117pt x 417.08664pt>
 File: charts/gamesxp.pdf Graphic file (type pdf)
 
 <use charts/gamesxp.pdf>
-Package pdftex.def Info: charts/gamesxp.pdf used on input line 12.
+Package pdftex.def Info: charts/gamesxp.pdf used on input line 14.
 (pdftex.def)             Requested size: 345.0pt x 357.52922pt.
+
+<charts/laptimes.png, id=478, 458.46281pt x 396.7322pt>
+File: charts/laptimes.png Graphic file (type png)
+
+<use charts/laptimes.png>
+Package pdftex.def Info: charts/laptimes.png used on input line 23.
+(pdftex.def)             Requested size: 345.0pt x 298.55936pt.
+
+<charts/shapiroWilkResults.pdf, id=479, 597.55246pt x 845.07718pt>
+File: charts/shapiroWilkResults.pdf Graphic file (type pdf)
+
+<use charts/shapiroWilkResults.pdf>
+Package pdftex.def Info: charts/shapiroWilkResults.pdf used on input line 33.
+(pdftex.def)             Requested size: 345.0pt x 487.9143pt.
+
+<images/KolmogorowSmimov.png, id=480, 402.00188pt x 146.04562pt>
+File: images/KolmogorowSmimov.png Graphic file (type png)
+
+<use images/KolmogorowSmimov.png>
+Package pdftex.def Info: images/KolmogorowSmimov.png used on input line 42.
+(pdftex.def)             Requested size: 345.0pt x 125.33603pt.
+
+<charts/Mann-Whitney.pdf, id=481, 597.55246pt x 845.07718pt>
+File: charts/Mann-Whitney.pdf Graphic file (type pdf)
+
+<use charts/Mann-Whitney.pdf>
+Package pdftex.def Info: charts/Mann-Whitney.pdf used on input line 51.
+(pdftex.def)             Requested size: 345.0pt x 487.9143pt.
 ) [34
 
 
-] [35 <./charts/gamesxp.pdf>]
+] [35 <./charts/gamesxp.pdf>] [36 <./charts/laptimes.png>] [37 <./charts/shapir
+oWilkResults.pdf>] [38 <./images/KolmogorowSmimov.png>] [39 <./charts/Mann-Whit
+ney.pdf>]
 \openout2 = `Future_Work.aux'.
 
- (Future_Work.tex)
-[36
+ (Future_Work.tex) [40
 
 
-] [37
+] [41
 
 ]
 \openout2 = `Conclusion.aux'.
 
- (Conclusion.tex) [38
 
-] [39
+(Conclusion.tex) [42
+
+] [43
 
 ]
 \openout2 = `Appendices.aux'.
 
  (Appendices.tex
-<charts/genderAge.pdf, id=549, 845.07718pt x 597.55246pt>
+<charts/genderAge.pdf, id=603, 845.07718pt x 597.55246pt>
 File: charts/genderAge.pdf Graphic file (type pdf)
 
 <use charts/genderAge.pdf>
 Package pdftex.def Info: charts/genderAge.pdf used on input line 5.
 (pdftex.def)             Requested size: 345.0pt x 243.94952pt.
 
-<charts/licenseddriversexperience.pdf, id=550, 845.07718pt x 597.55246pt>
+<charts/licenseddriversexperience.pdf, id=604, 845.07718pt x 597.55246pt>
 File: charts/licenseddriversexperience.pdf Graphic file (type pdf)
 
 <use charts/licenseddriversexperience.pdf>
 Package pdftex.def Info: charts/licenseddriversexperience.pdf used on input lin
 e 12.
 (pdftex.def)             Requested size: 345.0pt x 243.94952pt.
-) [40
+) [44
 
  <./charts/genderAge.pdf>]
-[41 <./charts/licenseddriversexperience.pdf>] (Report.bbl [42
+[45 <./charts/licenseddriversexperience.pdf>] (Report.bbl [46
 
-]) [43]
+]) [47]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
 
@@ -975,7 +1008,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 74404722BEB20F93AE64914C7BBF5F5D;2539.
+(rerunfilecheck)             Checksum: 51DF216C9CB6FFB9902E132D72F297E2;2608.
 
 
 LaTeX Warning: There were undefined references.
@@ -986,10 +1019,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 17122 strings out of 493634
- 346290 string characters out of 3134016
- 407919 words of memory out of 3000000
- 20033 multiletter control sequences out of 15000+200000
+ 17155 strings out of 493634
+ 346993 string characters out of 3134016
+ 407993 words of memory out of 3000000
+ 20053 multiletter control sequences out of 15000+200000
  7016 words of font info for 25 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,6n,65p,2130b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1004,9 +1037,9 @@ s/cm/cmr17.pfb><D:/Users/Francois/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr9.pfb><D:/Users/Francois/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Users/Francois/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Report.pdf (44 pages, 2584525 bytes).
+Output written on Report.pdf (48 pages, 2795389 bytes).
 PDF statistics:
- 745 PDF objects out of 1000 (max. 8388607)
- 128 named destinations out of 1000 (max. 500000)
- 390 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 800 PDF objects out of 1000 (max. 8388607)
+ 137 named destinations out of 1000 (max. 500000)
+ 418 words of extra memory for PDF output out of 10000 (max. 10000000)
 

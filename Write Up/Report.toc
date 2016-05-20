@@ -33,7 +33,8 @@
 \contentsline {subsubsection}{\numberline {7.2.6}Output Interface}{33}{subsubsection.7.2.6}
 \contentsline {section}{\numberline {8}Evaluation}{34}{section.8}
 \contentsline {subsection}{\numberline {8.1}Demographic of the Sample}{34}{subsection.8.1}
-\contentsline {section}{\numberline {9}Future Work}{36}{section.9}
-\contentsline {section}{\numberline {10}Conclusion}{38}{section.10}
-\contentsline {section}{\numberline {11}Glossary}{39}{section.11}
-\contentsline {section}{\numberline {12}Charts}{40}{section.12}
+\contentsline {subsection}{\numberline {8.2}Distribution tests}{34}{subsection.8.2}
+\contentsline {section}{\numberline {9}Future Work}{40}{section.9}
+\contentsline {section}{\numberline {10}Conclusion}{42}{section.10}
+\contentsline {section}{\numberline {11}Glossary}{43}{section.11}
+\contentsline {section}{\numberline {12}Charts}{44}{section.12}
