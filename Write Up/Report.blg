@@ -13,6 +13,7 @@ Warning--entry type for "assestoCorsa" isn't style-file defined
 --line 183 of file citeations.bib
 Warning--entry type for "ProjectCars" isn't style-file defined
 --line 188 of file citeations.bib
+Warning--I didn't find a database entry for "leary"
 Warning--to sort, need author or key in assestoCorsa
 Warning--to sort, need author or key in ProjectCars
 Warning--can't use both author and editor fields in Harteveld2007
@@ -20,4 +21,4 @@ Warning--empty journal in moser2002methodology
 Warning--empty journal in siegel1956nonparametric
 Warning--empty journal in yuserious
 Warning--empty year in yuserious
-(There were 9 warnings)
+(There were 10 warnings)

@@ -6,6 +6,15 @@
 \usepackage{graphicx}
 \usepackage{pgfgantt}
 \usepackage{setspace}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
 
 \linespread{1.5}
 \begin{document}
@@ -88,12 +97,7 @@ The problem at hand is best described as an optimisation problem. Telemetry data
 \include{Methodology}
 
 \newpage
-\include{Specification_And_Design}
-
-\newpage
 \include{Implementation}
-
-TO ADD How the logic of the feedback modules
 
 \newpage
 \include{Evaluation}
@@ -110,8 +114,8 @@ At present only negative feedback is given, a good idea would be to look into th
 \section{Glossary}
 
 \newpage
-\section{Appendices}
-Transcript of the audio files
+\include{Appendices}
+
 
 \newpage
 \bibliography{citeations}{}
