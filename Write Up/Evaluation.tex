@@ -11,7 +11,7 @@ The following demographic data was drawned out from the pre study survey. Partic
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=\textwidth]{charts/gamesxp.pdf}
+	\includegraphics[height=10cm]{charts/gamesxp.pdf}
 	\caption[Gaming xp]{Video games experience}
 	\label{fig:chart-gamesxp}
 \end{figure}
@@ -24,7 +24,6 @@ The following demographic data was drawned out from the pre study survey. Partic
 	\caption{Lap times vs session, clustered by group}
 	\label{fig:chart-laptimes}
 \end{figure}
-
 
 Carrying out Shapiro-Wilk test for normality for the feedback group and base group during the first session on their respective lap times it was found that the data is not normally distributed as the p-value for both groups is below 0.05 resulting in rejecting the null hypothesis stating the samples come from a normal distribution
 
@@ -44,6 +43,8 @@ The same data was checked for similar distribution across groups using the Indep
 	\label{fig:chart-KolmogorowSmimov}
 \end{figure}
 
+\subsection{Feedback system results}
+
 Having established both groups' lap times share the same distribution during the first session the Mann-Whitney Test to determine any differences between the groups before the feedback system is introduced. The test results show a p value of 0.057 resulting in no statistical difference between the groups at the start of the sessions.
 
 \begin{figure}[!htb]
@@ -51,4 +52,13 @@ Having established both groups' lap times share the same distribution during the
 	\includegraphics[width=\textwidth]{charts/Mann-Whitney.pdf}
 	\caption[Mann-Whitney]{Mann-Whitney test result}
 	\label{fig:chart-KolmogorowSmimov}
+\end{figure}
+
+Running the Mann-Whitney test on the remaining sessions, results show there is no significant difference between the two groups even after the feedback system was introduced to one group. The third session tells a different story as the p value is 0.029 which results is accepting the null hypothesis. The fourth and final sessions is the one which both groups had the feedback system turned off which resulted in the difference between the groups to yet again show no statistical significant difference.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\textwidth]{charts/Mann-Whitney-Sessions.pdf}
+	\caption[Mann-Whitney Accross Sessions]{Mann-Whitney test result for the last the sessions}
+	\label{fig:chart-Mann-Whitney-Sessions}
 \end{figure}
