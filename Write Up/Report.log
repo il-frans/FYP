@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.9)  20 MAY 2016 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.9)  20 MAY 2016 20:39
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -613,11 +613,7 @@ LaTeX Warning: Label `fig:slipangle' multiply defined.
 LaTeX Warning: Label `fig:slipangle' multiply defined.
 
 ) (LiteratureReview.aux) (Methodology.aux) (Implementation.aux) (Evaluation.aux
-) (Future_Work.aux) (Conclusion.aux) (Appendices.aux
-
-LaTeX Warning: Label `fig:chart-licenseddriversexperience' multiply defined.
-
-))
+) (Future_Work.aux) (Conclusion.aux) (Appendices.aux))
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -921,23 +917,20 @@ gRig.jpg>] [32]) [33]
 \openout2 = `Evaluation.aux'.
 
  (Evaluation.tex
-<charts/gamesxp.pdf, id=466, 597.55246pt x 845.07718pt>
+<charts/gamesxp.pdf, id=466, 402.49117pt x 417.08664pt>
 File: charts/gamesxp.pdf Graphic file (type pdf)
 
 <use charts/gamesxp.pdf>
 Package pdftex.def Info: charts/gamesxp.pdf used on input line 12.
-(pdftex.def)             Requested size: 345.0pt x 487.9143pt.
+(pdftex.def)             Requested size: 345.0pt x 357.52922pt.
 ) [34
 
 
-]
-
-LaTeX Warning: Text page 35 contains only floats.
-
-[35 <./charts/gamesxp.pdf>]
+] [35 <./charts/gamesxp.pdf>]
 \openout2 = `Future_Work.aux'.
 
- (Future_Work.tex) [36
+ (Future_Work.tex)
+[36
 
 
 ] [37
@@ -945,8 +938,7 @@ LaTeX Warning: Text page 35 contains only floats.
 ]
 \openout2 = `Conclusion.aux'.
 
- (Conclusion.tex)
-[38
+ (Conclusion.tex) [38
 
 ] [39
 
@@ -954,14 +946,14 @@ LaTeX Warning: Text page 35 contains only floats.
 \openout2 = `Appendices.aux'.
 
  (Appendices.tex
-<charts/genderAge.pdf, id=521, 845.07718pt x 597.55246pt>
+<charts/genderAge.pdf, id=549, 845.07718pt x 597.55246pt>
 File: charts/genderAge.pdf Graphic file (type pdf)
 
 <use charts/genderAge.pdf>
 Package pdftex.def Info: charts/genderAge.pdf used on input line 5.
 (pdftex.def)             Requested size: 345.0pt x 243.94952pt.
 
-<charts/licenseddriversexperience.pdf, id=522, 845.07718pt x 597.55246pt>
+<charts/licenseddriversexperience.pdf, id=550, 845.07718pt x 597.55246pt>
 File: charts/licenseddriversexperience.pdf Graphic file (type pdf)
 
 <use charts/licenseddriversexperience.pdf>
@@ -996,7 +988,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
 Here is how much of TeX's memory you used:
  17122 strings out of 493634
  346290 string characters out of 3134016
- 407885 words of memory out of 3000000
+ 407919 words of memory out of 3000000
  20033 multiletter control sequences out of 15000+200000
  7016 words of font info for 25 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -1012,9 +1004,9 @@ s/cm/cmr17.pfb><D:/Users/Francois/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr9.pfb><D:/Users/Francois/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Users/Francois/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Report.pdf (44 pages, 2745121 bytes).
+Output written on Report.pdf (44 pages, 2584525 bytes).
 PDF statistics:
- 717 PDF objects out of 1000 (max. 8388607)
+ 745 PDF objects out of 1000 (max. 8388607)
  128 named destinations out of 1000 (max. 500000)
  390 words of extra memory for PDF output out of 10000 (max. 10000000)
 
