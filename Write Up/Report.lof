@@ -3,16 +3,17 @@
 \contentsline {figure}{\numberline {3}{\ignorespaces Visual representation for oversteer and understeer}}{12}{figure.3}
 \contentsline {figure}{\numberline {4}{\ignorespaces Professional racing rig by Vesaro}}{13}{figure.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Experiment Setup Schematic}}{20}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Track splicer tool}}{28}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Visual representation for part of the quad tree}}{29}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Overview of the system architecture components}}{30}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Side view of the racing rig}}{31}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Gaming xp}}{35}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Lap times vs session, clustered by group}}{36}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Shapiro Wilk}}{36}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Kolmogorow Smimov Test}}{37}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Mann-Whitney}}{37}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Mann-Whitney Accross Sessions}}{38}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces feedback system feedback}}{39}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Sample age and gender}}{45}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Licensed drivers experience}}{46}{figure.18}
+\contentsline {figure}{\numberline {6}{\ignorespaces track splicer input out}}{26}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Splicing using vectors}}{27}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Gaming xp}}{29}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Lap times vs session, clustered by group}}{30}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Shapiro Wilk}}{30}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Kolmogorow Smimov Test}}{31}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Mann-Whitney}}{31}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Mann-Whitney Accross Sessions}}{32}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces feedback system feedback}}{33}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Sample age and gender}}{36}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Licensed drivers experience}}{36}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Where the track and car choice adequet?}}{37}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces How real do these componets feel?}}{37}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Was the feedback intrusive?}}{38}{figure.19}
