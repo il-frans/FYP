@@ -1,9 +1,8 @@
 \section{Evaluation}
-%
-% Overview
-%
+This chapter provides an insight into the data collected from the questionnaires and the feedback system logs while also explaining results derived from statistical tests. The chapter is structured as follows: \S~\ref{sec:eval-demographic} provides an over of the demographic background for the sampled participants. \S~\ref{sec:eval-distTests} covers test which check the data sets distribution moving on to compare the distribution across the feedback group and base group. \S~\ref{sec:eval-feedbackSysResults} goes through determining any difference between the two groups which might have been cuased by the introduction of the feedback system.  \S~\ref{sec:eval-usersFeedback} covers the participants impressions on the experiment and finally conclusive results from this study are presented in \S~\ref{sec:eval-Discussion} 
 
-\subsection{Demographic of the Sample}
+\subsection{Demographic of The Sample}
+\label{sec:eval-demographic}
 
 The following demographic data was drawned out from the pre study survey. Participant's were mostly in their early twenties and mostly males. Out of 27 participants, 2 didn't have a driving license and 25 had a driving license with most of them have been driving for a year. Furthermore 22 participants identified them self as playing videos games, from which 18 participants stated they have played racing video games. The majority of participants who plays racing games identified them self as playing mostly arcade sim racing games, while only 3 play sim racing games. Out of the 27 participants, 7 participants have previously used a racing rig.
 
@@ -16,7 +15,10 @@ The following demographic data was drawned out from the pre study survey. Partic
 	\label{fig:chart-gamesxp}
 \end{figure}
 
-\subsection{Distribution tests}
+\subsection{Distribution Tests}
+\label{sec:eval-distTests}
+
+From the lap times box plot, one can notice a trend in which lap times improve the more time they use the rig irrespective of the group assignment. It's worth pointing out the median of the feedback group is lower than the base group's median, except during the last session in which the medians are close to each other. Moreover the participants in the feedback group seem to be less consistent in their lap times as the box plot whiskers and quartiles are more spread out then the ones from the base group.
 
 \begin{figure}[!htb]
 	\centering
@@ -43,7 +45,8 @@ The same data was checked for similar distribution across groups using the Indep
 	\label{fig:chart-KolmogorowSmimov}
 \end{figure}
 
-\subsection{Feedback system results}
+\subsection{Feedback System Results}
+\label{sec:eval-feedbackSysResults}
 
 Having established both groups' lap times share the same distribution during the first session the Mann-Whitney Test to determine any differences between the groups before the feedback system is introduced. The test results show a p value of 0.057 resulting in no statistical difference between the groups at the start of the sessions.
 
@@ -62,3 +65,20 @@ Running the Mann-Whitney test on the remaining sessions, results show there is n
 	\caption[Mann-Whitney Accross Sessions]{Mann-Whitney test result for the last the sessions}
 	\label{fig:chart-Mann-Whitney-Sessions}
 \end{figure}
+
+\subsection{Users' Feedback}
+\label{sec:eval-usersFeedback}
+
+Users reported an overall good experience, the rig setup was found to be realistic and easy to use. An overwhelming majority of the participants reported having issues mastering the s-bend part of the track, however, they reported that the car and track choice was an adequate one. When the feedback group was asked about the feedback system, they reported to be intelligible, accurate, helpful and somewhat easy to apply the feedback given. Lastly, when asked about if the thought the feedback was intrusive, possible distracting them, out of 15, 5 reported it to be intrusive.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\textwidth]{charts/feedbacksystemfeedback.pdf}
+	\caption[feedback system feedback]{Users' Feedback}
+	\label{fig:chart-feedbacksystemfeedback}
+\end{figure}
+
+\subsection{Discussion}
+\label{sec:eval-Discussion}
+
+From the post experiment questionnaire one can note that rig setup has been well received, with users enjoying the experiments while also given it a high score for it sense of realism. This suggests that by using off the shelf entry level hardware for the sim racing rig, it is possible to achieve a good level of realisem. the feedback system shows to have potential. the groups start of the same skill level. Both groups show a noticeable improvement from one session to the next session, excluding the last session in which it seems the shorter session might have but extra pressure on the participants' hindering their performance. Furthermore there was not statistical difference during the second session, but during the third session there was. The fact that the feedback group had a lower average lap time it suggest the group managed to get used to the feedback system after the second session and start to follow the feedback instructions during the third session.

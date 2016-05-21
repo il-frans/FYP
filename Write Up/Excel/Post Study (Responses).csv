@@ -1,0 +1,28 @@
+Timestamp,userID,realistic_SteeringWheel,realistic_Pedals,realistic_Seating,realistic_ScreenSetup,realistic_Shifter,easy_Steering wheel,easy_Pedals,easy_Seating,easy_Screen,easy_Shifter,realistic,trackchoice,sectionproblematic,sectionproblematic_dt,carchoice,easyapplyfeedback,helpfulfeedback,accuratefeedback,intelligiblefeedback,intrusivefeedback,focusedfeedback,detailedfeedback,adequateinstructions,adequatetime
+4/20/2016 11:17:39,1,5,2,4,4,4,4,4,4,4,4,4,Yes,No,,Yes,3,3,3,3,No,No,No,Yes,Yes
+4/20/2016 12:16:30,2,4,4,2,4,3,4,2,2,4,5,4,Yes,Yes,S bend,Yes,4,4,4,5,No,No,Yes,Yes,Yes
+4/20/2016 15:53:19,3,4,3,4,5,4,4,4,3,4,5,4,Yes,Yes,S bend,Not sure,5,,,,,,,Yes,Yes
+4/21/2016 8:58:42,4,5,5,5,5,5,5,5,5,5,5,5,Yes,Yes,S bend,Yes,4,4,5,5,No,No,Yes,Yes,Yes
+4/21/2016 10:02:43,5,4,2,4,3,1,4,2,4,4,1,4,Not sure,Yes,S bend,Yes,1,2,2,2,Yes,Yes,No,Yes,Yes
+4/21/2016 11:05:26,6,3,4,5,5,3,2,4,4,5,2,3,Yes,Yes,S bend,Not sure,,,,,,,,Yes,Yes
+4/21/2016 12:10:39,7,4,4,5,3,2,4,3,4,4,3,4,Yes,Yes,S bend,Yes,,,,,,,,Yes,Yes
+4/21/2016 12:44:28,8,5,3,3,5,3,5,5,5,5,5,5,Yes,Yes,S bend,Yes,1,4,4,4,No,Not sure,Yes,Yes,Yes
+4/22/2016 13:56:01,9,4,4,5,4,4,5,3,4,5,5,5,Yes,Yes,Last harpin,Yes,4,5,5,5,No,Yes,Yes,Yes,Yes
+4/22/2016 15:00:30,10,4,5,4,3,5,3,5,5,4,5,3,Yes,Yes,S bend,Yes,,,,,,,,Yes,Yes
+4/22/2016 16:02:39,11,3,3,4,4,4,5,4,5,5,5,4,Yes,Yes,Braking into the last set of harpins,Yes,3,3,3,3,No,Yes,Yes,Yes,Yes
+4/25/2016 10:42:00,12,4,3,4,4,4,4,3,4,4,3,4,Yes,Yes,S Bend,Yes,,,,,,,,Yes,Yes
+4/25/2016 15:09:03,13,4,4,2,4,3,5,5,3,5,4,4,Yes,Yes,S bend,Yes,3,4,3,4,Yes,Yes,No,Yes,Yes
+4/25/2016 16:16:41,14,1,2,1,3,3,5,3,5,5,3,3,Yes,Yes,S bend,Not sure,,,,,,,,Yes,Yes
+4/25/2016 17:05:10,15,4,4,5,3,4,5,5,5,3,5,3,Not sure,Yes,S bend,Not sure,,,,,,,,Yes,Yes
+4/25/2016 17:59:35,16,5,4,5,4,2,5,3,5,5,3,5,Yes,No,,Yes,4,5,5,5,No,No,Yes,Yes,Yes
+4/26/2016 11:06:39,17,5,4,5,5,4,2,5,5,5,3,5,Yes,Yes,S bend,Yes,4,5,4,4,No,No,Yes,Yes,Yes
+4/26/2016 13:08:41,18,3,5,5,5,5,3,5,5,5,5,4,Not sure,Yes,S bend,Yes,,,,,,,,Yes,Yes
+4/26/2016 13:57:14,19,3,4,2,3,2,5,5,4,5,2,4,Yes,Yes,S bend,Yes,3,4,4,3,No,No,Yes,Yes,Yes
+4/26/2016 14:45:04,20,4,5,4,5,3,5,4,3,5,3,4,Yes,Yes,S bend,Yes,5,4,3,4,Yes,Yes,Yes,Yes,Yes
+4/26/2016 15:55:27,21,4,4,3,3,5,4,2,3,3,5,4,Yes,No,,Not sure,,,,,,,,Yes,Yes
+4/27/2016 11:06:34,22,4,4,5,4,4,4,3,5,5,3,4,Yes,Yes,s-band,Yes,,,,,,,,Yes,Yes
+4/27/2016 12:08:23,23,5,4,4,4,3,1,1,1,5,1,5,Yes,Yes,S bend,Yes,2,1,3,5,Yes,Not sure,Yes,Yes,Yes
+4/27/2016 13:04:00,24,4,3,3,3,4,5,4,4,4,4,3,Not sure,Yes,S bend,Not sure,2,3,4,4,No,Yes,No,Yes,Yes
+4/27/2016 14:56:27,25,3,3,4,3,3,4,5,4,4,3,4,Yes,Yes,S bend,Yes,,,,,,,,Yes,Yes
+4/28/2016 15:41:59,26,4,4,3,5,4,5,4,5,5,5,5,Yes,Yes,S bend,Yes,,,,,,,,Yes,Yes
+5/2/2016 11:15:24,27,4,3,4,3,2,5,5,5,4,4,4,Yes,Yes,Hard right turn at one point,Yes,3,3,3,4,Yes,Yes,Not sure,Yes,Yes

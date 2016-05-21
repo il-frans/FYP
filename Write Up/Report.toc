@@ -32,10 +32,12 @@
 \contentsline {subsubsection}{\numberline {7.2.5}Feedbacks being provided}{32}{subsubsection.7.2.5}
 \contentsline {subsubsection}{\numberline {7.2.6}Output Interface}{33}{subsubsection.7.2.6}
 \contentsline {section}{\numberline {8}Evaluation}{34}{section.8}
-\contentsline {subsection}{\numberline {8.1}Demographic of the Sample}{34}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Distribution tests}{35}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Feedback system results}{36}{subsection.8.3}
-\contentsline {section}{\numberline {9}Future Work}{39}{section.9}
-\contentsline {section}{\numberline {10}Conclusion}{41}{section.10}
-\contentsline {section}{\numberline {11}Glossary}{42}{section.11}
-\contentsline {section}{\numberline {12}Charts}{43}{section.12}
+\contentsline {subsection}{\numberline {8.1}Demographic of The Sample}{34}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Distribution Tests}{34}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Feedback System Results}{36}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Users' Feedback}{38}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Discussion}{40}{subsection.8.5}
+\contentsline {section}{\numberline {9}Future Work}{41}{section.9}
+\contentsline {section}{\numberline {10}Conclusion}{43}{section.10}
+\contentsline {section}{\numberline {11}Glossary}{44}{section.11}
+\contentsline {section}{\numberline {12}Charts}{45}{section.12}
