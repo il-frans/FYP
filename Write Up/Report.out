@@ -16,20 +16,32 @@
 \BOOKMARK [2][-]{subsection.6.1}{Overview}{section.6}% 16
 \BOOKMARK [2][-]{subsection.6.2}{Experiment Design}{section.6}% 17
 \BOOKMARK [2][-]{subsection.6.3}{Experiment Materials}{section.6}% 18
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Questionnaire}{subsection.6.3}% 19
-\BOOKMARK [2][-]{subsection.6.4}{Procedure}{section.6}% 20
-\BOOKMARK [2][-]{subsection.6.5}{Data Collection and Sampling}{section.6}% 21
-\BOOKMARK [2][-]{subsection.6.6}{Data Analysis}{section.6}% 22
-\BOOKMARK [1][-]{section.7}{Design and Implementation}{}% 23
-\BOOKMARK [2][-]{subsection.7.1}{Overview}{section.7}% 24
-\BOOKMARK [2][-]{subsection.7.2}{Supporting tools}{section.7}% 25
-\BOOKMARK [3][-]{subsubsection.7.2.1}{Track Splicer}{subsection.7.2}% 26
-\BOOKMARK [1][-]{section.8}{Evaluation}{}% 27
-\BOOKMARK [2][-]{subsection.8.1}{Demographic of The Sample}{section.8}% 28
-\BOOKMARK [2][-]{subsection.8.2}{Distribution Tests}{section.8}% 29
-\BOOKMARK [2][-]{subsection.8.3}{Feedback System Results}{section.8}% 30
-\BOOKMARK [2][-]{subsection.8.4}{Users' Feedback}{section.8}% 31
-\BOOKMARK [2][-]{subsection.8.5}{Discussion}{section.8}% 32
-\BOOKMARK [1][-]{section.9}{Conclusion}{}% 33
-\BOOKMARK [1][-]{section.10}{Future Work}{}% 34
-\BOOKMARK [1][-]{section.11}{Charts}{}% 35
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Hardware choice}{subsection.6.3}% 19
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Software choice}{subsection.6.3}% 20
+\BOOKMARK [3][-]{subsubsection.6.3.3}{Questionnaire}{subsection.6.3}% 21
+\BOOKMARK [3][-]{subsubsection.6.3.4}{Participants' Demographic}{subsection.6.3}% 22
+\BOOKMARK [3][-]{subsubsection.6.3.5}{Participants' Insight}{subsection.6.3}% 23
+\BOOKMARK [2][-]{subsection.6.4}{Procedure}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.5}{Data Collection and Sampling}{section.6}% 25
+\BOOKMARK [2][-]{subsection.6.6}{Data Analysis}{section.6}% 26
+\BOOKMARK [1][-]{section.7}{Design and Implementation}{}% 27
+\BOOKMARK [2][-]{subsection.7.1}{Requirements}{section.7}% 28
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Sim Racing Rig}{subsection.7.1}% 29
+\BOOKMARK [2][-]{subsection.7.2}{Supporting tools}{section.7}% 30
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Track Splicer}{subsection.7.2}% 31
+\BOOKMARK [3][-]{subsubsection.7.2.2}{Log files Data Store}{subsection.7.2}% 32
+\BOOKMARK [3][-]{subsubsection.7.2.3}{Spatial Querying}{subsection.7.2}% 33
+\BOOKMARK [2][-]{subsection.7.3}{System Architecture}{section.7}% 34
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Telemetry Input Interface}{subsection.7.3}% 35
+\BOOKMARK [3][-]{subsubsection.7.3.2}{Processing}{subsection.7.3}% 36
+\BOOKMARK [3][-]{subsubsection.7.3.3}{Feedbacks being provided}{subsection.7.3}% 37
+\BOOKMARK [3][-]{subsubsection.7.3.4}{Output Interface}{subsection.7.3}% 38
+\BOOKMARK [1][-]{section.8}{Evaluation}{}% 39
+\BOOKMARK [2][-]{subsection.8.1}{Demographic of The Sample}{section.8}% 40
+\BOOKMARK [2][-]{subsection.8.2}{Distribution Tests}{section.8}% 41
+\BOOKMARK [2][-]{subsection.8.3}{Feedback System Results}{section.8}% 42
+\BOOKMARK [2][-]{subsection.8.4}{Users' Feedback}{section.8}% 43
+\BOOKMARK [2][-]{subsection.8.5}{Discussion}{section.8}% 44
+\BOOKMARK [1][-]{section.9}{Conclusion}{}% 45
+\BOOKMARK [1][-]{section.10}{Future Work}{}% 46
+\BOOKMARK [1][-]{section.11}{Charts}{}% 47
