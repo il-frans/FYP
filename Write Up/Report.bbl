@@ -6,6 +6,10 @@ http://www.assettocorsa.net/en/.
 \bibitem{ProjectCars}
 http://www.projectcarsgame.com/.
 
+\bibitem{nasaTelemetry}
+{Telemetry: Summary of concept and rationale}.
+\newblock {\em NASA STI/Recon Technical Report N}, 89, December 1987.
+
 \bibitem{abt1970}
 Clark~C. Abt.
 \newblock {\em Serious Games}.
@@ -55,6 +59,11 @@ Casper Harteveld, Rui Guimar{\~a}es, Igor Mayer, and Rafael Bidarra.
   Within a Unique Serious Game for Training Levee Inspection, pages 128--139.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2007.
 
+\bibitem{CarDataAnalysis}
+Bob Knox.
+\newblock A practical guide to race car data analysis".
+\newblock 2011.
+
 \bibitem{leahy2003auditory}
 Wayne Leahy, Paul Chandler, and John Sweller.
 \newblock When auditory presentations should and should not be a component of
@@ -97,11 +106,6 @@ Robert~Breck Moser.
 H.B. Pacejka and Society of~Automotive~Engineers.
 \newblock {\em Tire and Vehicle Dynamics}.
 \newblock SAE-R. SAE International, 2006.
-
-\bibitem{siegel1956nonparametric}
-Sidney Siegel.
-\newblock Nonparametric statistics for the behavioral sciences.
-\newblock 1956.
 
 \bibitem{stanton2015brief}
 R.~Stanton.

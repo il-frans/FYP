@@ -42,6 +42,16 @@ Moving on to oversteer, this is an other issue which can arise from lack of grip
 
 During acceleration and braking the tire experiences rotational forces, however these rotational forces do not match the expected velocity, this means at all time there is some level of slip occurring between the tire and the road beneath it. This slip is called slip ratio and is expressed in percentage. A slip percentage of 100\% would mean the tire is rotating, but the road is stationary, this is called a burnout or wheel spin. On the other hand, a percentage of -100\% would mean the tire is not rotating but the road beneath it is moving, this can occur while braking hard and is called locking the wheels\cite{pacejka2006tire}. While braking the driver must make sure not lock up the tires as this will cause the tires to wear out quicker while also drastically increasing the stopping distance. On the other hand braking too lightly will make the car take longer to decelerate with makes the driver lose time. In order to braking optimally the slip ratio should be between 10\% to 15\% \cite{GoingFaster}.
 
+\subsubsection{Telemetry data}
+Telemetry data is domain specialised data contains measurements and other data collected at remote or inaccessible points and are subsequently transmitted to receiving equipment for monitoring \cite{nasaTelemetry}. In motorsport telemetry data contains measurements from the engine and other vehicle dynamics. From these measurements one can the vehicle state at a particular point in time, such as speed, engine speed, temperatures, slip angles, slip ratios and so on. Telemetry is widely regarded as being the most important source of information by motorsport engineers as engineers can analyse this data and better under stand the car's and driver's strength and weaknesses \cite{CarDataAnalysis}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[height=7cm]{charts/telemetrydata.jpg}
+	\caption{Visualised telemetry data from a Formula 1 team}
+	\label{fig:telemetrydata}
+\end{figure}
+
 \subsection{Racing Rigs}
 
 Moving on from the real world into the simulation world in which a racing rig is an integral part of achieving an authentic feel to the simulation experience. Racing rigs vary in price starting from a bundle with a steering wheel and pedal set costing less than €100 to ones used by professional racing teams costing thousands. The difference in price is partially due to built quality, but the biggest contributing factor is attributed to how well the rig mimics the real world. This is achieved by integrating force feedback, butt kickers and hydraulic pistons. Racing rigs can be categorised by four price range brackets. Entry level refer to the cheapest price range, racing rigs in the range offer the basics to get some one up and running.
@@ -50,8 +60,8 @@ The most basic racing rig is one which only has Steering wheel, than more sophis
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[height=7cm]{images/proracingrig}
-	\caption{Professional racing rig by Vesaro}
+	\includegraphics[height=7cm]{images/proracingrig.png}
+	\caption{Professional racing rig by CXC Simulations}
 	\label{fig:slipangle}
 \end{figure}
 

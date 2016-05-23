@@ -10,15 +10,17 @@ A level-1 auxiliary file: Appendices.aux
 The style file: plain.bst
 Database file #1: citeations.bib
 Warning--entry type for "assestoCorsa" isn't style-file defined
---line 189 of file citeations.bib
+--line 206 of file citeations.bib
 Warning--entry type for "ProjectCars" isn't style-file defined
---line 194 of file citeations.bib
+--line 211 of file citeations.bib
+Warning--to sort, need author or key in nasaTelemetry
 Warning--to sort, need author or key in assestoCorsa
 Warning--to sort, need author or key in ProjectCars
+Warning--empty author in nasaTelemetry
 Warning--empty journal in de2015statsref
 Warning--can't use both author and editor fields in Harteveld2007
+Warning--empty journal in CarDataAnalysis
 Warning--empty journal in moser2002methodology
-Warning--empty journal in siegel1956nonparametric
 Warning--empty journal in yuserious
 Warning--empty year in yuserious
-(There were 10 warnings)
+(There were 12 warnings)
