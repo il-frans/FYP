@@ -4,22 +4,49 @@
 This chapter introduces motorsport racing and a number of related concepts that are essential in gaining an understanding of this work. The chapter opens with a brief overview of the sport, followed by an exposition of important concepts like the \emph{racing line}, cornering and braking. A discussion ensues, wherein \emph{understeer} and \emph{oversteer} and explained. A short overview of telemetry is then provided. The chapter concludes with a general introduction to simulation racing rigs.
 
 \section{Motorsport racing}
-In sports individuals or groups compete to be first to achieve a particular objective. In the case of circuit motorsport races, in which motorised vehicles go round a course. Each racing discipline or series has its own rules. However, at the core, all disciplines participants aim to complete a full lap of the circuit in the least amount of time. Some disciplines focus on achieving one fast lap, such as time trials, while others focus on achieving the least amount of time across a fixed amount of laps, such as FIA's Formula 1 series. This dissertation will focus on confined car racing taking place on smooth asphalt surfaces in purpose built race tracks. 
-
-\subsection{Racing Line}
-
-A race driver needs to figure out how to go round a piece of asphalt in the minimum amount of time \cite{GoingFaster}. In order to do so, he or she needs to develop techniques for more advanced vehicle control. One such technique is that of mastering the race line, which is considered the the fundamental skill a race driver must understand and master before moving on to anything else \cite{GoingFaster}. The racing line is the best path through a circuit, it is the path which takes the least time while keeping the higher average speed \cite{beckman1991physics}. The trickiest part of the racing line to master is that of a corner, this task is  split into two parts, identifying the line which should be taken and staying on the line. The first part refers to being able to visualise the racing line while the later refers to actually being able to control the car so that it stays on the line. Once the driver has an idea of the race line which the corner should be taken at, he or she must further split the line into three sections. The first part is the braking part, during this part the driver needs to decelerate in preparation for the corner, this is usually carried out in a straight line and end right before the turn in point. The turn in point refers to a point on the corner race line in which steering input is applied, allowing the car to turn into the corner. The turn in motion should be a smooth one, taking the car all through the corner without having to do too much corrections to the steering. Being smooth while cornering allows the G-forces and centre of gravity of the car to not be abruptly effected which would result in unpredictable car behaviour \cite{GoingFaster}. The aim of the turn in section is to aim for the apex point, this is the inside middle point of the corner. The final part of tackling a corner is the acceleration part, after the apex point, the driver must start to gradually accelerate out of the corner while still turning out of the corner aiming for the outside apex.
+In sports, individuals or groups compete to be the first to achieve a particular objective. In circuit motorsport racing, motorised vehicles go round a course for a set number of times. There are varies racing disciplines or series, each one having its own specific rules. However, at the core, participants in all disciplines aim to complete a full lap of the circuit in the shortest time. Some disciplines focus on achieving one fast lap, such as time trials, while others focus on achieving the least amount of time across a fixed number of laps, such as FIA's Formula 1 series. This dissertation will focus on one such discipline, that of confined car racing, which takes place on smooth asphalt surfaces in purpose-built race tracks. 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[height=7cm]{images/cornerraceline}
-	\caption{Race line through a 90" right corner}
+	\caption{Example of confined car racing circuit}
+	\label{fig:circuit-overhead}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[height=7cm]{images/cornerraceline}
+	\caption{Example of racing line, straight and corners}
+	\label{fig:circuit-breakdown}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[height=7cm]{images/cornerraceline}
+	\caption{Forces acting on a car}
+	\label{fig:forces-car}
+\end{figure}
+
+\textbf{Figures: Circuit overhead, Racing line overhead, Segmented by straight and corner}
+
+\subsection{Racing Line}
+A race driver needs to figure out how to achieve the shortest lap time for a given track.
+\emph{A race driver needs to figure out how to go round a piece of asphalt in the minimum amount of time} \cite{GoingFaster}. In order to do so, he or she needs to develop techniques for more advanced vehicle control. One such technique is that of mastering the racing line (see Figure \ref{fig:circuit-breakdown}), which is considered the fundamental skill a race driver must understand and master before moving on to anything else \cite{GoingFaster}. The racing line is the best path through a circuit: if followed, it is the path that yields the shortest time at the highest average speed \cite{beckman1991physics}. The trickiest part of the racing line to master is that which overlaps circuit corner segments (see Figure \ref{fig:circuit-breakdown}). There are two aspects to mastery of the racing line: first, one has to identifying the path which should be taken, and secondly, one must stay on that path. In the first instance, one has to be able to visualise the racing line, while in the latter one has to control the car such that it stays on the line whilst achieving the highest possible average speed. Once the driver can visualise the racing line, he must further partition it, at and near a corner, in three sections. The first section is the breaking part, where the car needs to sufficiently decelerate in preparation for the corner. Braking is usually carried out in a straight line, ending right before the \emph{turn-in point}. The turn-in point refers to a point on the racing line where steering input is applied, forcing the car to turn into the corner. This action should be carried out smoothly, without jerking motions, taking the car all through the corner without too much correction to the steering. Smooth cornering prevents any abrupt changes to the g-forces and centre of gravity of the car (see Figure \ref{fig:forces-car}), which would result in unpredictable car behaviour \cite{GoingFaster}. Thus, the second partition of the racing line at a corner is the segment between the turn-in point and the apex point, which is the inside mid-point of the corner (see Figure \ref{fig:CornerRaceLine}). After the turn-in point, the driver aims for the apex point. The final section of the racing line in a corner lies from the apex point onwards, where the driver must gradually accelerate out of the corner, while still turning, aiming for the outside apex (see Figure \ref{fig:to add}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[height=7cm]{images/cornerraceline}
+	\caption{Racing line through a 90" right corner}
 	\label{fig:CornerRaceLine}
 \end{figure}
 
-After the driver manages to drive the race line at a relatively slow speed, the driver must find the limit of the car. This is the maximum speed the car can be driven while still allowing the driver to have maximum control over the car. Various studies have been carried out to define such a limit in terms of the physical properties of the car and environment around it. The most important property is the level of grip the car can achieve and sustain on track. Various factors contribute to the level of grip, most notable are the tires which the car is being driven on, as the tires are the only actual contact to the track, allowing for braking, accelerating and turning forces to be transferred to the asphalt\cite{beckman1991physics}.
+As the driver gets acquainted to the racing line, usually at sub-optimal speeds, he must find the limit of the car, which is the highest speed the car can be driven while still retaining some measure of control. Various studies have been carried out to define such a limit in terms of the physical properties of the car and its environment \cite{beckman1991physics}. The most important property is the level of grip the car can achieve and sustain on track. A number of factors contribute to the level of grip. Most notably, one very important factor is the tires as they are the only contact the car makes with the track, and allow for braking, accelerating and turning forces to be transferred to the asphalt. 
 
-Each tire has two properties which are of particular interest to a drive, the slip angle and slip ratio. The slip angle is the angle between a tire’s direction of travel and the actual direction the tire is going towards. Given both the actual direction of travel and desired direction of travel are known, it becomes trivial to calculate the angle which is done by calculating the arch of the two vectors as shown in \ref{fig:slipangle}.
+Each tire has two properties which are of particular interest: the slip angle and slip ratio (see Figure \ref{fig:slipangle}). The slip angle is the angle between the tire's desired direction (perpendicular to the axis of rotation of the tire) and the tire's actual direction (the direction the car is moving in). Given both the actual direction of travel $\mathbf{D}_t$) and the desired direction ($\mathbf{D}_d$) are known, the slip angle $s_a$ is calculated as follows:
+\begin{equation}
+	s_a = \cos^{-1}(\hat{\mathbf{D}}_d \cdot \hat{\mathbf{D}_t}),
+\end{equation}
+\noindent where $\hat{\mathbf{D}_d} = \frac{\mathbf{D}_d}{|\mathbf{D}_d|}$ and $\hat{\mathbf{D}_t} = \frac{\mathbf{D}_t}{|\mathbf{D}_t|}$ are the normalised direction vectors for desired and travel directions respectively.
 
 \begin{figure}[!htb]
 	\centering
