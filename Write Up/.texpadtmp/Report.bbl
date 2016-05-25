@@ -6,16 +6,30 @@ http://www.assettocorsa.net/en/.
 \bibitem{ProjectCars}
 http://www.projectcarsgame.com/.
 
+\bibitem{nasaTelemetry}
+{Telemetry: Summary of concept and rationale}.
+\newblock {\em NASA STI/Recon Technical Report N}, 89, December 1987.
+
 \bibitem{abt1970}
 Clark~C. Abt.
 \newblock {\em Serious Games}.
 \newblock Viking Press, 1970.
+
+\bibitem{bastow2004car}
+Donald Bastow, Geoffrey Howard, and John~P Whitehead.
+\newblock {\em Car suspension and handling}.
+\newblock SAE international Warrendale, 2004.
 
 \bibitem{beckman1991physics}
 Brian Beckman and No~Bucks~Racing Club.
 \newblock The physics of racing, part 5: Introduction to the racing line.
 \newblock {\em online] http://www. esbconsult. com.
   au/ogden/locust/phors/phors05. htm}, 1991.
+
+\bibitem{de2015statsref}
+MJ~De~Smith.
+\newblock Statsref: Statistical analysis handbook-a web-based statistics.".
+\newblock 2015.
 
 \bibitem{djaouti2011classifying}
 Damien Djaouti, Julian Alvarez, and Jean-Pierre Jessel.
@@ -45,11 +59,21 @@ Casper Harteveld, Rui Guimar{\~a}es, Igor Mayer, and Rafael Bidarra.
   Within a Unique Serious Game for Training Levee Inspection, pages 128--139.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2007.
 
+\bibitem{CarDataAnalysis}
+Bob Knox.
+\newblock A practical guide to race car data analysis".
+\newblock 2011.
+
 \bibitem{leahy2003auditory}
 Wayne Leahy, Paul Chandler, and John Sweller.
 \newblock When auditory presentations should and should not be a component of
   multimedia instruction.
 \newblock {\em Applied Cognitive Psychology}, 17(4):401--418, 2003.
+
+\bibitem{introductiontobehavioralresearchmethods}
+Mark~R. Leary.
+\newblock {\em Introduction to Behavioral Research Methods, 2nd Edition}.
+\newblock Cole Publishing Company, 2001.
 
 \bibitem{li2015can}
 Qing Li.
@@ -57,6 +81,11 @@ Qing Li.
   game based traffic education.
 \newblock {\em Developments in Business Simulation and Experiential Learning},
   42, 2015.
+
+\bibitem{likert1932technique}
+Rensis Likert.
+\newblock A technique for the measurement of attitudes.
+\newblock {\em Archives of psychology}, 1932.
 
 \bibitem{GoingFaster}
 C.~Lopez and D.~Sullivan.
