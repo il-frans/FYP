@@ -1,33 +1,48 @@
-\contentsline {section}{\numberline {1}Acknowledgements}{2}
-\contentsline {section}{\numberline {2}Other tables and lists}{5}
-\contentsline {section}{\numberline {3}Table of abbreviations}{6}
-\contentsline {section}{\numberline {4}Introduction}{7}
-\contentsline {subsection}{\numberline {4.1}Motivation}{7}
-\contentsline {subsection}{\numberline {4.2}Why the problem is non-trivial}{8}
-\contentsline {section}{\numberline {5}Literature Review}{9}
-\contentsline {subsection}{\numberline {5.1}Video games and Serious Games}{9}
-\contentsline {subsubsection}{\numberline {5.1.1}Pedagogy}{10}
-\contentsline {subsection}{\numberline {5.2}Sim Racing as a Serious Game}{11}
-\contentsline {section}{\numberline {6}Background Work}{13}
-\contentsline {subsection}{\numberline {6.1}Motorsport racing}{13}
-\contentsline {section}{\numberline {7}Specification and design}{17}
-\contentsline {section}{\numberline {8}Methodology}{18}
-\contentsline {subsection}{\numberline {8.1}Sim setup}{18}
-\contentsline {subsection}{\numberline {8.2}Feedback System}{18}
-\contentsline {subsection}{\numberline {8.3}Evaluation}{19}
-\contentsline {subsubsection}{\numberline {8.3.1}Experiment structure}{19}
-\contentsline {subsubsection}{\numberline {8.3.2}Surveys}{20}
-\contentsline {subsubsection}{\numberline {8.3.3}Track and Car choice}{20}
-\contentsline {subsubsection}{\numberline {8.3.4}Data Analysis}{21}
-\contentsline {section}{\numberline {9}Implementation}{22}
-\contentsline {subsection}{\numberline {9.1}Supporting tools}{22}
-\contentsline {subsection}{\numberline {9.2}Track Splicer}{22}
-\contentsline {subsection}{\numberline {9.3}Spatial Querying}{24}
-\contentsline {section}{\numberline {10}Evaluation}{26}
-\contentsline {section}{\numberline {11}Evaluation strategy}{26}
-\contentsline {subsection}{\numberline {11.1}Experiment setup}{26}
-\contentsline {subsection}{\numberline {11.2}User study}{26}
-\contentsline {section}{\numberline {12}Future Work}{27}
-\contentsline {section}{\numberline {13}Conclusion}{29}
-\contentsline {section}{\numberline {14}Glossary}{30}
-\contentsline {section}{\numberline {15}Appendices}{31}
+\contentsline {section}{\numberline {1}Acknowledgements}{2}{section.1}
+\contentsline {section}{\numberline {2}Other tables and lists}{5}{section.2}
+\contentsline {section}{\numberline {3}Introduction}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Motivation}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Why the problem is non-trivial}{8}{subsection.3.2}
+\contentsline {section}{\numberline {4}Background}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Motorsport racing}{9}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Racing Line}{9}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Cornering and braking}{11}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Telemetry data}{13}{subsubsection.4.1.3}
+\contentsline {subsection}{\numberline {4.2}Racing Rigs}{13}{subsection.4.2}
+\contentsline {section}{\numberline {5}Literature Review}{16}{section.5}
+\contentsline {subsection}{\numberline {5.1}Video games and Serious Games}{16}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Pedagogy}{17}{subsubsection.5.1.1}
+\contentsline {subsection}{\numberline {5.2}Sim Racing}{19}{subsection.5.2}
+\contentsline {section}{\numberline {6}Research Methodology}{20}{section.6}
+\contentsline {subsection}{\numberline {6.1}Overview}{20}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Experiment Design}{21}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Experiment Materials}{22}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Hardware choice}{24}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Software choice}{25}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Questionnaire}{25}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.4}Participants' Demographic}{26}{subsubsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.5}Participants' Insight}{26}{subsubsection.6.3.5}
+\contentsline {subsection}{\numberline {6.4}Procedure}{26}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Data Collection and Sampling}{28}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Data Analysis}{28}{subsection.6.6}
+\contentsline {section}{\numberline {7}Design and Implementation}{30}{section.7}
+\contentsline {subsection}{\numberline {7.1}Requirements}{30}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Sim Racing Rig}{31}{subsubsection.7.1.1}
+\contentsline {subsection}{\numberline {7.2}Supporting tools}{31}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Track Splicer}{31}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Log files Data Store}{34}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}Spatial Querying}{34}{subsubsection.7.2.3}
+\contentsline {subsection}{\numberline {7.3}System Architecture}{35}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Telemetry Input Interface}{35}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Processing}{35}{subsubsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.3}Feedbacks being provided}{37}{subsubsection.7.3.3}
+\contentsline {subsubsection}{\numberline {7.3.4}Output Interface}{38}{subsubsection.7.3.4}
+\contentsline {section}{\numberline {8}Evaluation}{39}{section.8}
+\contentsline {subsection}{\numberline {8.1}Demographic of The Sample}{39}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Distribution Tests}{39}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Feedback System Results}{41}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Users' Feedback}{43}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Discussion}{44}{subsection.8.5}
+\contentsline {section}{\numberline {9}Conclusion}{46}{section.9}
+\contentsline {section}{\numberline {10}Future Work}{46}{section.10}
+\contentsline {section}{\numberline {11}Charts}{47}{section.11}
