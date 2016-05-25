@@ -1,69 +1,68 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/Francois/GitHub/FYP/Write Up/.texpadtmp/Report.aux
-A level-1 auxiliary file: Introduction.aux
-A level-1 auxiliary file: BackgroudWork.aux
-A level-1 auxiliary file: LiteratureReview.aux
+A level-1 auxiliary file: BackgroudAndLiteratureReview.aux
+A level-1 auxiliary file: Specification_And_Design.aux
 A level-1 auxiliary file: Methodology.aux
 A level-1 auxiliary file: Implementation.aux
 A level-1 auxiliary file: Evaluation.aux
+A level-1 auxiliary file: Future_Work.aux
 A level-1 auxiliary file: Conclusion.aux
-A level-1 auxiliary file: Appendices.aux
 The style file: plain.bst
 Database file #1: ../citeations.bib
+Repeated entry---line 66 of file ../citeations.bib
+ : @book{michael2005serious
+ :                         ,
+I'm skipping whatever remains of this entry
 Warning--entry type for "assestoCorsa" isn't style-file defined
---line 206 of file ../citeations.bib
+--line 161 of file ../citeations.bib
 Warning--entry type for "ProjectCars" isn't style-file defined
---line 211 of file ../citeations.bib
-Warning--to sort, need author or key in nasaTelemetry
+--line 166 of file ../citeations.bib
 Warning--to sort, need author or key in assestoCorsa
 Warning--to sort, need author or key in ProjectCars
-Warning--empty author in nasaTelemetry
-Warning--empty journal in de2015statsref
 Warning--can't use both author and editor fields in Harteveld2007
-Warning--empty journal in CarDataAnalysis
 Warning--empty journal in moser2002methodology
 Warning--empty journal in yuserious
 Warning--empty year in yuserious
-You've used 24 entries,
+You've used 18 entries,
             2118 wiz_defined-function locations,
-            634 strings with 7912 characters,
-and the built_in function-call counts, 6365 in all, are:
-= -- 600
-> -- 271
+            606 strings with 7274 characters,
+and the built_in function-call counts, 5084 in all, are:
+= -- 482
+> -- 224
 < -- 3
-+ -- 115
-- -- 86
-* -- 377
-:= -- 1073
-add.period$ -- 67
-call.type$ -- 24
-change.case$ -- 106
++ -- 93
+- -- 72
+* -- 314
+:= -- 847
+add.period$ -- 50
+call.type$ -- 18
+change.case$ -- 83
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 277
-empty$ -- 537
-format.name$ -- 86
-if$ -- 1326
+cite$ -- 24
+duplicate$ -- 213
+empty$ -- 424
+format.name$ -- 72
+if$ -- 1064
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 31
-newline$ -- 117
-num.names$ -- 42
-pop$ -- 157
+int.to.str$ -- 18
+missing$ -- 23
+newline$ -- 88
+num.names$ -- 32
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 91
+purify$ -- 72
 quote$ -- 0
-skip$ -- 193
+skip$ -- 152
 stack$ -- 0
-substring$ -- 280
-swap$ -- 40
+substring$ -- 248
+swap$ -- 36
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
-warning$ -- 10
-while$ -- 56
-width$ -- 26
-write$ -- 234
-(There were 12 warnings)
+type$ -- 58
+warning$ -- 6
+while$ -- 46
+width$ -- 20
+write$ -- 177
+(There was 1 error message)
