@@ -3,7 +3,7 @@
 
 This chapter introduces motorsport racing and a number of related concepts that are essential in gaining an understanding of this work. The chapter opens with a brief overview of the sport, followed by an exposition of important concepts like the \emph{racing line}, cornering and braking. A discussion ensues, wherein \emph{understeer} and \emph{oversteer} and explained. A short overview of telemetry is then provided. The chapter concludes with a general introduction to simulation racing rigs.
 
-\section{Motorsport racing}
+\section{Motorsport Racing}
 In sports, individuals or groups compete to be the first to achieve a particular objective. In circuit motorsport racing, motorised vehicles go round a course for a set number of times. There are varies racing disciplines or series, each one having its own specific rules. However, at the core, participants in all disciplines aim to complete a full lap of the circuit in the shortest time. Some disciplines focus on achieving one fast lap, such as time trials, while others focus on achieving the least amount of time across a fixed number of laps, such as FIA's Formula 1 series. This dissertation will focus on one such discipline, that of confined car racing, which takes place on smooth asphalt surfaces in purpose-built race tracks. 
 
 \begin{figure}[!htb]
@@ -55,7 +55,7 @@ Each tyre has two properties which are of particular interest: the slip angle an
 	\label{fig:slipangle}
 \end{figure}
 
-\subsection{Cornering and braking}
+\subsection{Cornering and Braking}
 Whenever the slip angle is above $0\degree$ ($s_a > 0$) the tyre is said to be in an understeering situation. Symptoms include reduced friction, drifting towards the outside of a bend and possible tyre noise from the wheels. Assuming the tyres are not damaged and the track is neither wet nor dirty, understeer can be caused by active factors such as cornering speed, throttle application, braking, steering inputs and weight transfer. Other passive factors such as weight distribution, drive layout, suspension and chassis setup, tyre type, wear and pressures also affect understeer. An understeer situation may be caused by entering the corner at excessive speed, accelerating too aggressively in the corner, breaking through a corner or making sudden input changes which drastically upset the weight distribution of the car. A tyre has an optimal slip angle at which grip is maximised during cornering. The optimal slip angle for a road tyre is about $5\degree$, whereas for a slick tyre, which is purposely constructed for racing, is about $8\degree-10\degree$ \cite{beckman1991physics}.
 
 %Passive factors have to do with the way a car is mechanically setup, such factors will be taken in consideration during this project but will not be given great importance as this project aims to improve the drive’s skills. The project will focus on the active factors as these are the ones which the driver has direct input on while driving a car. 
@@ -75,21 +75,18 @@ During acceleration and braking the tyre experiences rotational forces; when the
 
 Passive factors, which depend on the mechanical set up of a car, may also influence car behaviour during cornering and braking. However, in this work, any passive factors will be normalised and kept constant across all the study to eliminate any possible effects on dependent variables. 
 
-\subsection{Telemetry data}
-Telemetry data is domain specialised data contains measurements and other data collected at remote or inaccessible points and are subsequently transmitted to receiving equipment for monitoring \cite{nasaTelemetry}. In motorsport telemetry data contains measurements from the engine and other vehicle dynamics. From these measurements one can the vehicle state at a particular point in time, such as speed, engine speed, temperatures, slip angles, slip ratios and so on. Telemetry is widely regarded as being the most important source of information by motorsport engineers as engineers can analyse this data and better under stand the car's and driver's strength and weaknesses \cite{CarDataAnalysis}.
+\subsection{Telemetry Data}
+Telemetry (literally remote measurement), is the automated communications process by which measurements and other data are acquired from remote or inaccessible objects or sites, to be subsequently monitored \cite{nasaTelemetry}. Telemetry data is domain specialised data that contains such measurements, transmitted to receiving equipment for remote monitoring. In motorsport, telemetry data contains measurements of vehicle dynamics from the engine and other components. These measurements can serve to monitor and reconstruct the vehicle state at a particular point in time. Telemetry data in motorsports usually accounts for measurements of speed, engine speed, component temperatures, slip angles, slip ratios, etc. Telemetry is widely regarded as the most important source of information by motorsports engineers; analysing this data can lead to a better understanding of the respective strengths and weaknesses of the car and the driver \cite{CarDataAnalysis}. In this work, we posit that through the real-time analysis of telemetry data, the pedagogical aspect of sim racing can be exploited to teach race driving to non experts.  
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[height=7cm]{charts/telemetrydata.jpg}
-	\caption{Visualised telemetry data from a Formula 1 team}
+	\caption{Visualisation of racing car telemetry data}
 	\label{fig:telemetrydata}
 \end{figure}
 
-\section{Racing Rigs}
-
-Moving on from the real world into the simulation world in which a racing rig is an integral part of achieving an authentic feel to the simulation experience. Racing rigs vary in price starting from a bundle with a steering wheel and pedal set costing less than €100 to ones used by professional racing teams costing thousands. The difference in price is partially due to built quality, but the biggest contributing factor is attributed to how well the rig mimics the real world. This is achieved by integrating force feedback, butt kickers and hydraulic pistons. Racing rigs can be categorised by four price range brackets. Entry level refer to the cheapest price range, racing rigs in the range offer the basics to get some one up and running.
-
-The most basic racing rig is one which only has Steering wheel, than more sophisticated ones are made by adding pedals, shifters, racing seat, mounting frames and hydraulic pistons. Butt kickers and hydraulic pistons are commonly integrated in high end rigs such as ones built by Vesaro. Force feedback is a form of haptic technology which used to replicate the forces which are transferred through a steering wheel in a car onto the driver\cite{li2015can}. Butt kickers and hydraulic used to simulate lateral and longitudinal forces which a race driver is exposed to during racing.
+\section{Racing Simulation Rigs}
+The racing simulation rig (sim racing rig) is a piece of equipment designed to mimic the cockpit of a real-world car. The quality of a sim racing rig is dependent on its authenticity - how similar it is to a real-world car - and its build quality. These rigs come in various shapes, forms and sizes, from hangar-sized hydraulic-driven car chassis, that cost millions of Euro, to the more modest, built from off-the-shelf commodity hardware. Minimally, a rig should provide a steering wheel, seating and a display. More sophisticated rigs augment the user experience by employing gear shifters, and clutch, throttle and breaking pedals. The more advanced components are furnished with a force feedback mechanism, a form of haptic technology used to replicate the sense of touch by applying forces or vibrations, or motions to the user \cite{li2015can}. Force feedback may be caused by electrical motors, gear trains or hydraulic systems. In high-end rigs, for instance, hydraulic systems are used to simulate the latitudinal and longitudinal forces to which a driver is exposed during driving. Modern rigs might include virtual reality headsets as a replacement for displays, to enhance immersion and increase realism.
 
 \begin{figure}[!htb]
 	\centering
@@ -98,6 +95,7 @@ The most basic racing rig is one which only has Steering wheel, than more sophis
 	\label{fig:slipangle}
 \end{figure}
 
+\section{Summary}
 
 
 
