@@ -1,16 +1,40 @@
+\def \methodname {TeAR\xspace}
+\def \methodnamefull {Telemetry Assisted Racing\xspace}
+
 \chapter{Design and Implementation}
-In this chapter an in detail description is given for the software and hardware which has been implemented. Starting with \S~\ref{sec:imp-requirements} section which gives an overview of the most important requirements the software artefact should meet. \S~\ref{sec:imp-supportingTools} covers tools which have been developed in order to aid the use of the feedback system. Finlay the \S~\ref{sec:imp-systemArchitecture} section gives an indept description of the inner workings of the feedback system and how components integrate with each other. 
+This chapter provides a detailed description of the design and implementation of the software artefact employed in this project. The chapter starts by giving an overview of the core requirements for the main software artefact which we refer to as \emph{\methodnamefull (\methodname)} (see Section \S\ref{sec:imp-requirements}). Section \S\ref{sec:imp-supportingTools} discusses the tools developed to create content for the feedback system, including track annotation and racing line visualisation amongst others \S\ref{sec:imp-supportingTools}. The chapter concludes with an in-depth description of the internals of the feedback system, the respective components, their integration and communication \ref{sec:imp-systemArchitecture}.
 
 \section{Requirements}
 \label{sec:imp-requirements}
-The the feedback system is broken down into the following basic requirements.
+Deliberation on the methodologies provided in Chapter \ref{chp:methodology} led to a number of requirements being identified for the software artefact. These requirements are listed below:
 
-\begin{description}
-	\item[Abstract Input / Output Interface] The telemetry data input and feedback output needs to be abstracted. Techniclay this does not effect the feedback's effectiveness or accuracy but it is usefull as to be able to change the sim racing game and the type of feedback which is given with out having to change any of the internal components. This allows for fast prototyping especially with the output interface in which one can develop another way to convey the feedback. 
-	\item[Perform Spatial Querying] The feedback system relies on being able to determine the location of the car on track. This is used to determine if the car is in a straight section or corner section, how far away from the race line the car is and if the mid point of the corner is being driven on. 
-	\item[Store telemetry files] In order for the evaluation chapter to be carried out, the telemetry data is required to be stored for later data analysis. This is achieved by writing the telemetry data to a log file which is later uploaded to the database.
-	\item[Query log files]
-\end{description}
+\begin{itemize}
+	\item Content creation and annotation 
+	\item Interfacing with third-party racing sim software 
+	\item Efficiently read and process incoming telemetry stream
+	\begin{itemize}
+		\item Filter the stream for noise and unnecessary detail
+		\item Structure raw data to facilitate further processing
+	\end{itemize}
+	\item Develop a heuristic-based system to provide feedback
+	\item Provide a mechanism for communicating feedback to user
+	\item Persist telemetry data for further processing
+\end{itemize}
+
+Circuit information coming from third-party software, such as the racing line, must be available to \methodname; furthermore, this data is to be annotated with additional information such as track section partitioning and the respective properties, which are fundamental in determining which feedback to provide to the user. Thus, a number of supporting tools have to be developed.
+\methodname must interface with the third party racing simulation software (Assetto Corsa) via the inter-process communication system provided by the program. In addition, \methodname must extract a stream of telemetry data from the simulator, at a sampling rate of approximately 333Hz (which is the sustained rate provided by Assetto Corsa).
+The incoming telemetry data must be filtered since not all data is useful to \methodname. Furthermore, these data are organised into structures that are more conducive to processing later on in the pipeline. 
+This telemetry information will be fed into a heuristic-based algorithm that should return feedback that will eventually be presented to the user. This feedback should be the most effective correction the user would need to make to improve that particular race track section.
+\methodname should communicate this feedback to the user via an auditory messaging system. 
+Finally, all telemetry data should be persisted onto secondary storage for offline analysis. 
+
+%The following core requirements have been identified for \methodname:
+%\begin{description}
+%	\item[Abstract Input/Output Interface] The telemetry data input and feedback output needs to be abstracted. Techniclay this does not effect the feedback's effectiveness or accuracy but it is usefull as to be able to change the sim racing game and the type of feedback which is given with out having to change any of the internal components. This allows for fast prototyping especially with the output interface in which one can develop another way to convey the feedback. 
+%	\item[Perform Spatial Querying] The feedback system relies on being able to determine the location of the car on track. This is used to determine if the car is in a straight section or corner section, how far away from the race line the car is and if the mid point of the corner is being driven on. 
+%	\item[Store telemetry files] In order for the evaluation chapter to be carried out, the telemetry data is required to be stored for later data analysis. This is achieved by writing the telemetry data to a log file which is later uploaded to the database.
+%	\item[Query log files]
+%\end{description}
 
 \subsection{Sim Racing Rig}
 \label{sec:imp-simRacingRig}
