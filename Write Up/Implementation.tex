@@ -54,7 +54,7 @@ The track splicing tool extracts track and racing line information from Assetto 
 \end{figure}
 
 \begin{description}
-	\item [Track Partitioning and Annotation] The idealised racing line is a simple closed curve $\mathcal{C}$ on a plane; its digital counterpart is a discrete simple closed curve $\mathcal{C}_d$ with a finite number of vertices, each lying on the curve $\mathcal{C}$ and connected by straight edges - an inscribed polygon - where each vertex $\mathbf{v}_i \in \mathcal{C}_d$ represents a coordinate pair $(x,z)$. The ground is assumed to be a horizontal plane. 	To determine whether a section of the track near a vertex $\mathbf{v}_j \in \mathcal{C}_d$ is a straight or a corner, two further vertices are sampled $\mathbf{v}_i, \mathbf{v}_k \in \mathcal{C}_d$, where $i < j < k \in \mathbb{Z}/|\mathcal{C}_d|\mathbb{Z}$. We define the measure of curvature $c_j$ for the curve at $\mathbf{v}_j$ as follows:
+	\item [Track Partitioning] The idealised racing line is a simple closed curve $\mathcal{C}$ on a plane; its digital counterpart is a discrete simple closed curve $\mathcal{C}_d$ with a finite number of vertices, each lying on the curve $\mathcal{C}$ and connected by straight edges - an inscribed polygon - where each vertex $\mathbf{v}_i \in \mathcal{C}_d$ represents a coordinate pair $(x,z)$. The ground is assumed to be a horizontal plane. 	To determine whether a section of the track near a vertex $\mathbf{v}_j \in \mathcal{C}_d$ is a straight or a corner, two further vertices are sampled $\mathbf{v}_i, \mathbf{v}_k \in \mathcal{C}_d$, where $i < j < k \in \mathbb{Z}/|\mathcal{C}_d|\mathbb{Z}$. We define the measure of curvature $c_j$ for the curve at $\mathbf{v}_j$ as follows:
 	\begin{equation}
 		c_j = \cos^{-1} \left(\frac{\mathbf{v}_k - \mathbf{v}_j}{|\mathbf{v}_k - \mathbf{v}_j|} \cdot \frac{\mathbf{v}_j - \mathbf{v}_i}{|\mathbf{v}_j - \mathbf{v}_i|} \right),
 	\end{equation}
@@ -69,7 +69,13 @@ The track splicing tool extracts track and racing line information from Assetto 
 		\label{fig:diagram-vectorCorners}
 	\end{figure}
 	
-	\item [Find the mid point of a corner] The mid point of a corner is the highest point of the corner as shown in the figure. The mid point is found by going through each point. A perpendicular vector 'vP' to the first point is calculated, then a vector list vL is created containing a vector for each point as such v[x] = vector(p[x].x, p[x].y) where x is the position of the point in the array. Finally each vector in vL has the dot product with VP computed. The vector with the highest dot product result corresponds with the point which is the mid point of the corner.
+	\item [Track Annotation] The corner sections resulting from the partitioning process above are further annotated with the addition of the apex, or the corner midpoint vertex. The index $i$ of the midpoint vertex $\mathbf{v}_i$ is given by
+	\begin{equation}
+		\forall i,j | (\mathbf{v}_i - \mathbf{v}_0) \cdot (\mathbf{v}_{n-1} - \mathbf{v}_0)_{\perp} > (\mathbf{v}_j - \mathbf{v}_0) \cdot (\mathbf{v}_{n-1} - \mathbf{v}_0)_{\perp},  
+	\end{equation} 
+	where $0 \leq i,j < n$, for a corner section with $n$ vertices, and $\perp$ is the perpendicular operator such that $\mathbf{a} \cdot \mathbf{a}_{\perp} = 0$. 
+
+%	The mid point of a corner is the highest point of the corner as shown in the figure. The mid point is found by going through each point. A perpendicular vector 'vP' to the first point is calculated, then a vector list vL is created containing a vector for each point as such v[x] = vector(p[x].x, p[x].y) where x is the position of the point in the array. Finally each vector in vL has the dot product with VP computed. The vector with the highest dot product result corresponds with the point which is the mid point of the corner.
 	
 	\begin{figure}[!htb]
 		\centering
@@ -79,7 +85,7 @@ The track splicing tool extracts track and racing line information from Assetto 
 		\label{fig:diagram-cornerMidPoint}
 	\end{figure}
 	
-	\item [Visual representation of the race line] It was important to be able to visualise the results of the above processes in order to be able to determine the correctness of the processes. For this reasons an application with a graphic user interface was developed from which one can see the results.
+	\item [Visualisation and Tweaking] The partitioning and annotation of tracks is a semiautomated process; a visualisation component was added to the the track splicing tool, to display the partitioning results and bolster confidence in the transformed data. Furthermore, the visualisation helps in the tweaking of generation parameters ($c_m$, $c_t$, etc), by showing how changes in these values affect the output (see Figure fig:TrackSplicerTool). 
 	
 	\begin{figure}[!htb]
 		\centering
@@ -87,8 +93,7 @@ The track splicing tool extracts track and racing line information from Assetto 
 		\caption{Track splicer tool}
 		\textbf{Blue dots} : Part of a straight \textbf{Red dots} : Part of a corner \textbf{Green dots} : Corner mid point
 		\label{fig:TrackSplicerTool}
-	\end{figure}
-	
+	\end{figure}	
 \end{description}
 
 \subsection{Persistence of Telemetry Data}
@@ -114,7 +119,7 @@ In order for \methodname to determine the closest point on the racing line from 
 
 \section{System Architecture}
 \label{sec:imp-systemArchitecture}
-The feedback system is made up of independent components which pass data to each other in order to produce the feedback instruction which is output to the user. Below is the break down of each component including an overview of their inner workings.
+\methodname is comprised of independent components which pass data to each other in order to select feedback instructions to be presented to the driver. Figure \ref{} illustrates the system architecture of \methodname. The following sections provide an in-depth overview of the these components.
 
 \begin{figure}[!htb]
 	\centering
@@ -124,7 +129,7 @@ The feedback system is made up of independent components which pass data to each
 \end{figure}
 
 \subsection{Telemetry Input Interface}
-This components handles data inputs, two type of inputs are required, static and real time inputs. The static inputs are the ones which have been previously generated by the supporting tools. Real time input refers to the telemetry generated from the sim racing game. Assetto corsa provides a UDP server which a client can connect to, once the connection is established the game will send telemetry data.
+This component handles all data input, either static on a per-track basis or real-time during a user's session. Static inputs include data generated by the track splicing tool. Real-time input is generated by Assetto Corsa which exposes a UDP server for \methodname to connect to and receive telemetry data.
 
 \subsection{Processing}
 Feedback processing is split into sub modules. Each module runs on a separate independent thread and gets a copy of the telemetry data passed in real time as it becomes available. Modules can be developed and plugged in without changing any other components. Having each module run on a dedicated thread ensures the system can scale horizontally making uses of all the available cores without hindering the feedback systems responsiveness. The processing component acts as a coordinator by passing data to sub modules, and listening to any feedback notification raised which are forwarded to the output interface.
