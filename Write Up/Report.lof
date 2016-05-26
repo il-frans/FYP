@@ -2,36 +2,37 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Example of confined car racing circuit}}{11}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Example of racing line, straight and corners}}{11}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Forces acting on a car}}{12}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Racing line through a 90" right corner}}{13}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Slip Angle of a tyre understeering while turning left}}{14}{figure.2.5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Forces acting on a car\cite {carscienceForces} }}{12}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Racing line through a 90" right corner}}{14}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Slip Angle of a tyre understeering while turning left}}{15}{figure.2.5}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Visual representation for oversteer and understeer}}{16}{figure.2.6}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Visualisation of racing car telemetry data}}{17}{figure.2.7}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Professional racing rig by CXC Simulations}}{18}{figure.2.8}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Experiment Setup Schematic}}{27}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Experiment Setup Schematic}}{28}{figure.4.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Side view of the racing rig}}{37}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces track splicer input out}}{38}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Splicing using vectors}}{38}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Corner mid point}}{39}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Track splicer tool}}{40}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Microsoft Integration Services SQL import}}{40}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Visual representation for part of the quad tree for the Silverstone national circuit}}{41}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Overview of the system architecture components}}{41}{figure.5.8}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Overview of the coordination threading}}{43}{figure.5.9}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Side view of the racing rig}}{38}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Top view of the racing rig}}{38}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces track splicer input out}}{39}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Splicing using vectors}}{40}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Corner mid point}}{40}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Track splicer tool}}{41}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Microsoft Integration Services SQL import}}{41}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Visual representation for part of the quad tree for the Silverstone national circuit}}{42}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Overview of the system architecture components}}{43}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Overview of the coordination threading}}{44}{figure.5.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Gaming xp}}{46}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Lap times vs session, clustered by group}}{47}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Shapiro Wilk}}{47}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Kolmogorow Smimov Test}}{48}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Mann-Whitney}}{49}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Mann-Whitney Accross Sessions}}{49}{figure.6.6}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces feedback system feedback}}{50}{figure.6.7}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Gaming xp}}{47}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Lap times vs session, clustered by group}}{48}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Shapiro Wilk}}{48}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Kolmogorow Smimov Test}}{49}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Mann-Whitney}}{50}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Mann-Whitney Accross Sessions}}{50}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces feedback system feedback}}{51}{figure.6.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Sample age and gender}}{54}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Licensed drivers experience}}{54}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Where the track and car choice adequet?}}{55}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces How real do these componets feel?}}{55}{figure.7.4}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Was the feedback intrusive?}}{56}{figure.7.5}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Sample age and gender}}{55}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Licensed drivers experience}}{55}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Where the track and car choice adequet?}}{65}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces How real do these componets feel?}}{65}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Was the feedback intrusive?}}{66}{figure.7.5}
