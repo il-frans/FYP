@@ -1,4 +1,5 @@
 \chapter{Research Methodology}
+\label{chp:methodology}
 This chapter provides a detailed exposition of the methodology used throughout this work. This study has conducted exploratory and descriptive research to determine whether the use of simulation and an automated feedback driven system, a user can be trained as a race driver. The chapter is structured as follows: \S~\ref{sec:meth-overview} provides a general overview of the overarching methodology used in the study, \S~\ref{sec:meth-experiment-setup} describes in length the design of the instrument used to acquire experiment data and results, \S~\ref{sec:meth-experiment-structure} presents the experimental procedure and the rationale behind it, \S~\ref{sec:meth-data-gathering} identifies the information and data acquired through the experimental and descriptive methodologies employed, and finally \S~\ref{sec:meth-data-analysis} presents the data analysis mechanisms employed to substantiate our conclusions.
 %
 % Overview
@@ -15,13 +16,13 @@ These goals were addressed by means of an experimental setup based on a race-dri
 
 Since the main goal of this study is that of assessing how effective a feedback system is in the learning process, the independent variable in the experiment is the ability to receive feedback. The hypothesis is that participant performance (such as average lap time) is improved through feedback, and is thus a dependent variable. However, practising without feedback can also lead to changes in the dependent variable; therefore this is controlled for by having two groups of participants: the experimental group that receives feedback and the control group that doesn't. Random assignment is used to determine a participant's group.
 
-A questionnaire, to be administered to the participants at the end of the session, will be designed to help normalise and control for other factors that may influence dependent variables, and hence, the outcome of the experiment. The design of the questionnaire also helps in bridging the participants' perception of their performance with the actual performance data, possibly providing further insight into the results. A questionnaire was preferred to an interview because it is easier to administer, it lends itself to group administration and also allows confidentiality. It is indeed true that interviews permit a greater freedom of expression on behalf of the participant; however, questionnaires create a sense of anonymity that encourages the participants to be more truthful in their answers \cite{introductiontobehavioralresearchmethods}.
+A questionnaire, to be administered to the participants at the end of the session, will be designed to help normalise and control for other factors that may influence dependent variables, and hence, the outcome of the experiment. The design of the questionnaire also helps in bridging the participants' perception of their performance with the actual performance data, possibly providing further insight into the results. A questionnaire was preferred to an interview because it is easier to administer, it lends itself to group administration and also allows confidentiality \cite{introductiontobehavioralresearchmethods}.. It is indeed true that interviews permit a greater freedom of expression on behalf of the participant; however, questionnaires create a sense of anonymity that encourages the participants to be more truthful in their answers \cite{introductiontobehavioralresearchmethods}.
 
 \section{Experiment Design}
 \label{sec:meth-experiment-design}
 In the experiment, each group would be utilising the same car and racetrack. Bastow et al. \cite{bastow2004car} suggest that cars equipped with a front wheel drivetrain may be easier to handle. The Fiat 500 Abarth was the car chosen for the experiments, partially based on Bastow et al.'s findings. The car is relatively low-powered and thus, easier to use by beginning drivers. The Silverstone National race track has the desirable properties of being flat and smooth, without uneven surfaces or bumps which may result in loss of control in rookie drivers. Furthermore, the way the track is structured, with wide run-off areas located along the circuit where drivers are most likely to lose control of the car, allows the car to slow down before colliding with barriers or other stationary objects.
 
-Two feedback mechanisms have been considered for this experiment, \emph{visual}, through the use of a heads-up-display (HUD) superimposed on the simulation display, or \emph{auditory}, by means of descriptive speech projected through loud speakers. Leahy et al. \cite{leahy2003auditory} argue that auditory feedback is less intrusive that visual clues; based on these findings, it was decided that the system should provide feedback using auditory clues.
+Two feedback mechanisms have been considered for this experiment, \emph{visual}, through the use of a heads-up-display (HUD) superimposed on the simulation display, or \emph{auditory}, by means of descriptive speech projected through loud speakers. Leahy et al. \cite{leahy2003auditory} argue that auditory feedback is less intrusive than visual clues; based on these findings, it was decided that the system should provide feedback using auditory clues.
 
 \begin{figure}
 	\centering
@@ -54,7 +55,7 @@ The setup of the experiment was divided into three material categories: \emph{si
 
 \subsection{Hardware choice}
 
-The comparison table shows the desired properties the steering wheel controls should have. The G25 is the only which comes as a bundle with a three pedal set and H shifter on top of that, it's also the cheapest. The Toastmaster TX and Fanatec are more high end which explains the spike in price. These two to not come with a three pedal set nor an H shifter but can be purchased separately for an extra cost. The G25 is the obvious choice given it's relative low cost and the ability to supply decent force feedback.
+The comparison table shows the desired properties the steering wheel controls should have. The G25 is the only which comes as a bundle with a three pedal set and H shifter on top of that, it's also the cheapest. The Toastmaster TX and Fanatec are more high end which explains the spike in price. These two to not come with a three pedal set nor an H shifter but can be purchased separately for an extra cost. The G25 is the obvious choice given it's relative low cost and the ability to supply decent feedback.
 
 \begin{center}
 	\begin{tabular}{ | l | l | l | l |}
@@ -70,12 +71,12 @@ The comparison table shows the desired properties the steering wheel controls sh
 
 \subsection{Software choice}
 
-The comparison table shows the desired properties a sim game must have, and a selection of games which have been considered. Fromt he start it is clear, Dirt and Forza Motorsport 6 should be discarded as none provided telemetry data to be read. Assetto Corsa, Project Cars and iRacing are closely matched, however Assetto Corsa has the leading edge as it provides an easy way to interface via UDP, well document and wide developer community who can help. Furthermore Assetto Corsa provides good visual graphics. For these reasons Assetto Corsa has been picked as the game to be used.
+The comparison table shows the desired properties a sim game must have, and a selection of games which have been considered. From the start it is clear, Dirt and Forza 6 should be discarded as none provide telemetry data to be read. Assetto Corsa, Project Cars and iRacing are closely matched, however Assetto Corsa has the leading edge as it provides an easy way to interface via UDP, well document and wide developer community who can help. Furthermore Assetto Corsa provides good visual graphics. For these reasons Assetto Corsa has been picked as the sim to be used.
 
 \begin{center}
 	\begin{tabular}{ | l | l | l | l | l | l |}
 		\hline
-			& Assetto Corsa\cite{assestoCorsa} & Project Cars \cite{ProjectCars} & iRacing \cite{iRacing} & Dirt \cite{dirtgame} & Forza 6 \cite{forza} \\ \hline
+			& Assetto Corsa\cite{assestoCorsa} & pCars \cite{ProjectCars} & iRacing \cite{iRacing} & Dirt \cite{dirtgame} & Forza 6 \cite{forza} \\ \hline
 		Realistic model	& \checkmark &\checkmark & \checkmark & \checkmark & \checkmark \\ \hline
 		Tracks	& \checkmark &\checkmark & \checkmark &  & \checkmark \\ \hline
 		Disable wear & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline
@@ -108,7 +109,7 @@ Based on these guidelines two qualitative questionnaires have been designed, one
 In order to evaluate the effectiveness of the system a user study took place. Participants were split randomly into two groups. One group will be referred as the feedback group, the other will be referred to as the base group. The experiments structure was subdivided into smaller systemic tasks.
 
 \begin{description}
-	\item[Demographic questionare] At the start on the experiment the demographic questionare is to be handed out to the participant.
+	\item[Demographic questionare] At the start of the experiment the demographic questionare is to be handed out to the participant.
 	
 	\item[Adjust Rig Configuration] In order for the participant to sit comfortable while also ensuring all controls can be reached with ease, the rig has to be configured per participant. This involves having to move the seat further back or forward to the steering wheel, as it would be done in a real car. In addition participants are also told how to operating the rig. The explanation covers the steering wheel turns two and a half turns from lock to lock, the pedals are setup as on any manual road car, having the clutch pedal on the left, brake in the middle, and throttle on the right. The H shifter is also explained by having a run through demonstration of all gears which allows participants to be able to operate the rig with out having to learn on their own.
 	
@@ -116,7 +117,7 @@ In order to evaluate the effectiveness of the system a user study took place. Pa
 	
 	\item[Ten minuties practice] During these ten minutes users are told to simply get used to the rig setup, track and car. The aim of this session is for participants to get used to the setup while also allow this study to measure their skill before the feedbvack system as the independent variable is introduced.
 	
-	\item[Two Ten minuties sessions] These are the sessions in which the feedback system is turned on for the feedback group, while the participants in base group are left to keep trying to improve without any aid. 
+	\item[Two Ten minuties sessions] These are the sessions in which the feedback system is turned on for the feedback group, while the participants in the base group are left to keep trying to improve without any aid. 
 	
 	\item[Five minuties session] A final five minuties of driving are allocated yet again, this time with the feedback system turned of for both groups. This was designed to possibly identify any conclusive results. Such session could show the possibility of the feedback group performing worst after having the aid of the feedback system removed or both groups ending up performing the same after the sessions, which would suggest the feedback participant didn't manage to get any cognitive advantage.
 	
@@ -126,19 +127,19 @@ In order to evaluate the effectiveness of the system a user study took place. Pa
 
 \section{Data Collection and Sampling}
 \label{sec:meth-data-gathering}
-At the end of the experiments the data collected includes two questioners from each participant and four batches of telemetry data, one for each participant. Questioners are filled online using Google Forms as it provides the ability to export the data and also automatic generation of descriptive statistic. The data collected from the questionnaires and telemetry data is to be loaded into a data base management system from which the data can be queried using specialised data querying constructs. By having a querying language, it provides the flexibility of extract data which is relevant for the data analysis at hand.
+At the end of the experiments the data collected includes two questioners from each participant and four batches of telemetry data, one for each participant. Questioners are filled online using Google Forms as it provides the ability to export the data and also automatic generation of descriptive statistic. The data collected from the questionnaires and telemetry data is to be loaded into a data base management system from which the data can be queried using specialised data querying constructs. By having a querying language, it provides the flexibility of extracting data which is relevant for the data analysis at hand.
 
 \section{Data Analysis}
 \label{sec:meth-data-analysis}
-In order to accept or reject the null hypothesis statistical test are to be carried out. Most important is the ability to compare the performance of the two groups across sessions. The lap time is used as the test variable as this gives a good indication for the average performance achieved during a lap. Furthermore which comparison test to use depends on the the sample size, the distribution of data and the types of group. In this case the groups are independent from each other, as a participant may not be part of the base group and also part of the feedback group. As pointed out by De Smith in his book "Statistical Analysis Handbook-a web-based statistics" the tests of interest to this project are the Independent samples t-test\cite{de2015statsref} and the Mann Whitney U test\cite{de2015statsref} as the these test for difference between independent groups. Both tests share the same hypothesis listed below.
+In order to accept or reject the null hypothesis statistical test are to be carried out. Most important is the ability to compare the performance of the two groups across sessions. The lap time is used as the test variable as this gives a good indication for the average performance achieved during a lap. Furthermore which comparison test to use depends on the sample size, the distribution of data and the types of group. In this case the groups are independent from each other, as a participant may not be part of the base group and also part of the feedback group. As pointed out by De Smith in his book "Statistical Analysis Handbook-a web-based statistics" the tests of interest to this project are the Independent samples t-test\cite{de2015statsref} and the Mann Whitney U test\cite{de2015statsref} as these test for difference between independent groups. Both tests share the same hypothesis listed below.
 
 \begin{description}
-	\item[Independent t test] assumes the data is normally as such the data must be check for normal distribution. This can be carried out by using the Shapiro-Wilk\cite{de2015statsref} test for normality on both groups.
+	\item[Independent t test] assumes the data is normally as such the data must be checked for normal distribution. This can be carried out by using the Shapiro-Wilk\cite{de2015statsref} test for normality on both groups.
 	
-	\item[Mann Whitney U test] Does not require the data to be normally distributed but it assumes the groups' data shares the same distribution. The groups are checked for equal distribution using the Independent Samples Kolmogorow-Smimov test.
+	\item[Mann Whitney U test] Does not require the data to be normally distributed however, it assumes the groups' data shares the same distribution. The groups are checked for equal distribution using the Independent Samples Kolmogorow-Smimov test.
 	
 	\item[Null hypotesis]there is no significant difference across the groups
 	\item[Alternative hypotesis]there is significant difference across the groups
 \end{description}
 
-As the data distribution is not known before hand, distribution test will be carried out after the data is collected and depending on the result, the adequate test will be used.
+As the data distribution is not known before hand, distribution tests will be carried out after the data is collected and depending on the result, the adequate test will be used.

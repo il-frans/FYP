@@ -2,7 +2,7 @@
 \def \methodnamefull {Telemetry Assisted Racing\xspace}
 
 \chapter{Design and Implementation}
-This chapter provides a detailed description of the design and implementation of the software artefact employed in this project. The chapter starts by giving an overview of the core requirements for the main software artefact which we refer to as \emph{\methodnamefull (\methodname)} (see Section \S\ref{sec:imp-requirements}). Section \S\ref{sec:imp-supportingTools} discusses the tools developed to create content for the feedback system, including track annotation and racing line visualisation amongst others \S\ref{sec:imp-supportingTools}. The chapter concludes with an in-depth description of the internals of the feedback system, the respective components, their integration and communication \ref{sec:imp-systemArchitecture}.
+This chapter provides a detailed description of the design and implementation of the software artefact employed in this project. The chapter starts by giving an overview of the core requirements for the main software artefact which we refer to as \emph{\methodnamefull (\methodname)} (see Section \S\ref{sec:imp-requirements}). Section \S\ref{sec:imp-content-creation} discusses the tools developed to create content for the feedback system, including track annotation and racing line visualisation amongst others. The chapter concludes with an in-depth description of the internals of the feedback system, the respective components, their integration and communication \ref{sec:imp-systemArchitecture}.
 
 \section{Requirements}
 \label{sec:imp-requirements}
@@ -22,29 +22,19 @@ Deliberation on the methodologies provided in Chapter \ref{chp:methodology} led 
 \end{itemize}
 
 Circuit information coming from third-party software, such as the racing line, must be available to \methodname; furthermore, this data is to be annotated with additional information such as track section partitioning and the respective properties, which are fundamental in determining which feedback to provide to the user. Thus, a number of supporting tools have to be developed.
-\methodname must interface with the third party racing simulation software (Assetto Corsa) via the inter-process communication system provided by the program. In addition, \methodname must extract a stream of telemetry data from the simulator, at a sampling rate of approximately 333Hz (which is the sustained rate provided by Assetto Corsa).
+\methodname must interface with the third party racing simulation software (Assetto Corsa) via the inter-process communication system provided by the program. In addition, \methodname must extract a stream of telemetry data from the simulator, at a sampling rate of approximately 333Hz (which is the sustained rate provided by Assetto Corsa on the experiment's hardware).
 The incoming telemetry data must be filtered since not all data is useful to \methodname. Furthermore, these data are organised into structures that are more conducive to processing later on in the pipeline. 
 This telemetry information will be fed into a heuristic-based algorithm that should return feedback that will eventually be presented to the user. This feedback should be the most effective correction the user would need to make to improve that particular race track section.
 \methodname should communicate this feedback to the user via an auditory messaging system. 
 Finally, all telemetry data should be persisted onto secondary storage for offline analysis. 
 
-%The following core requirements have been identified for \methodname:
-%\begin{description}
-%	\item[Abstract Input/Output Interface] The telemetry data input and feedback output needs to be abstracted. Techniclay this does not effect the feedback's effectiveness or accuracy but it is usefull as to be able to change the sim racing game and the type of feedback which is given with out having to change any of the internal components. This allows for fast prototyping especially with the output interface in which one can develop another way to convey the feedback. 
-%	\item[Perform Spatial Querying] The feedback system relies on being able to determine the location of the car on track. This is used to determine if the car is in a straight section or corner section, how far away from the race line the car is and if the mid point of the corner is being driven on. 
-%	\item[Store telemetry files] In order for the evaluation chapter to be carried out, the telemetry data is required to be stored for later data analysis. This is achieved by writing the telemetry data to a log file which is later uploaded to the database.
-%	\item[Query log files]
-%\end{description}
-
 \section{Content Creation and Annotation}
-\label{sec:content-creation}
+\label{sec:imp-content-creation}
 The telemetry data stream read-out from Assetto Corsa does not provide sufficient information about the environment for \methodname to make informed decisions about possible feedback. The feedback mechanism used in \methodname is highly dependent on the racing line, which in turn, is a function of the track geometry; however, it is not possible to acquire any meaningful information about the racing track from telemetry data alone. These factors prompted the creation of the \emph{Track Splicer and Visualiser}, a supporting tool that extracts track information from the Assetto Corsa data files and provides additional annotations to this data as required by \methodname. 
 
 \subsection{Track Splicing}
 \label{sec:imp-trackSplicer}
 The track splicing tool extracts track and racing line information from Assetto Corsa, partitions the data into a number of sections that are annotated as either straight or corner, and finally finds the apex of each corner section. The tool also provides visualisation of the results in case the user needs to tweak the generation parameters. This process is shown in Figure \ref{fig:diagram-trackspliceinputoutput}.
-
-%The track splicer tool has been developed to aid the feedback system's track meta data file creation. It automates the following tasks. Given a series of two dimensional cartesian coordinate denoting a track race line, (i) split the race line into straights and corners (ii) find the mid point of a corner which is used as the apex point and (iii) give a visual representation of the race line, straights and corners. 
 
 \begin{figure}[!htb]
 	\centering
@@ -81,7 +71,7 @@ The track splicing tool extracts track and racing line information from Assetto 
 		\label{fig:diagram-cornerMidPoint}
 	\end{figure}
 	
-	\item [Visualisation and Tweaking] The partitioning and annotation of tracks is a semiautomated process; a visualisation component was added to the the track splicing tool, to display the partitioning results and bolster confidence in the transformed data. Furthermore, the visualisation helps in the tweaking of generation parameters ($c_m$, $c_t$, etc), by showing how changes in these values affect the output (see Figure fig:TrackSplicerTool). 
+	\item [Visualisation and Tweaking] The partitioning and annotation of tracks is a semiautomated process; a visualisation component was added to the the track splicing tool, to display the partitioning results and bolster confidence in the transformed data. Furthermore, the visualisation helps in the tweaking of generation parameters ($c_m$, $c_t$, etc), by showing how changes in these values affect the output (see Figure \ref{fig:TrackSplicerTool}). 
 	
 	\begin{figure}[!htb]
 		\centering
@@ -93,18 +83,18 @@ The track splicing tool extracts track and racing line information from Assetto 
 \end{description}
 
 \subsection{Persistence of Telemetry Data}
-Log files containing telemetry data from each user session are inserted into a database management system for offline analysis. An extraction transfer loading (ETL) process (see Figure \ref{}) was purposely built, which takes as input a log file and inserts processed data as records into a database. This database is then used to run SQL queries related to the evaluation of the experiment.
+Log files containing telemetry data from each user session are inserted into a database management system for offline analysis. An extraction transfer loading (ETL\cite{kimball2004data}) process (see Figure \ref{fig:ssis}) was purposely built, which takes as input a log file and inserts processed data as records into a database. This database is then used to run SQL queries related to the evaluation of the experiment.
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=\textwidth]{diagrams/ssis.png}
-	\caption{Microsoft Integration Services SQL import}
+	\caption{ETL process using Microsoft's Integration Services}
 	\label{fig:ssis}
 \end{figure}
 
 \subsection{Spatial Queries}
 \label{sec:imp-SpatialQuerying}
-In order for \methodname to determine the closest point on the racing line from the car's current position a spatial querying mechanism is required. Since TeAR provides real-time feedback on how the user is following the racing line, spatial queries are continuously carried out. Therefore, rather than using a linear search, a quad-tree data structure \cite{} is used to store all the points on the racing line (see Figure \ref{}) and accelerate to $\mathcal{O}(\log{n})$ spatial queries. 
+In order for \methodname to determine the closest point on the racing line from the car's current position a spatial querying mechanism is required. Since TeAR provides real-time feedback on how the user is following the racing line, spatial queries are continuously carried out. Therefore, rather than using a linear search, a quad-tree data structure \cite{finkel1974quad} is used to store all the points on the racing line (see Figure \ref{fig:QuadTree}) and accelerate to $\mathcal{O}(\log{n})$ spatial queries. 
 
 \begin{figure}[!htb]
 	\centering
@@ -115,7 +105,7 @@ In order for \methodname to determine the closest point on the racing line from 
 
 \section{System Architecture}
 \label{sec:imp-systemArchitecture}
-\methodname is comprised of independent components which pass data to each other in order to select feedback instructions to be presented to the driver. Figure \ref{} illustrates the system architecture of \methodname. The following sections provide an in-depth overview of these components.
+\methodname is comprised of independent components which pass data to each other in order to select feedback instructions to be presented to the driver. Figure \ref{fig:SystemArch} illustrates the system architecture of \methodname. The following sections provide an in-depth overview of these components.
 
 \begin{figure}[!htb]
 	\centering
@@ -138,11 +128,18 @@ This component handles all data input, either static on a per-track basis or rea
 Telemetry data is consumed by the processing module, which coordinates a number of sub-modules each consuming the same telemetry data in a different way (e.g. Logger, Car Handling Feedback). These sub-modules run on separate threads and communicate and synchronise with the main processing module using shared memory. Any feedback notification raised by the sub-modules is captured by the processing module, which in turn forwards the message to the output module.
 
 \subsubsection{Feedback Processing Sub-modules}
-Although a number of sub-modules communicate with the processing module, to consume telemetry data, not all contribute towards the final user feedback that the system passes on to the output module. Those that contribute are termed feedback processing sub-modules and their collection comprises a static expert system. The rules and facts that make up this hand crafted expert system are derived from expert knowledge (see Chapter \ref{chp:background}).
+Although a number of sub-modules communicate with the processing module, to consume telemetry data, not all contribute towards the final user feedback that the system passes on to the output module. Those that contribute are termed feedback processing sub-modules and their collection comprises a static expert system. The rules and facts that make up this hand crafted expert system are derived from expert knowledge (see Chapter \ref{sec:background}).
 
 The feedback processing sub-modules possess a common structure; each module is bound to a telemetry event. These events may be triggered by changes in one or more of the incoming telemetry data values. For example, while a braking event may be tied to a single telemetry datum, a gear-shift event requires examining data related to both the clutch pedal and the shifter. 
 
 When an event is triggered, the respective sub-module will start the analysis process related to the respective telemetry information. Eventually, when the corresponding termination event (not necessarily tied to the same telemetry data as the activation event) is triggered, a decision is taken as to whether provide feedback or not, and if so, which feedback (see Figure \ref{fig:feedback-events}).
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\textwidth]{diagrams/feedbackEvent.pdf}
+	\caption{Event triggering and stopping flow chart}
+	\label{fig:feedback-events}
+\end{figure}
 
 The system operates using two feedback tiers; initially, at the first tier, only feedback related to the racing line is provided. As the user masters the racing line, the system will switch to the second tier and suggest more advanced feedback.
 
@@ -216,7 +213,7 @@ This component monitors for user gear changes, and is able to raise the followin
 \end{itemize}
 
 \subsection{Output Interface}
-The final component in \methodname's pipeline is the Output Interface, through which feedback suggestions coming from the Processing module are presented to the user. This module connects to a repository of audio soundbites that map to the input feedback from the previous module. The audio files in the repository were generated using a free online text-to-speech tool \footnote{url}. The module does not support concurrent playback of audio feedback by design, since this would overwhelm the user. Furthermore, since feedback is topical, buffering of feedback was intentionally omitted.
+The final component in \methodname's pipeline is the Output Interface, through which feedback suggestions coming from the Processing module are presented to the user. This module connects to a repository of audio soundbites that map to the input feedback from the previous module. The audio files in the repository were generated using a free online text-to-speech tool \footnote{http://www.fromtexttospeech.com}. The module does not support concurrent playback of audio feedback by design, since this would overwhelm the user. Furthermore, since feedback is topical, buffering of feedback was intentionally omitted.
 
 \subsection{Summary}
 Blah Blah
