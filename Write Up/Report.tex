@@ -11,6 +11,7 @@
 \usepackage{gensymb}
 \usepackage{pdfpages}
 \usepackage{hyperref}
+\usepackage[toc,page]{appendix}
 
 \hypersetup{
 	colorlinks,
@@ -55,10 +56,8 @@
 \newpage
 \begin{abstract}
 
-\emph{TODO}
-To be revisited after the entire document is finalised as to include a sentence about each chapter.
+This study explores the research, design, development, implementation and evaluation of a novel real-time telemetry aided system for racing driving training for non-experts. It does so by starting off exploring what serious games are and their applications, what motorsport is, what is expected of a race driver and what's the state of the art of virtual sim racing. After which a system for real time feedback is designed which provides auditory feedback in the form of descriptive speech while a user makes use of a racing rig and a sim racing game. User studies are carried out to evaluate the effectiveness of the system.  Evaluation is based on the collected telemetry data and questionnaires filled out by participants. Initial results are encouraging, indicating that there is potential for performance gain and driver confidence enhancement based on the audio feedback.
 
-Serious games are known to be an effective tool for improving learning. Recent years seeing an increase in a wide area of applications that flooding various markets. This project will be looking into utilising off the shelf hardware and software to simulate a race car being driven on track. On top of which a software will be developed to interpret user driving patterns and providing auditory feedback explaining what can be improved. The objective is to explore if there is any viability in using a serious game to help drivers improve their skills on a race track. After carrying out user studies and collecting data, data analysis is carried out from which conclusions are drawn regarding any improvements in the users' skills after using the system.
 
 \end{abstract}
 
@@ -99,10 +98,12 @@ Keith and Sandro
 \include{Conclusion}
 
 \newpage
-\include{Appendices}
-
-\newpage
 \bibliography{citeations}{}
 \bibliographystyle{plain}
+
+\newpage
+\begin{appendices}
+	\include{Appendices}
+\end{appendices}
 
 \end{document}
