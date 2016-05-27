@@ -1,6 +1,6 @@
 \chapter{Research Methodology}
 \label{chp:methodology}
-This chapter provides a detailed exposition of the methodology used throughout this work. This study has conducted exploratory and descriptive research to determine whether the use of simulation and an automated feedback driven system, a user can be trained as a race driver. The chapter is structured as follows: \S~\ref{sec:meth-overview} provides a general overview of the overarching methodology used in the study, \S~\ref{sec:meth-experiment-setup} describes in length the design of the instrument used to acquire experiment data and results, \S~\ref{sec:meth-experiment-structure} presents the experimental procedure and the rationale behind it, \S~\ref{sec:meth-data-gathering} identifies the information and data acquired through the experimental and descriptive methodologies employed, and finally \S~\ref{sec:meth-data-analysis} presents the data analysis mechanisms employed to substantiate our conclusions.
+This chapter provides a detailed exposition of the methodology used throughout this work. This study has conducted exploratory and descriptive research to determine whether the use of simulation and an automated feedback driven system, a user can be trained as a race driver. The chapter is structured as follows: \S\ref{sec:meth-overview} provides a general overview of the overarching methodology used in the study, \S\ref{sec:meth-experiment-setup} describes in length the design of the instrument used to acquire experiment data and results, \S\ref{sec:meth-experiment-structure} presents the experimental procedure and the rationale behind it, \S\ref{sec:meth-data-gathering} identifies the information and data acquired through the experimental and descriptive methodologies employed, and finally \S\ref{sec:meth-data-analysis} presents the data analysis mechanisms employed to substantiate our conclusions.
 %
 % Overview
 %
@@ -176,19 +176,30 @@ In this section, we describe in detail the experiment procedure. Participants ar
 
 \section{Data Collection and Sampling}
 \label{sec:meth-data-gathering}
-At the end of the experiments the data collected includes two questioners from each participant and four batches of telemetry data, one for each participant. Questioners are filled online using Google Forms as it provides the ability to export the data and also automatic generation of descriptive statistic. The data collected from the questionnaires and telemetry data is to be loaded into a data base management system from which the data can be queried using specialised data querying constructs. By having a querying language, it provides the flexibility of extracting data which is relevant for the data analysis at hand.
+The data collected during the experiments consists of two questionnaires per participant and four batches of telemetry data per participant. Each batch represents the telemetry data collected in a particular driving session. Google Forms was used to host the questionnaires due to its ease of use and the ability to export data and generate descriptive statistics on that data, such as frequency counts, etc.  
+
+%At the end of the experiments the data collected includes two questioners from each participant and four batches of telemetry data, one for each participant. Questioners are filled online using Google Forms as it provides the ability to export the data and also automatic generation of descriptive statistic. The data collected from the questionnaires and telemetry data is to be loaded into a data base management system from which the data can be queried using specialised data querying constructs. By having a querying language, it provides the flexibility of extracting data which is relevant for the data analysis at hand.
 
 \section{Data Analysis}
 \label{sec:meth-data-analysis}
-In order to accept or reject the null hypothesis statistical test are to be carried out. Most important is the ability to compare the performance of the two groups across sessions. The lap time is used as the test variable as this gives a good indication for the average performance achieved during a lap. Furthermore which comparison test to use depends on the sample size, the distribution of data and the types of group. In this case the groups are independent from each other, as a participant may not be part of the base group and also part of the feedback group. As pointed out by De Smith in his book "Statistical Analysis Handbook-a web-based statistics" the tests of interest to this project are the Independent samples t-test\cite{de2015statsref} and the Mann Whitney U test\cite{de2015statsref} as these test for difference between independent groups. Both tests share the same hypothesis listed below.
+In order to evaluate the performance of each of the two groups (control and feedback) and perform meaningful statistical comparisons between them, the collected data were subjected to Independent T-Test and the Mann-Whitney U Test. These are appropriate tests for independent groups \cite{de2015statsref}. In our case, the groups are indeed independent because a participant from the control group may not make part of the feedback group and vice versa. The null hypothesis is that there is no significant difference across the groups, while the alternative hypothesis is that there is significant difference across the groups. The tests are described below:
+
+%In order to accept or reject the null hypothesis statistical test are to be carried out. Most important is the ability to compare the performance of the two groups across sessions. The lap time is used as the test variable as this gives a good indication for the average performance achieved during a lap. Furthermore which comparison test to use depends on the sample size, the distribution of data and the types of group. In this case the groups are independent from each other, as a participant may not be part of the base group and also part of the feedback group. As pointed out by De Smith in his book "Statistical Analysis Handbook-a web-based statistics" the tests of interest to this project are the Independent samples t-test\cite{de2015statsref} and the Mann Whitney U test\cite{de2015statsref} as these test for difference between independent groups. Both tests share the same hypothesis listed below.
 
 \begin{description}
-	\item[Independent t test] assumes the data is normally as such the data must be checked for normal distribution. This can be carried out by using the Shapiro-Wilk\cite{de2015statsref} test for normality on both groups.
+	\item[Independent T Test] This test determines whether there is a statistically significant difference between the means in two unrelated groups. This test assumes the data is normally-distributed; this is verified by testing each group for normality using the Shapiro-Wilk\cite{xxx} test.
 	
-	\item[Mann Whitney U test] Does not require the data to be normally distributed however, it assumes the groups' data shares the same distribution. The groups are checked for equal distribution using the Independent Samples Kolmogorow-Smimov test.
+%	assumes the data is normally as such the data must be checked for normal distribution. This can be carried out by using the Shapiro-Wilk\cite{de2015statsref} test for normality on both groups.
+%	
+	\item[Mann-Whitney U test] This test does not require the data to be normally distributed; it does, however, assume that the data in the groups share the same distribution. This is verified by using the Kolmogorov-Smirnov \cite{xxx} test.
 	
-	\item[Null hypotesis]there is no significant difference across the groups
-	\item[Alternative hypotesis]there is significant difference across the groups
+%	Does not require the data to be normally distributed however, it assumes the groups' data shares the same distribution. The groups are checked for equal distribution using the Independent Samples Kolmogorow-Smimov \cite{xxx} test.
 \end{description}
+	
+%	\item[Null hypotesis]there is no significant difference across the groups
+%	\item[Alternative hypotesis]there is significant difference across the groups
+%\end{description}
 
-As the data distribution is not known before hand, distribution tests will be carried out after the data is collected and depending on the result, the adequate test will be used.
+%As the data distribution is not known before hand, distribution tests will be carried out after the data is collected and depending on the result, the adequate test will be used.
+
+\section{Summary}
