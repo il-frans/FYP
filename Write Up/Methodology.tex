@@ -40,88 +40,137 @@ The setup of the experiment was divided into three material categories: \emph{si
 	\item [Environment] The experiment should be carried out in an isolated, noise-free and well-lit room. Participants would be let in the room one at a time, to ensure the experiment is conducted without any distractions.
 	\item [Hardware] The hardware components identified for this experiment are the (i) display output, (ii) audio output, (iii) steering wheel, (iv) gear shifter, (v) acceleration, brake and clutch pedals and (vi) seating frame.
 	\begin{description}
-		\item [Display and Audio] 32 inch lcd display capable of 1080p resolution with integrated stereo audio output.
+		\item [Display and Audio] A 32"+ display capable of outputting graphics at a progressive resolution of 1080 pixels vertically at 60 Hz (1080p60) is required; smaller display sizes would not yield a large enough solid angle for the participant to feel immersed in the simulator. For audio output, a stereo setup with a speaker output power of 10W should be sufficient; at a distance of 1m, these speakers can generate sound volume up to 100db, where normal conversation is around 60db.
 		\item [Driving Controls] The driving controls include (ii)-(iv); minimally a steering wheel should provide the same number of revolutions as a racing car, providing accurate force feedback to let the participants accurately assess the behaviour of the car. Gear shifters do not implement feedback mechanisms; however, given their ubiquity, H-shifters are preferred since they are the kind most drivers are familiar with. High-end pedal systems use hydraulics to simulate the variability of force required on part of the driver to actuate a pedal during different stages.
-		\item [Seating frame] The seating frame should ensure a seating position akin to a driver in a racing car. The seating frame should also provide the ability to move the seat back and forward inorder for participants to be able to seat comfortable and be able to reach the pedals.
+		\item [Seating Frame] The seating frame should ensure a seating position akin to a driver in a racing car. The seating frame should also provide the ability to move the seat back and forward in order for participants to be able to seat comfortable and be able to reach the pedals.
 	\end{description}
-	\item [Software] The chosen sim racing game must include (i) realistic driving model, (ii) real life tarmac circuits (iii) ability to disable wear and tear on the car, (iv) quality of graphics and most importantly (v) provide means to read telemetry data while also being easy to interface to.
+	\item [Software] The software aspect of the experiment, which is primarily the racing simulator, should have a number of desirable properties. In particular, the simulator should provide (i) a realistic driving model, (ii) driving aid customisation, (iii) high-fidelity graphics, (iv) real-world tarmac circuits, (v) and telemetry data access through an interface that is intuitive to use.
 	\begin{description}
-		\item [Real life tarmac circuits] Most sim games replicate accurately tracks, including elevation changes, bumps and distances. By having the level of realism, participants can be exposed to real life scenarios. The circuits also need to be a loop so that participants do not need to reset the game to do another lap,  which could be tedious. 
-		\item [Ability to disable wear and tear] This is important as it allows for better controlling of experiment variables as cars will not get progressively worse during a session hindering a participants.
-		\item [Quality of graphics] The game should be visually appealing in order to provide the right level of impressions. Sim games might prefer to allocate more processing power to the physics engine which ipects the quality of the graphics produced. In the case of the project good graphics will be given a slight preference.
-		\item [Read telemetry data] In order for feedback to be given out, it must be possible to be able to know what the car is doing on track. This is achieved by having the sim game allow 3rd party software to read the telemetry data.
+		\item [Realistic Driving Model] For this experiment, a realistic driving model is a sine qua non. Recreating real-world conditions requires a high-fidelity physics simulation of race car dynamics that is as close to the real thing as possible.
+		\item [Driving Aid Customisation] Required to control experiment variables, such as tyre wear and tear. The aim is to prevent car behaviour from changing as the experiment progresses. 
+		\item [High-fidelity Graphics] Required to provide the participant with a fully immersive experience.
+		\item [Real-world Tarmac Circuits] Most racing simulators accurately replicate real-world tracks, up to minute details such as elevation changes and bumps. This level of realism exposes participants to real-life scenarios. Furthermore, the simulator should provide circuits that loop, to streamline experiments and remove the need to reset the software in order to drive another lap.  
+		\item [Telemetry Data Access] The premise of this project hinges on the ability to read telemetry data from a simulator. Thus, any software that does not provide this feature is a priori discarded. However, easier and cleaner interfaces for reading telemetry data, and the breadth of telemetry data offered, are a deciding factor in the choice of racing simulator to use.
 	\end{description}
 \end{description}
 
-\subsection{Hardware choice}
+\subsection{Hardware Selection}
+A number of racing simulator input devices have been considered (see Table \ref{tab:racing-input}). The choice was narrowed down to the most popular devices among racing game enthusiasts, the Logitech G25~\cite{logitecg25}, the Thrustmaster TX~\cite{TrustmasterTX} and the Fanatec CS~\cite{Fanatec}. The G25 provides the minimally required features: a steering wheel with a $900\degree$ turn, 3-pedal set, H-shifter and force feedback; furthermore, the G25 is also a very affordable device. Both the Thrustmaster and Fanatec are high-end devices, which explains the cost difference. Furthermore, neither come with the 3-pedal set and the H shifter, which have to be purchased separately. The Logitech G25 was chosen for being the most cost-effective of the three options.
 
-The comparison table shows the desired properties the steering wheel controls should have. The G25 is the only which comes as a bundle with a three pedal set and H shifter on top of that, it's also the cheapest. The Toastmaster TX and Fanatec are more high end which explains the spike in price. These two to not come with a three pedal set nor an H shifter but can be purchased separately for an extra cost. The G25 is the obvious choice given it's relative low cost and the ability to supply decent feedback.
-
-\begin{center}
-	\begin{tabular}{ | l | l | l | l |}
-		\hline
-						& G25\cite{logitecg25}		& Trustmaster TX\cite{TrustmasterTX}	& Fanatec\cite{Fanatec}		\\ \hline
-		Cost ( EUR )	& 240 			& 324 				& 850 			\\ \hline
-		900' turn		& \checkmark 	& \checkmark 		& \checkmark	\\ \hline
-		Three pedal set	& \checkmark 	&  					& 				\\ \hline
-		H Shifter 		& \checkmark 	&			 		&				\\ \hline
-		Force Feedback	& \checkmark 	& \checkmark 		& \checkmark	\\ \hline
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{lccccc}
+        \toprule
+        \textbf{Device} & \textbf{$900\degree$} & \textbf{3-Pedal Set} & \textbf{H-Shifter} & \textbf{Feedback} & \textbf{Cost} \\
+        \midrule
+        Logitech G25 & \checkmark & \checkmark & \checkmark & Low & 240 \\
+        Thrustmaster TX & \checkmark & & & Med & 324 \\
+        Fanatec CS & \checkmark & & & High & 850 \\
+		\bottomrule		
 	\end{tabular}
-\end{center}
+	\caption{Comparison of input devices}
+	\label{tab:racing-input}	
+\end{table}
 
-\subsection{Software choice}
+\subsection{Software selection}
+Similarly to the hardware selection process, a number of racing simulators have been considered (see Table \ref{tab:sim-choice}). Although there is a myriad of racing simulators available, the selection process narrowed them down to a popular handful: Forza Motorsports 6 \cite{forza} by Turn 10 Studios, Project Cars\cite{ProjectCars} by Slightly Mad Studios, Assetto Corsa\cite{assestoCorsa} by Kunos Simulazioni, iRacing\cite{iRacing} by iRacing.com Motorsports Simulations and Dirt \cite{dirtgame} by Codemasters. Unfortunately, notwithstanding its quality, Forza Motorsports 6 does not provide access to telemetry information. Dirt also suffers from the same shortcoming, in addition to providing very little in terms of track applicability: very few tracks are circuit-based. iRacing provides most of the functionality required by the experiment, however in terms of visual quality it suffers when compared to Project Cars and Assetto Corsa. Finally, the choice between Assetto Corsa and Project Cars was made on the basis of ease of interfacing for the acquisition of telemetry data; here we felt Assetto Corsa provided a clean, intuitive and ultimately superior interface to telemetry acquistion via User Datagram Protocol (UDP) connections.
 
-The comparison table shows the desired properties a sim game must have, and a selection of games which have been considered. From the start it is clear, Dirt and Forza 6 should be discarded as none provide telemetry data to be read. Assetto Corsa, Project Cars and iRacing are closely matched, however Assetto Corsa has the leading edge as it provides an easy way to interface via UDP, well document and wide developer community who can help. Furthermore Assetto Corsa provides good visual graphics. For these reasons Assetto Corsa has been picked as the sim to be used.
+%The comparison table shows the desired properties a sim game must have, and a selection of games which have been considered. From the start it is clear, Dirt and Forza 6 should be discarded as none provide telemetry data to be read. Assetto Corsa, Project Cars and iRacing are closely matched, however Assetto Corsa has the leading edge as it provides an easy way to interface via UDP, well document and wide developer community who can help. Furthermore Assetto Corsa provides good visual graphics. For these reasons Assetto Corsa has been picked as the sim to be used.
 
-\begin{center}
-	\begin{tabular}{ | l | l | l | l | l | l |}
-		\hline
-			& Assetto Corsa\cite{assestoCorsa} & pCars \cite{ProjectCars} & iRacing \cite{iRacing} & Dirt \cite{dirtgame} & Forza 6 \cite{forza} \\ \hline
-		Realistic model	& \checkmark &\checkmark & \checkmark & \checkmark & \checkmark \\ \hline
-		Tracks	& \checkmark &\checkmark & \checkmark &  & \checkmark \\ \hline
-		Disable wear & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline
-		Telemetry data	& \checkmark & \checkmark & \checkmark &  &  \\ \hline
-		Ease of Interfacing	& \checkmark &  & \checkmark &  &  \\ \hline
-		Quality of graphics & \checkmark & \checkmark &  & \checkmark & \checkmark \\ \hline
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{lcccccc}
+        \toprule
+        \textbf{Simulator} & 
+        \multicolumn{1}{p{1.2cm}}{\centering \textbf{Driving} \\ \textbf{Model}} &
+        \multicolumn{1}{p{1.2cm}}{\centering \textbf{Driving} \\ \textbf{Aids}} &
+        \multicolumn{1}{p{1.2cm}}{\centering \textbf{Visual} \\ \textbf{Quality}} &
+        \multicolumn{1}{p{1.1cm}}{\centering \textbf{Tracks}} &
+        \multicolumn{1}{p{1.1cm}}{\centering \textbf{Tele-metry}} &
+        \multicolumn{1}{p{1.1cm}}{\centering \textbf{I/F Ease}} \\
+        \midrule
+        Forza & \checkmark & \checkmark & \checkmark & \checkmark & & \\ 
+        Project Cars & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \\ 
+        Assetto Corsa & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\ 
+        iRacing & \checkmark & \checkmark & & \checkmark & \checkmark & \checkmark \\ 
+        Dirt & \checkmark & \checkmark & \checkmark & & & \\ 
+		\bottomrule		
 	\end{tabular}
-\end{center}
+	\caption[Comparison of Racing Simulators]{Comparison of racing simulators on the basis of a realistic driving model, customisable driving aids, high-fidelity graphics quality, applicability of tracks, availability of telemetry information, and ease of interfacing.}
+	\label{tab:sim-choice}	
+\end{table}
 
-\subsection{Questionnaire}
-Questionnaires allow for further insight from the point of view of the participants. Leary et al. provide seven guidelines for compiling a questionnaire \cite{introductiontobehavioralresearchmethods}:
+%
+%\begin{center}
+%	\begin{tabular}{ | l | l | l | l | l | l |}
+%		\hline
+%			& Assetto Corsa\cite{assestoCorsa} & pCars \cite{ProjectCars} & iRacing \cite{iRacing} & Dirt \cite{dirtgame} & Forza 6 \cite{forza} \\ \hline
+%		Realistic model	& \checkmark &\checkmark & \checkmark & \checkmark & \checkmark \\ \hline
+%		Tracks	& \checkmark &\checkmark & \checkmark &  & \checkmark \\ \hline
+%		Disable wear & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline
+%		Telemetry data	& \checkmark & \checkmark & \checkmark &  &  \\ \hline
+%		Ease of Interfacing	& \checkmark &  & \checkmark &  &  \\ \hline
+%		Quality of graphics & \checkmark & \checkmark &  & \checkmark & \checkmark \\ \hline
+%	\end{tabular}
+%\end{center}
+
+\subsection{Participant Information and Feedback}
+Questionnaires are a very important tool for acquiring insight from the point of view of experiment participants, and when compared to interviews, they provide a framework within which respondents can answer more truthfully due to lack of social external pressures. Leary et al. \cite{introductiontobehavioralresearchmethods} provide a set of guidelines for compiling questionnaires, consisting of seven general rules:
 \begin{enumerate}
-	\item being specific and precise in phrasing the questions
-	\item writing the questions as simply as possible, avoiding difficult words, unnecessary jargon, and cumbersome phrases
-	\item avoid making unwarranted assumptions about the respondents
-	\item conditional information should precede the key idea of the question
-	\item do not use double-barrelled questions
-	\item pretest the questions
+	\item Be specific and precise in phrasing the questions;
+	\item Write the questions as simply as possible, avoiding difficult words, unnecessary jargon, and cumbersome phrases;
+	\item Avoid making unwarranted assumptions about the respondents;
+	\item Conditional information should precede the key idea of the question;
+	\item Do not use double-barrelled questions;
+	\item Pretest the questions.
 \end{enumerate}
-Responses from questionnaires designed using these guidelines are valid in the general case. The challenge in choosing a response format in a question lies in identifying whether one should go for an open ended question in which more information might be collected, or on the other hand, use a rating scale response format, where the response is more constrained but may be easier to analyse. Leary et al. suggest using the former for questions dealing with behaviours, thoughts, or feelings that can vary in frequency or intensity (e.g. the Likert Scale\cite{likert1932technique}) and using open ended questions in cases where further insight is desired.
+Responses from questionnaires designed using these guidelines are valid in the general case. A further challenge posed by questionnaire compilation is that of choosing a response format for each question: open-ended questions may serve to collect more information but be less conducive to analysis, while on the other hand, more restrictive and constrained response formats may lack expressivity but be easier to analyse. Leary et al. suggest using constrained response formats, such as the Likert scale \cite{likert1932technique}, when dealing with behaviours, thoughts or feelings that can vary in frequency or intensity, and open-ended questions in cases where further insight is desired. 
 
-Based on these guidelines two qualitative questionnaires have been designed, one aiming to gather insight into the sample demographic, the other aiming to gain insight into the participants' impressions about the realism of the experiment setup, the level of comfort, or discomfort and any suggestions or comments they might have. 
+Two qualitative questionnaires have been designed in accord with these guidelines, one with the aim of gathering insight into the participant demographics, and a second to help normalise and control for factors that may influence dependent variables, to bridge the participants' perception of their performance with the actual execution, and to gather other insight and feedback about the experiment.
 
-\subsection{Participants' Demographic}
+%A questionnaire, to be administered to the participants at the end of the session, will be designed to help normalise and control for other factors that may influence dependent variables, and hence, the outcome of the experiment. The design of the questionnaire also helps in bridging the participants' perception of their performance with the actual performance data, possibly providing further insight into the results.
 
-\subsection{Participants' Insight}
+%The challenge in choosing a response format in a question lies in identifying whether one should go for an open ended question in which more information might be collected, or on the other hand, use a rating scale response format, where the response is more constrained but may be easier to analyse. Leary et al. suggest using the former for questions dealing with behaviours, thoughts, or feelings that can vary in frequency or intensity (e.g. the Likert Scale\cite{likert1932technique}) and using open ended questions in cases where further insight is desired.
 
-\section{Procedure}
+%Based on these guidelines two qualitative questionnaires have been designed, one aiming to gather insight into the sample demographic, the other aiming to gain insight into the participants' impressions about the realism of the experiment setup, the level of comfort, or discomfort and any suggestions or comments they might have. 
+
+%\subsection{Participant Demographic}
+%
+%\subsection{Participant Feedback}
+
+\section{Experiment Procedure}
 \label{sec:meth-experiment-structure}
-In order to evaluate the effectiveness of the system a user study took place. Participants were split randomly into two groups. One group will be referred as the feedback group, the other will be referred to as the base group. The experiments structure was subdivided into smaller systemic tasks.
+In this section, we describe in detail the experiment procedure. Participants are gathered through various methods, ranging from word-of-mouth to mailing lists, where each participant would reserve an experiment time slot. Participants are split randomly into two groups. The first group is referred to as the \emph{feedback group}, the second as the \emph{control group}. 
+
+%In order to evaluate the effectiveness of the system a user study took place. Participants were split randomly into two groups. One group will be referred as the feedback group, the other will be referred to as the base group. The experiments structure was subdivided into smaller systemic tasks.
 
 \begin{description}
-	\item[Demographic questionare] At the start of the experiment the demographic questionare is to be handed out to the participant.
+	\item[Introduction] Each participant is introduced to the setup and given an overview of the experiment procedure. 
+
+	\item[Demographic Questionnaire] The experiment starts by the participant responding to a brief questionnaire, aimed to gather more insight about the general participant demographics.
 	
-	\item[Adjust Rig Configuration] In order for the participant to sit comfortable while also ensuring all controls can be reached with ease, the rig has to be configured per participant. This involves having to move the seat further back or forward to the steering wheel, as it would be done in a real car. In addition participants are also told how to operating the rig. The explanation covers the steering wheel turns two and a half turns from lock to lock, the pedals are setup as on any manual road car, having the clutch pedal on the left, brake in the middle, and throttle on the right. The H shifter is also explained by having a run through demonstration of all gears which allows participants to be able to operate the rig with out having to learn on their own.
+	\item[Rig Configuration] 
+	The user climbs inside the rig; the seating position is adjusted to accommodate the user, making sure he or she is sitting comfortably, and all controls can be reached with ease. Participants are given a second, more in-depth overview of the components of the rig and how they operate. This explanation covers the steering wheel, the pedal layout and function and the H-shifter.
 	
-	\item[Breaks] To avoid having driving sessions possibly put too much strain on participants, optional five minute breaks are allowed to be taken between driving sessions. 
+	\item[Practice (10 minutes)] The participant is given ten minutes to get used to the rig setup, track and car. This session is aimed at gauging the skill level of the user while he or she gets acquainted with the simulator.
 	
-	\item[Ten minuties practice] During these ten minutes users are told to simply get used to the rig setup, track and car. The aim of this session is for participants to get used to the setup while also allow this study to measure their skill before the feedbvack system as the independent variable is introduced.
+	\item[Break (5 minutes)] A short break (5 minutes maximum) is given to each participant.
 	
-	\item[Two Ten minuties sessions] These are the sessions in which the feedback system is turned on for the feedback group, while the participants in the base group are left to keep trying to improve without any aid. 
+	\item[$1^{st}$ Session (10 minutes)] In this session, the participant drives the racing car around the track for ten minutes. Participants in the feedback group have the feedback system turned on, while for the control group, this is turned off.
 	
-	\item[Five minuties session] A final five minuties of driving are allocated yet again, this time with the feedback system turned of for both groups. This was designed to possibly identify any conclusive results. Such session could show the possibility of the feedback group performing worst after having the aid of the feedback system removed or both groups ending up performing the same after the sessions, which would suggest the feedback participant didn't manage to get any cognitive advantage.
+	\item[Break (5 minutes)] A short break (5 minutes maximum) is given to each participant.
+
+	\item[$2^{nd}$ Session (10 minutes)] A second ten minute session is held; participants in the feedback group have the feedback system turned on, while for the control group, this is turned off.
 	
-	\item[Particpant's feedback questionare] The final stage of the experiment requires participants to fill in the a questionnaire  in which they are asked to give their feedback on the experiment structure, hardware used and any further comments they would like to add.
+	\item[Break (5 minutes)] A short break (5 minutes maximum) is given to each participant.
+	
+	\item[$3^{rd}$ Session (5 minutes)] A final five minute driving session; the feedback system is turned off for participants in both groups. This session was included to help identifying conclusive results about the feedback system and its effects on the participants. 
+	
+%	\item[Five minuties session] A final five minuties of driving are allocated yet again, this time with the feedback system turned of for both groups. This was designed to possibly identify any conclusive results. Such session could show the possibility of the feedback group performing worst after having the aid of the feedback system removed or both groups ending up performing the same after the sessions, which would suggest the feedback participant didn't manage to get any cognitive advantage.
+	
+	\item[Feedback Questionnaire] The experiment concludes by the participant responding to a questionnaire about experiment structure, apparatus quality, performance perception and free-form participant feedback.
+	
+%	\item[Particpant's feedback questionare] The final stage of the experiment requires participants to fill in the a questionnaire  in which they are asked to give their feedback on the experiment structure, hardware used and any further comments they would like to add.
 	
 \end{description}
 
