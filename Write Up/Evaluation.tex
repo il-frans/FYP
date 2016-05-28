@@ -1,7 +1,10 @@
 \chapter{Evaluation}
+\label{eval}
+
 This chapter provides an insight into the data collected from the questionnaires and \methodname system logs while also explaining results derived from statistical tests. The chapter is structured as follows: \S\ref{sec:eval-experiment} gives an overview of the hardware used. \S\ref{sec:eval-demographic} provides an over of the demographic background for the sampled participants. \S\ref{sec:eval-distTests} covers test which check the data sets distribution moving on to compare the distribution across the feedback group and control group. \S\ref{sec:eval-feedbackSysResults} goes through determining any difference between the two groups which might have been cuased by the introduction of the feedback system. \S\ref{sec:eval-usersFeedback} covers the participants impressions on the experiment and finally conclusive results from this study are presented in \S\ref{sec:eval-Discussion} 
 
 \section{Experiment Setup}
+\label{sec:eval-experiment}
 
 The experiment has been carried out using the methods specified in chapter \ref{chp:methodology}. The hardware includes a 32inch LCD Samsung monitor capable of outputting stereo audio and running Assetto Corsa at the resolution of 1920*1080. Assetto Corsa and \methodname run on a PC with an i7 cpu, GTX 980 video, X RAM card and Windows 10 operation system.
 
@@ -29,6 +32,8 @@ The following demographic data was drawn out from the pre study survey. Particip
 
 \section{Distribution Tests}
 \label{sec:eval-distTests}
+
+Histograms for the datasets used during tests which are found in this section are reproduce at Figure \ref{hist-1}
 
 \begin{figure}[!htb]
 	\centering
@@ -65,6 +70,9 @@ The same dataset as used for the Shapiro-Wilk Test was used to run the Kolmogoro
 
 \section{Experiments Results}
 \label{sec:eval-ExperimentsResults}
+
+Histograms for the datasets used during tests which are found in this section are reproduce at Figure \ref{hist-1}, Figure \ref{hist-2}, Figure \ref{hist-3} and Figure \ref{hist-4}
+
 Having established both groups' lap times share the same distribution during the first session, the Mann-Whitney Test is used to determine if any differences between the groups exist before \methodname is introduced to the feedback group. The results of the test are shown in Table \ref{table:Mann-Whitney}. These show a p-value of 0.057 with a confidence interval of 0.95 resulting in no statistical difference between the groups at the start of the sessions as the p-value is greater than 0.05, accepting the alternative hypothesis.
 
 \begin{table}[!htb]
@@ -99,7 +107,7 @@ The Mann-Whitney Test was carried out on the second, third and forth session, al
 
 \section{Participant Feedback}
 \label{sec:eval-usersFeedback}
-Participants reported an overall good experience, the rig setup was found to be realistic and easy to use (see Figure \ref{fig:chart-feedbacksystemfeedback}. An overwhelming majority of the participants reported having issues mastering the second and third corners (refereed to as the s-bend). Participants also reported the car and track choice to be adequate. When the feedback group was asked about the \methodname, they reported it to be intelligible, accurate, helpful and somewhat easy to apply the feedback given. Lastly, when asked about if they found the feedback to be intrusive, possible distracting them, out of 15, 10 reported it to not finding it intrusive (see Figure \ref{fig:chart-intrusivefeedback}).
+Participants reported an overall good experience, the rig setup was found to be realistic and easy to use (see Figure \ref{fig:chart-feedbacksystemfeedback}. An overwhelming majority of the participants reported having issues mastering the second and third corners (refereed to as the s-bend). Participants also reported the car and track choice to be adequate. When the feedback group was asked about the \methodname, they reported it to be intelligible, accurate, helpful and somewhat easy to apply the feedback given. Lastly, when asked about if they found the feedback to be intrusive, possible distracting them, out of 15, 10 reported to not finding it intrusive (see Figure \ref{fig:chart-intrusivefeedback}).
 
 \begin{figure}[!htb]
 	\centering
@@ -110,6 +118,6 @@ Participants reported an overall good experience, the rig setup was found to be 
 
 \section{Discussion}
 \label{sec:eval-Discussion}
-From the post experiment questionnaire one can note that rig setup has been well received, with participants enjoying the experiments while also giving it a high score for it sense of realism (see Figure \ref{fig:chart-realistic}). This suggests that by using off the shelf entry level hardware for the sim racing rig, it is possible to achieve a good level of realism. the feedback system shows to have potential. the groups start of the same skill level. Both groups show a noticeable improvement from one session to the next session, excluding the last session in which it seems the shorter session might have put extra pressure on the participants' hindering their performance. Furthermore there was not statistical difference during the second session, but during the third session there was. The fact that the feedback group had a lower average lap time it suggest the group managed to get used to the feedback system after the second session and start to follow the feedback instructions during the third session. Lastly the sample is too simple to test for correlation between gaming experience and lap times, as only two players have played sim racing games while the other gamers don't play enough racing games. Same goes for correlation between having a driving licences and being able to the user the rig, as only two unlicensed participants took part, both of which are in the process of obtaining their driving license.
+From the post experiment questionnaire one can note that rig setup has been well received, with participants enjoying the experiments while also giving it a high score for it sense of realism (see Figure \ref{fig:chart-realistic}). This suggests that by using off the shelf entry level hardware for the sim racing rig, it is possible to achieve a good level of realism. the feedback system shows to have potential. the groups start of with the same skill level. Both groups show a noticeable improvement from one session to the next session, excluding the last session in which it seems the shorter session might have put extra pressure on the participants' hindering their performance. Furthermore there was not statistical difference during the second session, but during the third session there was. The fact that the feedback group had a lower average lap time it suggest the group managed to get used to the feedback system after the second session and start to follow the feedback instructions during the third session. Lastly the sample is too simple to test for correlation between gaming experience and lap times, as only two players have played sim racing games while the other gamers don't play enough racing games. Same goes for correlation between having a driving licences and being able to the user the rig, as only two unlicensed participants took part, both of which are in the process of obtaining their driving license.
 
 \section{Summary}
