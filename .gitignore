@@ -2,10 +2,9 @@ Write Up/Report.log
 *.synctex.gz
 *.gz
 *.aux
+*.lof
+*.bbl
 Write Up/Report.run.xml
 Write Up/Report.out
-Write Up/Report.lof
-Write Up/Report.bbl
 Write Up/Report.toc
-Write Up/Report.lof
 Write Up/Report.blg
