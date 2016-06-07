@@ -42,6 +42,9 @@
 
 \keywords{Sim Racing, Motorsport Training, Serious Games}
 
+\def \methodname {TeAR\xspace}
+\def \methodnamefull {Telemetry Assisted Racing\xspace}
+
 \section{Introduction}
 
 \section{Background work} {
@@ -101,8 +104,10 @@ The main contrast between video games and serious games is the use of pedagogic 
 
 \section{Design and Implementation}
 
-\section{Evaluation}
+\section{Evaluation} {
 \label{sec:Evaluation}
+
+In this section findings from the user study are presented. The section start by describing the hardware setup used for the experiments followed by an overview of the participants' demographic. Experiments results are presented showing the resulting dataset for the laptimes and the outcome of the statistical analysis. Participants' feedback is presented and the section concludes with a discussion resulting from the findings.
 
 \subsection{Experiment Setup}
 The user study has been carried out in line with the methodology described in Section \ref{sec:Methodology}. The sim racing rig framework was custom-built, and the Logitech G25 input devices mounted on it. The display device used was a 32" LCD HD Samsung monitor also capable of outputting stereo audio from 2x10W speakers. The racing simulator used in this experiment is Assetto Corsa by Kunos Simulazioni, running in full HD resolution at 60 frames per second (fps). The hardware platform running the simulator is an Intel Core i7-940, with 8GB of RAM and an Nvidia 660Ti video card with 2GB VRAM. The machine is running the retail version of the Windows 10 Professional operating system.
@@ -146,13 +151,27 @@ The dataset of the 1st session shown in Figure \ref{fig:chart-laptimes} was subj
 
 The Mann-Whitney Test is used to determine differences in the groups. The results of the test are shown in Table \ref{table:Mann-Whitney-Sessions}. For the first session these show a p-value of 0.057, with a confidence interval of 0.95 resulting in no statistical difference between the groups (p-value $> 0.05$, thus accepting the alternative hypothesis).  The tests for the second and fourth session have a p-value of 0.054 and 0.539 respectively; both values are above the significance level of 0.05, resulting in the alternative hypothesis being accepted. The third session, however, has a p-value of 0.029, resulting in accepting the null hypothesis suggesting there is statistical difference in the groups' performance.
 
-\def \methodname {TeAR\xspace}
-\def \methodnamefull {Telemetry Assisted Racing\xspace}
-
 \subsection{Participant Feedback}
 The participants reported a good experience overall. The rig setup was found to be realistic and easy to use. With respect to the difficulty of the race track, an overwhelming majority of the respondents reported having issues mastering the second and third corners (referred to as the \emph{s-bend}). When the feedback group was asked about \methodname, they reported the feedback and the output quality of the audio to be intelligible, accurate and helpful. They also said that the feedback hints were somewhat easy to apply. Lastly, when asked whether the feedback was intrusive and possibly distractive, 10 out of 14 respondents reported that it was neither intrusive nor distractive.
 
-\section{Conclusions}
+\subsection{Discussion}
+The rig setup has been well received, with participants enjoying the driving and awarding it a high score in terms of realism. This suggests that is it possible to achieve a good level of realism using simple off-the-shelf hardware. 
+Both groups show a noticeable improvement from one session to the next, except for the final session in which the shorter time slot allocated might have put additional pressure on the participants, hindering their performance.
+For the second session, the tests shown no statistical differences in the performance of the two groups, albeit this changed for the third session. The lower average lap time for the feedback group suggests that after familiarising with the feedback system, the group started following its instructions more closely, thus improving their performance.
+
+The available sample of participants is too small to test for correlation between gaming experience and lap times, The same argument can be made for a possible correlation between holding a driving licence and driving performance, since all but two participants are in possession of a driving licence.
+}
+
+\section{Conclusions} {
+\label{sec:Conclusions}
+The skills required to become a good motorsport driver are generally learned through practice, and suggestions provided by more experienced drivers. Our hypothesis for this work is that an automated telemetry-based feedback system can be used to simulate this process and thus, to possibly help novice drivers assimilate this knowledge at a higher rate. For this purpose, \methodname was developed, which using a static expert system, presents auditory suggestions to drivers underlining the driving mistakes they are currently making. An was set up to verify this hypothesis with 27 participants taking part. From the data gathered in this experiment, it appears that the real-time feedback was effective to some extent; however, the participants seemed to be having difficulty retaining and applying the suggestions once it was switched off. This lack of cognitive retention may be due to a number of reasons, which could be investigated in future work.
+
+\subsection{Future Work}
+At present, \methodname presents feedback only when the driver is performing something wrong. It would be interesting to determine whether a system which also presents positive feedback, for instance letting the driver know that a previously reported mistake was actually corrected, would lead to any improvements. Furthermore, it is also possible to experiment with a variety of feedback methods, both visual and auditory, on the assumption that different feedback presentation media can lead to changes in the learning rates. Combining both auditory and visual feedback could help in increasing the clarity of the feedback provided. The feedback mechanism of \methodname is entirely based on telemetry data provided by the racing simulation software. However, a number of mistakes cannot be directly extracted from this data. For instance, during the experiment it was noted that some of the participants lacked some basic driving skills such as keeping both hands on the steering, not crossing hands while steering and not resting hands on the shifter. This additional information could be collected through the use of a motion tracking camera which directly feeds \methodname.   
+
+\methodname is currently intended to help drivers improve their motorsport driving skills. A future direction could also look into the possibility of using \methodname to automate the driving process of a racing car. One possibility is that of using neural nets and fuzzy logic controllers, with both models learning how to drive via the feedback provided by \methodname.
+
+}
 
 \bibliographystyle{abbrv}
 \bibliography{sigproc}
