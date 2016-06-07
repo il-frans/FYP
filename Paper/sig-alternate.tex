@@ -47,6 +47,8 @@
 \section{Background work} {
 \label{sec:background}
 
+In this section fundamental concepts relevant to this paper are given a brief overview. The section start by explaining what motor sports is and what is expected off a race drive. The section continues by mentioning fundamental concepts such as the racing line and how to achieve the limit of the car. An explanation of telemetry data is given and why it is important. The section concludes by explaining the differences between video games and serious games. 
+
 \subsection{Motorsport Racing}
 In circuit motorsport racing, motorised vehicles go round a course for a set number of times. There are varies racing disciplines or series, each one having its own specific rules. However, at the core, participants in all disciplines aim to complete a full lap of the circuit in the shortest time. This paper will focus on one such discipline, that of confined car racing, which takes place on smooth asphalt surfaces in purpose-built race tracks in which the aim is to perform the fastest lap possible. 
 
@@ -95,10 +97,60 @@ The racing simulation rig (sim racing rig) is a piece of equipment designed to m
 The main contrast between video games and serious games is the use of pedagogic activities which aim to educate or instruct knowledge or skill \cite{zyda2005visual} in serious games as opposed to the pure leisurely aspects of the video game. Pedagogy is given preference over the amusement value which in some cases might not be found in serious games \cite{zyda2005visual}. Serious games need to educate the player with a specific type of content, whereas videos games need to entertain the player with whatever; racing, puzzles, it does not really matter, as long as the player enjoys it\cite{Harteveld2007}. On the other hand, serious game designers have multiple objectives, they still need to create a compelling and fun game, but also an educating and realistic game. From this it follows that three aspects as essential for a serious game, fun, learning and validity \cite{Harteveld2007}. The serious game should make use of pedagogical methods and theories to ensure knowledge can be conveyed.
 }
 \section{Methodology}
+\label{sec:Methodology}
 
 \section{Design and Implementation}
 
 \section{Evaluation}
+\label{sec:Evaluation}
+
+\subsection{Experiment Setup}
+The user study has been carried out in line with the methodology described in Section \ref{sec:Methodology}. The sim racing rig framework was custom-built, and the Logitech G25 input devices mounted on it. The display device used was a 32" LCD HD Samsung monitor also capable of outputting stereo audio from 2x10W speakers. The racing simulator used in this experiment is Assetto Corsa by Kunos Simulazioni, running in full HD resolution at 60 frames per second (fps). The hardware platform running the simulator is an Intel Core i7-940, with 8GB of RAM and an Nvidia 660Ti video card with 2GB VRAM. The machine is running the retail version of the Windows 10 Professional operating system.
+
+\begin{figure}[!htb]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/RacingRig}
+	\end{minipage}\hfill
+	\caption[Side view of the racing rig]{Side view of the racing rig}
+	\label{sec:eval-simRacingRig}
+\end{figure}
+
+\subsection{Sample Demographic}
+During the experiments, 27 participants took part most of which were males in their early twenties. Out of 27 participants, 2 did not hold a driving license; 25 had a driving license, although most of them haven't been driving for more than a year. 22 participants claimed to play video games, from which 18 stated to have played racing video games. Out of these 18, a majority of 15 play mostly arcade sim racing games, while the remaining 3 regularly play simulation racing games. 7 out of 27 participants have previously used a racing rig. Random assignment was used to split the participants into the control and feedback/experimental group. The control group had 13 participants, while the feedback group had 14.
+
+\subsection{Experiments Results}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.45\textwidth]{charts/laptimes.png}
+	\caption[Lap times vs session, clustered by group]{Blue : Control Group, Green : Feedback group \\ Lap times vs session, clustered by group}
+	\label{fig:chart-laptimes}
+\end{figure}
+
+The dataset of the 1st session shown in Figure \ref{fig:chart-laptimes} was subjected to the Kolmogorov-Smirnov Test; the result had a p-value of 0.360, with a significance level of 0.05 the null hypothesis is accepted. The groups share the same distribution, hence the Mann-Whitney U Test can be used.
+
+\begin{table*}
+	\centering
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		& \multicolumn{4}{c|}{LapTime}            \\ \cline{2-5} 
+		& 1st Session & 2nd Session & 3rd Session & 4th Session \\ \hline
+		Asymp. Sig. (2-tailed) & .057 & .054        & .029        & .539        \\ \hline
+	\end{tabular}\\
+	Grouping Variable : Group
+	\caption[Mann-Whitney U Test for Experiments' Sessions]{Mann-Whitney U Test result for Experiments' Sessions}
+	\label{table:Mann-Whitney-Sessions}
+\end{table*}
+
+The Mann-Whitney Test is used to determine differences in the groups. The results of the test are shown in Table \ref{table:Mann-Whitney-Sessions}. For the first session these show a p-value of 0.057, with a confidence interval of 0.95 resulting in no statistical difference between the groups (p-value $> 0.05$, thus accepting the alternative hypothesis).  The tests for the second and fourth session have a p-value of 0.054 and 0.539 respectively; both values are above the significance level of 0.05, resulting in the alternative hypothesis being accepted. The third session, however, has a p-value of 0.029, resulting in accepting the null hypothesis suggesting there is statistical difference in the groups' performance.
+
+\def \methodname {TeAR\xspace}
+\def \methodnamefull {Telemetry Assisted Racing\xspace}
+
+\subsection{Participant Feedback}
+The participants reported a good experience overall. The rig setup was found to be realistic and easy to use. With respect to the difficulty of the race track, an overwhelming majority of the respondents reported having issues mastering the second and third corners (referred to as the \emph{s-bend}). When the feedback group was asked about \methodname, they reported the feedback and the output quality of the audio to be intelligible, accurate and helpful. They also said that the feedback hints were somewhat easy to apply. Lastly, when asked whether the feedback was intrusive and possibly distractive, 10 out of 14 respondents reported that it was neither intrusive nor distractive.
 
 \section{Conclusions}
 
