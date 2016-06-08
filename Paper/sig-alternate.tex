@@ -38,6 +38,8 @@
 \maketitle
 \begin{abstract}
 
+Motorsports requires training and dedication to master, supplemented by hours of rote learning and mentoring by experts. This study explores the question of whether a serious game is a powerful enough pedagogical tool to be gainfully employed in the training of race drivers. A system of heuristics is proposed for a novel telemetry-based feedback model for contextual real-time suggestions. The model has been integrated into a racing simulation game and a study of its performance reported here. The study consists of 27 participants, partitioned into two groups, to provide a control for the experiment. Two questionnaires have been used to acquire demographic information about the participants and help control for factors such as experience. Quantitative results show that there is an improvement for the group using the feedback system, although this improvement dissipates when the feedback is disabled again for the feedback group. Analysis of the initial results are encouraging, with the model showing promise. Additionally, the lack of cognitive retention on behalf of the participants when feedback was disabled merits further investigation and future work.
+
 \end{abstract}
 
 \keywords{Sim Racing, Motorsport Training, Serious Games}
@@ -46,6 +48,20 @@
 \def \methodnamefull {Telemetry Assisted Racing\xspace}
 
 \section{Introduction}
+The gamification of areas of activity such as marketing, problem solving and education \cite{michael2005serious} has validated the use of serious games beyond their initial military use in training strategic skills \cite{djaouti2011classifying}.  Serious games simulate real-world processes designed for the purpose of solving a problem, making their main purpose that of training or educating users. Their popularity has been steadily increasing, as has their adoption, with military \cite{djaouti2011classifying} and emergency service providers (e.g. firefighters \cite{michael2005serious}) employing them to train for specific scenarios that might be encountered on the respective jobs. Motorsports cover a broad range of activities and vehicles, and as with all major forms of sporting activities, require training and dedication, with a pedagogic aspect arising in rote learning and mentoring by experts. The arenas in which motorsport events take place are called circuits; there is a large selection of the latter, ranging from purposely-built race tracks to public roads to natural formations such as hills and quarries. There is also a diverse selection of vehicles that take part in motorsports, with the greatest demarcation existing between motorbikes and cars. The focus of this dissertation is that of unifying serious games and motorsport racing; specifically, it will try to show whether a serious game is a powerful enough pedagogical tool that can be used to tangibly improve the performance of race drivers. The scope of the project is limited to four-wheeled cars racing on purposely-built confined circuits with a smooth tarmac surface.
+
+\subsection{Aims and Objectives}
+The aim of this paper is to demonstrate whether serious games can be used to teach a particular brand of motorsports. In order to establish whether this is possible or otherwise, the following objectives have been set out:
+
+\begin{enumerate}
+	\item Research and develop a model for assessing race driver performance
+	\item Develop a system of heuristics for providing feedback from the aforementioned model
+	\item Devise an experimental methodology for evaluating how effective the feedback model is (if at all) in training race drivers
+	\item Design and develop the main software and support tools for integrating the feedback model into a racing simulation game
+	\item Carry out a user study based on devised experimental methodology to gather data for analysis
+	\item Perform statistical analysis on the gathered data to answer research question
+\end{enumerate}
+
 
 \section{Background work} {
 \label{sec:background}
@@ -53,17 +69,7 @@
 In this section fundamental concepts relevant to this paper are given a brief overview. The section start by explaining what motor sports is and what is expected off a race drive. The section continues by mentioning fundamental concepts such as the racing line and how to achieve the limit of the car. An explanation of telemetry data is given and why it is important. The section concludes by explaining the differences between video games and serious games. 
 
 \subsection{Motorsport Racing}
-In circuit motorsport racing, motorised vehicles go round a course for a set number of times. There are varies racing disciplines or series, each one having its own specific rules. However, at the core, participants in all disciplines aim to complete a full lap of the circuit in the shortest time. This paper will focus on one such discipline, that of confined car racing, which takes place on smooth asphalt surfaces in purpose-built race tracks in which the aim is to perform the fastest lap possible. 
-
-\begin{figure}[!htb]
-	\centering
-	\begin{minipage}{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{images/confinedCircuit}
-		\caption{Example of confined car racing circuit}
-		\label{fig:circuit-overhead}
-	\end{minipage}\hfill
-\end{figure}
+In circuit motorsport racing, motorised vehicles go round a course for a set number of times. There are varies racing disciplines or series, each one having its own specific rules. However, at the core, participants in all disciplines aim to complete a full lap of the circuit in the shortest time. This paper will focus on one such discipline, that of confined car racing, which takes place on smooth asphalt surfaces in purpose-built race tracks in which the aim is to perform the fastest lap possible.
 
 \subsection{Racing Line}
 \emph{A race driver needs to figure out how to go round a piece of asphalt in the minimum amount of time} \cite{GoingFaster}. In order to do so, he or she needs to develop techniques for more advanced vehicle control. One such technique is that of mastering the racing line, which is considered the fundamental skill a race driver must understand and master before moving on to anything else \cite{GoingFaster}. The racing line is the best path through a circuit: if followed, it is the path that yields the shortest time at the highest average speed \cite{beckman1991physics}. The trickiest part in achieving this is to master the racing line of a corner. Corners are split in three sections. The first section is the breaking part, where the car needs to sufficiently decelerate in preparation for the  \emph{turn-in point}. Thus, the second partition of the racing line at a corner is the segment between the turn-in point and the apex point, which is the inside mid-point of the corner (see Figure \ref{fig:CornerRaceLine}). After the turn-in point, the driver aims for the apex point. The final section of the racing line in a corner lies from the apex point onwards, where the driver must gradually accelerate out of the corner, while still turning, aiming for the outside apex (see Figure \ref{fig:CornerRaceLine}.
@@ -99,10 +105,89 @@ The racing simulation rig (sim racing rig) is a piece of equipment designed to m
 \subsection{Video Games and Serious Games}
 The main contrast between video games and serious games is the use of pedagogic activities which aim to educate or instruct knowledge or skill \cite{zyda2005visual} in serious games as opposed to the pure leisurely aspects of the video game. Pedagogy is given preference over the amusement value which in some cases might not be found in serious games \cite{zyda2005visual}. Serious games need to educate the player with a specific type of content, whereas videos games need to entertain the player with whatever; racing, puzzles, it does not really matter, as long as the player enjoys it\cite{Harteveld2007}. On the other hand, serious game designers have multiple objectives, they still need to create a compelling and fun game, but also an educating and realistic game. From this it follows that three aspects as essential for a serious game, fun, learning and validity \cite{Harteveld2007}. The serious game should make use of pedagogical methods and theories to ensure knowledge can be conveyed.
 }
-\section{Methodology}
+\section{Research Methodology}
 \label{sec:Methodology}
 
+This section will provide insight behind the research methodology used in this study. The section starts by explaining the experiment design followed by an overview of the hardware and software used during the experiments. The experiment procedure is explained and the section concludes by going over the statistical tests which will be used.
+
+\subsection{Experiment Design}
+In the experiment, each group would be utilising the same car and racetrack. Bastow et al. \cite{bastow2004car} suggest that cars equipped with a front wheel drivetrain may be easier to handle. The Fiat 500 Abarth was the car chosen for the experiments, partially based on Bastow et al.'s findings. The car is relatively low-powered and thus, easier to use by beginning drivers. The Silverstone National race track has the desirable properties of being flat and smooth, without uneven surfaces or bumps which may result in loss of control in rookie drivers. Furthermore, the way the track is structured, with wide run-off areas located along the circuit where drivers are most likely to lose control of the car, allows the car to slow down before colliding with barriers or other stationary objects.
+
+Two feedback mechanisms have been considered for this experiment, \emph{visual}, through the use of a heads-up-display (HUD) superimposed on the simulation display, or \emph{auditory}, by means of descriptive speech projected through loud speakers. Leahy et al. \cite{leahy2003auditory} argue that auditory feedback is less intrusive than visual clues; based on these findings, it was decided that the system should provide feedback using auditory clues.
+
+\subsection{Experiment Materials}
+The setup of the experiment was divided into three material categories: \emph{simulation environment}, \emph{simulation hardware} and \emph{simulation software}, with each category subscribing to a number of desirable properties:
+
+\begin{description}
+	\item [Environment] The experiment should be carried out in an isolated, noise-free and well-lit room. Participants would be let in the room one at a time, to ensure the experiment is conducted without any distractions.
+	\item [Hardware] The hardware components identified for this experiment are the (i) display output, (ii) audio output, (iii) steering wheel, (iv) gear shifter, (v) acceleration, brake and clutch pedals and (vi) seating frame.
+	\item [Software] The software aspect of the experiment, which is primarily the racing simulator, should have a number of desirable properties. In particular, the simulator should provide (i) a realistic driving model, (ii) driving aid customisation, (iii) high-fidelity graphics, (iv) real-world tarmac circuits, (v) and telemetry data access through an interface that is intuitive to use.
+\end{description}
+
+\subsection{Experiment Procedure}
+Participants are gathered through various methods, ranging from word-of-mouth to mailing lists, where each participant would reserve an experiment time slot. Participants are split randomly into two groups. The first group is referred to as the \emph{feedback group}, the second as the \emph{control group}.
+
+\begin{description}
+	\item[Introduction] Each participant is introduced to the setup and given an overview of the experiment procedure. 
+	
+	\item[Demographic Questionnaire] The experiment starts by having the participant responding to a brief questionnaire, aimed to gather more insight about the general participant demographics.
+	
+	\item[Rig Configuration] 
+	The user climbs inside the rig; the seating position is adjusted to accommodate the user, making sure he or she is sitting comfortably. Participants are given a second, more in-depth overview of the components of the rig and how they operate.
+	
+	\item[Practice (10 minutes)] The participant is given ten minutes to get used to the rig setup, track and car.
+	
+	\item[Break (5 minutes)] A short break (5 minutes maximum) is given to each participant.
+	
+	\item[$1^{st}$ Session (10 minutes)] In this session, the participant drives the racing car around the track for ten minutes. Participants in the feedback group have the feedback system turned on, while for the control group, this is turned off.
+	
+	\item[Break (5 minutes)] A short break (5 minutes maximum) is given to each participant.
+	
+	\item[$2^{nd}$ Session (10 minutes)] A second ten minute session is held; participants in the feedback group have the feedback system turned on, while for the control group, this is turned off.
+	
+	\item[Break (5 minutes)] A short break (5 minutes maximum) is given to each participant.
+	
+	\item[$3^{rd}$ Session (5 minutes)] A final five minute driving session; the feedback system is turned off for participants in both groups.
+	
+	\item[Feedback Questionnaire] The experiment concludes by the participant responding to a questionnaire about experiment structure, apparatus quality, performance perception and free-form participant feedback.
+	
+\end{description}
+
+\subsection{Data Analysis}
+In order to evaluate the performance of each of the two groups (control and feedback) and perform meaningful statistical comparisons between them, the collected data were subjected to Independent T-Test\cite{student1908probable} and the Mann-Whitney U Test\cite{mann1947test}. These are appropriate tests for independent groups \cite{de2015statsref}. In our case, the groups are indeed independent because a participant from the control group may not make part of the feedback group and vice versa. The null hypothesis is that there is no significant difference across the groups, while the alternative hypothesis is that there is significant difference across the groups.
+
 \section{Design and Implementation}
+\label{sec:DesignImplementation}
+
+This section starts by giving an overview of the core requirements for the main software artefact which we refer to as \emph{\methodnamefull (\methodname)}
+
+\subsection{Content Creation and Annotation}
+The telemetry data stream read-out from Assetto Corsa does not provide sufficient information about the environment for \methodname to make informed decisions about possible feedback. The feedback mechanism used in \methodname is highly dependent on the racing line, which in turn, is a function of the track geometry. The creation of the \emph{Track Splicer and Visualiser}, a supporting tool that extracts track information from the Assetto Corsa data files and provides additional annotations to this data was required by \methodname.
+
+\subsection{Persistence of Telemetry Data}
+Log files containing telemetry data from each user session are inserted into a database management system for offline analysis. An extraction transfer loading (ETL\cite{kimball2004data}) process was purposely built, which takes as input a log file and inserts processed data as records into a database. This database is then used to run SQL queries related to the evaluation of the experiment.
+
+\subsection{System Architecture}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.45\textwidth]{diagrams/SystemArch}
+	\caption{Overview of the system architecture components}
+	\label{fig:SystemArch}
+\end{figure}
+
+\subsection{Telemetry Input Interface}
+This component handles all data input, either static on a per-track basis or real-time during a user's session. Static inputs include data generated by the track splicing tool. Real-time input is generated by Assetto Corsa which exposes a UDP server for \methodname to connect to and receive telemetry data.
+
+\subsection{Processing}
+Telemetry data is consumed by the processing module, which coordinates a number of sub-modules each consuming the same telemetry data in a different way (e.g. Logger, Car Handling Feedback). These sub-modules run on separate threads and communicate and synchronise with the main processing module using shared memory. Any feedback notification raised by the sub-modules is captured by the processing module, which in turn forwards the message to the output module.
+
+The feedback processing sub-modules possess a common structure; each module is bound to a telemetry event. These events may be triggered by changes in one or more of the incoming telemetry data values. When an event is triggered, the respective sub-module will start the analysis process related to the respective telemetry information. Eventually, when the corresponding termination event (not necessarily tied to the same telemetry data as the activation event) is triggered, a decision is taken as to whether provide feedback or not, and if so, which feedback.
+
+The system operates using two feedback tiers; initially, at the first tier, only feedback related to the racing line is provided. As the user masters the racing line, the system will switch to the second tier and suggest more advanced feedback.
+
+\subsection{Output Interface}
+The final component in \methodname's pipeline is the Output Interface, through which feedback suggestions coming from the Processing module are presented to the user. This module connects to a repository of audio soundbites that map to the input feedback from the previous module. The audio files in the repository were generated using a free online text-to-speech tool\footnote{http://www.fromtexttospeech.com}. The module does not support concurrent playback of audio feedback by design, since this would overwhelm the user. Furthermore, since feedback is topical, buffering of feedback was intentionally omitted.
 
 \section{Evaluation} {
 \label{sec:Evaluation}
