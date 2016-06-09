@@ -38,11 +38,11 @@
 \maketitle
 \begin{abstract}
 
-Motorsports requires training and dedication to master, supplemented by hours of rote learning and mentoring by experts. This study explores the question of whether a serious game is a powerful enough pedagogical tool to be gainfully employed in the training of race drivers. A system of heuristics is proposed for a novel telemetry-based feedback model for contextual real-time suggestions. The model has been integrated into a racing simulation game and a study of its performance reported here. The study consists of 27 participants, partitioned into two groups, to provide a control for the experiment. Two questionnaires have been used to acquire demographic information about the participants and help control for factors such as experience. Quantitative results show that there is an improvement for the group using the feedback system, although this improvement dissipates when the feedback is disabled again for the feedback group. Analysis of the initial results are encouraging, with the model showing promise. Additionally, the lack of cognitive retention on behalf of the participants when feedback was disabled merits further investigation and future work.
+Motorsports requires training and dedication to master, supplemented by hours of rote learning and mentoring by experts. This study explores the question of whether a serious game is a powerful enough pedagogical tool to be gainfully employed in the training of race drivers. A system of heuristics is proposed for a novel telemetry-based feedback model for contextual real-time suggestions. The model has been integrated into a racing simulation game and a study of its performance is reported here. The study consists of 27 participants, partitioned into two groups, to provide a control for the experiment. Two questionnaires have been used to acquire demographic information about the participants and help control for factors such as experience. Quantitative results show that there is an improvement for the group using the feedback system, although this improvement dissipates when the feedback is disabled again for the experimental group. Analysis of the initial results are encouraging, with the model showing promise. Additionally, the lack of cognitive retention on behalf of the participants when feedback was disabled merits further investigation and future work.
 
 \end{abstract}
 
-\keywords{Sim Racing, Motorsport Training, Serious Games}
+\keywords{Serious Games, Motorsports, Simulation, Learning, Training}
 
 \def \methodname {TeAR\xspace}
 \def \methodnamefull {Telemetry Assisted Racing\xspace}
@@ -51,7 +51,7 @@ Motorsports requires training and dedication to master, supplemented by hours of
 The gamification of areas of activity such as marketing, problem solving and education \cite{michael2005serious} has validated the use of serious games beyond their initial military use in training strategic skills \cite{djaouti2011classifying}.  Serious games simulate real-world processes designed for the purpose of solving a problem, making their main purpose that of training or educating users. Their popularity has been steadily increasing, as has their adoption, with military \cite{djaouti2011classifying} and emergency service providers (e.g. firefighters \cite{michael2005serious}) employing them to train for specific scenarios that might be encountered on the respective jobs. Motorsports cover a broad range of activities and vehicles, and as with all major forms of sporting activities, require training and dedication, with a pedagogic aspect arising in rote learning and mentoring by experts. The arenas in which motorsport events take place are called circuits; there is a large selection of the latter, ranging from purposely-built race tracks to public roads to natural formations such as hills and quarries. There is also a diverse selection of vehicles that take part in motorsports, with the greatest demarcation existing between motorbikes and cars. The focus of this dissertation is that of unifying serious games and motorsport racing; specifically, it will try to show whether a serious game is a powerful enough pedagogical tool that can be used to tangibly improve the performance of race drivers. The scope of the project is limited to four-wheeled cars racing on purposely-built confined circuits with a smooth tarmac surface.
 
 \subsection{Aims and Objectives}
-The aim of this paper is to demonstrate whether serious games can be used to teach a particular brand of motorsports. In order to establish whether this is possible or otherwise, the following objectives have been set out:
+The aim of this work is to demonstrate whether serious games can be used to teach a particular brand of motorsports. In order to establish whether this is possible or otherwise, the following objectives have been set out:
 
 \begin{enumerate}
 	\item Research and develop a model for assessing race driver performance
@@ -63,15 +63,15 @@ The aim of this paper is to demonstrate whether serious games can be used to tea
 \end{enumerate}
 
 
-\section{Background work} {
+\section{Background} {
 \label{sec:background}
+%
+%In this section fundamental concepts relevant to this paper are given a brief overview. The section start by explaining what motor sports is and what is expected off a race drive. The section continues by mentioning fundamental concepts such as the racing line and how to achieve the limit of the car. An explanation of telemetry data is given and why it is important. The section concludes by explaining the differences between video games and serious games. 
 
-In this section fundamental concepts relevant to this paper are given a brief overview. The section start by explaining what motor sports is and what is expected off a race drive. The section continues by mentioning fundamental concepts such as the racing line and how to achieve the limit of the car. An explanation of telemetry data is given and why it is important. The section concludes by explaining the differences between video games and serious games. 
-
-\subsection{Motorsport Racing}
+% \subsection{Motorsport Racing}
 In circuit motorsport racing, motorised vehicles go round a course for a set number of times. There are varies racing disciplines or series, each one having its own specific rules. However, at the core, participants in all disciplines aim to complete a full lap of the circuit in the shortest time. This paper will focus on one such discipline, that of confined car racing, which takes place on smooth asphalt surfaces in purpose-built race tracks in which the aim is to perform the fastest lap possible.
 
-\subsection{Racing Line}
+\subsection{Car and Circuit Dynamics}
 \emph{A race driver needs to figure out how to go round a piece of asphalt in the minimum amount of time} \cite{GoingFaster}. In order to do so, he or she needs to develop techniques for more advanced vehicle control. One such technique is that of mastering the racing line, which is considered the fundamental skill a race driver must understand and master before moving on to anything else \cite{GoingFaster}. The racing line is the best path through a circuit: if followed, it is the path that yields the shortest time at the highest average speed \cite{beckman1991physics}. The trickiest part in achieving this is to master the racing line of a corner. Corners are split in three sections. The first section is the breaking part, where the car needs to sufficiently decelerate in preparation for the  \emph{turn-in point}. Thus, the second partition of the racing line at a corner is the segment between the turn-in point and the apex point, which is the inside mid-point of the corner (see Figure \ref{fig:CornerRaceLine}). After the turn-in point, the driver aims for the apex point. The final section of the racing line in a corner lies from the apex point onwards, where the driver must gradually accelerate out of the corner, while still turning, aiming for the outside apex (see Figure \ref{fig:CornerRaceLine}.
 
 \begin{figure}[!htb]
@@ -81,8 +81,8 @@ In circuit motorsport racing, motorised vehicles go round a course for a set num
 	\label{fig:CornerRaceLine}
 \end{figure}
 
-\subsection{Limit Of The Car}
-After the driver develops a good grasp of the racing line, the limit of the car must be found. This is the highest speed the car can be driven while still retaining some measure of control. Various studies have been carried out to define such a limit in terms of the physical properties of the car and its environment \cite{beckman1991physics}. The most important property is the level of grip the car can achieve and sustain on track. A number of factors contribute to the level of grip. Most notably, one very important factor is the tyres as they are the only contact the car makes with the track, and allow for braking, accelerating and turning forces to be transferred to the asphalt.
+%\subsection{Limit Of The Car}
+As the driver gets acquainted to the racing line, usually at sub-optimal speeds, he must find the limit of the car, which is the highest speed the car can be driven while still retaining some measure of control. Various studies have been carried out to define such a limit in terms of the physical properties of the car and its environment \cite{beckman1991physics}. The most important property is the level of grip the car can achieve and sustain on track. A number of factors contribute to the level of grip. Most notably, one very important factor is the tyres as they are the only contact the car makes with the track, and allow for braking, accelerating and turning forces to be transferred to the asphalt.
 
 Each tyre has two properties which are of particular interest: the slip ratio and slip angle. The slip ratio refers to the level of slip occurring between tyre rotational velocity and the asphalt which occur during acceleration and deceleration The \emph{slip ratio} is expressed as a percentage: a slip percentage of 100\% means that the tyre is rotating but the road is stationary. In jargon, this is called \emph{wheel spin}. On the other hand, a percentage of -100\% indicates that the tyre is not rotating but the road beneath is moving. This can occur when braking too hard and is called \emph{locking the wheels}. Both events need to be avoid by the driver as they not only put excessive wear and tear, they also impact negatively the performance of the driver. For an optimal braking procedure, the slip ratio should be between 10\% to 15\% \cite{GoingFaster} and no slip should occur during acceleration.
 
@@ -96,15 +96,27 @@ Whenever the slip angle is above $0\degree$ ($s_a > 0$) the tyre is said to be i
 
 An oversteering situation may arise from lack of grip; while understeer is caused by a lack of grip in the front tyres, oversteer is cause by a lack of grip on the rear tyres. Oversteer is usually denoted by the rear of the vehicle becoming unstable resulting in its rotation such that the driver is facing towards the inside of the corner. Similarly to understeer, the active factors causing oversteer are also cornering speed, throttle application, braking, steering inputs and weight transfer. Oversteer is usually induced by braking during a corner or accelerating too hard in a rear wheel drive vehicle.
 
-\subsection{Telemetry Data}
+\subsubsection{Telemetry Data}
 In motorsport, telemetry data contains measurements of vehicle dynamics from the engine and other components and is transmitted to receiving equipment for remote monitoring. These measurements can serve to monitor and reconstruct the vehicle state at a particular point in time. Telemetry data in motorsports usually accounts for measurements of speed, engine speed, component temperatures, slip angles, slip ratios, etc. Telemetry is widely regarded as the most important source of information by motorsports engineers; analysing this data can lead to a better understanding of the respective strengths and weaknesses of the car and the driver \cite{CarDataAnalysis}. In this work, we posit that through the real-time analysis of telemetry data, the pedagogical aspect of sim racing can be exploited to teach race driving to non experts.
 
 \subsection{Racing Simulation Rigs}
 The racing simulation rig (sim racing rig) is a piece of equipment designed to mimic the cockpit of a real-world car. The quality of a sim racing rig is dependent on its authenticity - how similar it is to a real-world car - and its build quality. These rigs come in various shapes, forms and sizes, from hangar-sized hydraulic-driven car chassis, that cost millions of Euro, to the more modest, built from off-the-shelf commodity hardware. Minimally, a rig should provide a steering wheel, seating and a display. More sophisticated rigs augment the user experience by employing gear shifters, and clutch, throttle and breaking pedals. The more advanced components are furnished with a force feedback mechanism, a form of haptic technology used to replicate the sense of touch by applying forces or vibrations, or motions to the user \cite{li2015can}.
 
-\subsection{Video Games and Serious Games}
-The main contrast between video games and serious games is the use of pedagogic activities which aim to educate or instruct knowledge or skill \cite{zyda2005visual} in serious games as opposed to the pure leisurely aspects of the video game. Pedagogy is given preference over the amusement value which in some cases might not be found in serious games \cite{zyda2005visual}. Serious games need to educate the player with a specific type of content, whereas videos games need to entertain the player with whatever; racing, puzzles, it does not really matter, as long as the player enjoys it\cite{Harteveld2007}. On the other hand, serious game designers have multiple objectives, they still need to create a compelling and fun game, but also an educating and realistic game. From this it follows that three aspects as essential for a serious game, fun, learning and validity \cite{Harteveld2007}. The serious game should make use of pedagogical methods and theories to ensure knowledge can be conveyed.
-}
+\section{Related Work}
+\label{sec:related-work}
+Baranowski et al.~\cite{yuserious} define games as a physical or mental contest with a goal or objective, played according to a framework, or rule, that determines what a player can or cannot do inside a game world. Video games are built on top of these core values with the addition of having the game world confined to some sort of digital medium. From the early days of video games, their main aim was always to provide some degree of entertainment~\cite{stanton2015brief}. Modern video games are made up of three fundamental components: story, art and software \cite{zyda2005visual}.
+
+Serious games leverage traditional video games and the respective technologies to improve education~\cite{abt1970, stanton2015brief}. Djaouti et al. hold that the ability of video games to capture the attention of users can be harnessed for a variety of purposes that go beyond entertainment. \cite{djaouti2011classifying}. Thus, the main differentiator between video games and serious games is the use of pedagogic activities that aim to educate or instruct the player~\cite{zyda2005visual, Harteveld2007}. In order to produce a valid pedagogical experience, aspects such as learning objectives, target groups and challenges need to be clearly identified during the design process of a serious game~\cite{moser2002methodology}. Egentfeld-Nielset et al. identify three important properties that can help in this process:
+\begin{description}
+\item[Experience] Games tend to provide learning-by-doing~\cite{egenfeldt2005beyond}.
+
+\item[Exploration] The game should encourage the player to adopt an active and participative attitude. 
+
+\item[Incremental] The learning process should occur incrementally to avoid taxing the player's abilities~\cite{moser2002methodology}.
+\end{description}
+
+Racing simulation games such as Asseto Corsa~\cite{assestoCorsa} and Project CARS~\cite{ProjectCars}, while providing the player with various driving aids such as the racing line, traction control and stability, do not actively engage in providing a pedagogic experience to the user; instead, any learning experience is passively transferred, since the player is never made aware of his mistakes. Vogel et al.~\cite{vogel2006computer} have provided a meta-analysis of computer games and simulations for learning; while Li et al.~\cite{li2015can} have specifically investigated how car driving in computer games can provide traffic education to users, the authors are not aware of any other work that studies serious games and motorsports training.
+
 \section{Research Methodology}
 \label{sec:Methodology}
 
