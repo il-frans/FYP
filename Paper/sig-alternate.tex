@@ -117,15 +117,12 @@ Serious games leverage traditional video games and the respective technologies t
 
 Racing simulation games such as Asseto Corsa~\cite{assestoCorsa} and Project CARS~\cite{ProjectCars}, while providing the player with various driving aids such as the racing line, traction control and stability, do not actively engage in providing a pedagogic experience to the user; instead, any learning experience is passively transferred, since the player is never made aware of his mistakes. Vogel et al.~\cite{vogel2006computer} have provided a meta-analysis of computer games and simulations for learning; while Li et al.~\cite{li2015can} have specifically investigated how car driving in computer games can provide traffic education to users, the authors are not aware of any other work that studies serious games and motorsports training.
 
-\section{Research Methodology}
+\section{Methodology}
 \label{sec:Methodology}
-
-This section will provide insight behind the research methodology used in this study. The section starts by explaining the experiment design followed by an overview of the hardware and software used during the experiments. The experiment procedure is explained and the section concludes by going over the statistical tests which will be used.
+This section introduces the methodology used for this experimental study, followed by an overview of the hardware and software used during the experiments, and an explanation of the experiment procedure. The section concludes with the statistical tests chosen for analysis.
 
 \subsection{Experiment Design}
-In the experiment, each group would be utilising the same car and racetrack. Bastow et al. \cite{bastow2004car} suggest that cars equipped with a front wheel drivetrain may be easier to handle. The Fiat 500 Abarth was the car chosen for the experiments, partially based on Bastow et al.'s findings. The car is relatively low-powered and thus, easier to use by beginning drivers. The Silverstone National race track has the desirable properties of being flat and smooth, without uneven surfaces or bumps which may result in loss of control in rookie drivers. Furthermore, the way the track is structured, with wide run-off areas located along the circuit where drivers are most likely to lose control of the car, allows the car to slow down before colliding with barriers or other stationary objects.
-
-Two feedback mechanisms have been considered for this experiment, \emph{visual}, through the use of a heads-up-display (HUD) superimposed on the simulation display, or \emph{auditory}, by means of descriptive speech projected through loud speakers. Leahy et al. \cite{leahy2003auditory} argue that auditory feedback is less intrusive than visual clues; based on these findings, it was decided that the system should provide feedback using auditory clues.
+In the experiment, the same car and racetrack will be utilised for all participants. Bastow et al. \cite{bastow2004car} suggest that cars equipped with a front wheel drivetrain may be easier to handle, and motivated in part by these findings, the Fiat Abarth 500 was chosen. It is a relatively low-powered car and thus, easier to use by novice drivers. The Silverstone National race track has the desirable properties of being flat and smooth, without uneven surfaces or bumps which may result in loss of control in unexperienced drivers. Furthermore, the way the track is structured, with wide run-off areas located along the circuit where drivers are most likely to lose control of the car, allows the car to slow down before colliding with barriers or other stationary objects. Two feedback mechanisms have been considered for this experiment, \emph{visual}, through the use of a heads-up-display (HUD) superimposed on the simulation display, or \emph{auditory}, by means of descriptive speech projected through loud speakers. Leahy et al. \cite{leahy2003auditory} argue that auditory feedback is less intrusive than visual clues; based on these findings, it was decided that the system should provide feedback using auditory clues.
 
 \subsection{Experiment Materials}
 The setup of the experiment was divided into three material categories: \emph{simulation environment}, \emph{simulation hardware} and \emph{simulation software}, with each category subscribing to a number of desirable properties:
@@ -165,21 +162,23 @@ Participants are gathered through various methods, ranging from word-of-mouth to
 	
 \end{description}
 
-\subsection{Data Analysis}
-In order to evaluate the performance of each of the two groups (control and feedback) and perform meaningful statistical comparisons between them, the collected data were subjected to Independent T-Test\cite{student1908probable} and the Mann-Whitney U Test\cite{mann1947test}. These are appropriate tests for independent groups \cite{de2015statsref}. In our case, the groups are indeed independent because a participant from the control group may not make part of the feedback group and vice versa. The null hypothesis is that there is no significant difference across the groups, while the alternative hypothesis is that there is significant difference across the groups.
+\subsection{Data Collection, Sampling and Analysis}
+The data collected during the experiments consists of two questionnaires per participant and four batches of telemetry data per participant. Each batch represents the telemetry data collected in a particular driving session. In order to evaluate the performance of each of the two groups (control and feedback) and perform meaningful statistical comparisons between them, the collected data were subjected to Independent T-Test\cite{student1908probable} and the Mann-Whitney U Test\cite{mann1947test}. These are appropriate tests for independent groups\cite{de2015statsref}. In our case, the groups are indeed independent because a participant from the control group may not make part of the feedback group and vice versa. The null hypothesis is that there is no significant difference across the groups, while the alternative hypothesis is that there is significant difference across the groups.
 
-\section{Design and Implementation}
+\section{Telemetry Assisted Racing}
 \label{sec:DesignImplementation}
 
-This section starts by giving an overview of the core requirements for the main software artefact which we refer to as \emph{\methodnamefull (\methodname)}
+This section gives a brief overview of \emph{\methodnamefull (\methodname)}, the software artefact developed for this work. The system architecture of \methodname is shown in Figure \ref{fig:SystemArch}; \methodname is comprised of three main modules: (i) the Telemetry Input Interface, (ii) the Processing module and (ii) the Output Interface. 
 
-\subsection{Content Creation and Annotation}
-The telemetry data stream read-out from Assetto Corsa does not provide sufficient information about the environment for \methodname to make informed decisions about possible feedback. The feedback mechanism used in \methodname is highly dependent on the racing line, which in turn, is a function of the track geometry. The creation of the \emph{Track Splicer and Visualiser}, a supporting tool that extracts track information from the Assetto Corsa data files and provides additional annotations to this data was required by \methodname.
+	
 
-\subsection{Persistence of Telemetry Data}
-Log files containing telemetry data from each user session are inserted into a database management system for offline analysis. An extraction transfer loading (ETL\cite{kimball2004data}) process was purposely built, which takes as input a log file and inserts processed data as records into a database. This database is then used to run SQL queries related to the evaluation of the experiment.
+%\subsection{Content Creation and Annotation}
+%The telemetry data stream read-out from Assetto Corsa does not provide sufficient information about the environment for \methodname to make informed decisions about possible feedback. The feedback mechanism used in \methodname is highly dependent on the racing line, which in turn, is a function of the track geometry. The creation of the \emph{Track Splicer and Visualiser}, a supporting tool that extracts track information from the Assetto Corsa data files and provides additional annotations to this data was required by \methodname.
+%
+%\subsection{Persistence of Telemetry Data}
+%Log files containing telemetry data from each user session are inserted into a database management system for offline analysis. An extraction transfer loading (ETL\cite{kimball2004data}) process was purposely built, which takes as input a log file and inserts processed data as records into a database. This database is then used to run SQL queries related to the evaluation of the experiment.
 
-\subsection{System Architecture}
+%\subsection{System Architecture}
 
 \begin{figure}[!htb]
 	\centering
@@ -188,26 +187,14 @@ Log files containing telemetry data from each user session are inserted into a d
 	\label{fig:SystemArch}
 \end{figure}
 
-\subsection{Telemetry Input Interface}
-This component handles all data input, either static on a per-track basis or real-time during a user's session. Static inputs include data generated by the track splicing tool. Real-time input is generated by Assetto Corsa which exposes a UDP server for \methodname to connect to and receive telemetry data.
+The \textbf {Telemetry Input Interface} is responsible for handling the telemetry data stream coming from the racing simulator. The module also handles supporting files that place telemetry data into context, such as race track geometry and its respective annotations (e.g. racing line). Communication with the racing simulator is handled using UDP sockets. 
+The telemetry data is then filtered and rearranged for further processing by the \textbf{Processing} module, which coordinates a number of sub-modules each consuming the same telemetry data in a different way (e.g. Logger, Car Handling Feedback). These sub-modules run on separate threads and communicate and synchronise with the main Processing module using shared memory. Any feedback notification raised by the sub-modules is captured by the processing module, which in turn forwards the message to the output module. The feedback processing sub-modules possess a common structure; each module is bound to a telemetry event. These events may be triggered by changes in one or more of the incoming telemetry data values. When an event is triggered, the respective sub-module will start the analysis process related to the respective telemetry information. Eventually, when the corresponding termination event (not necessarily tied to the same telemetry data as the activation event) is triggered, a decision is taken as to whether provide feedback or not, and if so, which feedback. The system operates using two feedback tiers; initially, at the first tier, only feedback related to the racing line is provided. As the user masters the racing line, the system will switch to the second tier and suggest more advanced feedback.
 
-\subsection{Processing}
-Telemetry data is consumed by the processing module, which coordinates a number of sub-modules each consuming the same telemetry data in a different way (e.g. Logger, Car Handling Feedback). These sub-modules run on separate threads and communicate and synchronise with the main processing module using shared memory. Any feedback notification raised by the sub-modules is captured by the processing module, which in turn forwards the message to the output module.
+The final component in \methodname's pipeline is the \textbf{Output Interface}, through which feedback suggestions coming from the Processing module are presented to the user. This module connects to a repository of audio soundbites that map to the input feedback from the previous module. The audio files in the repository were generated using a free online text-to-speech tool\footnote{http://www.fromtexttospeech.com}. The module does not support concurrent playback of audio feedback by design, since this would overwhelm the user. Furthermore, since feedback is topical, buffering of feedback was intentionally omitted.
 
-The feedback processing sub-modules possess a common structure; each module is bound to a telemetry event. These events may be triggered by changes in one or more of the incoming telemetry data values. When an event is triggered, the respective sub-module will start the analysis process related to the respective telemetry information. Eventually, when the corresponding termination event (not necessarily tied to the same telemetry data as the activation event) is triggered, a decision is taken as to whether provide feedback or not, and if so, which feedback.
-
-The system operates using two feedback tiers; initially, at the first tier, only feedback related to the racing line is provided. As the user masters the racing line, the system will switch to the second tier and suggest more advanced feedback.
-
-\subsection{Output Interface}
-The final component in \methodname's pipeline is the Output Interface, through which feedback suggestions coming from the Processing module are presented to the user. This module connects to a repository of audio soundbites that map to the input feedback from the previous module. The audio files in the repository were generated using a free online text-to-speech tool\footnote{http://www.fromtexttospeech.com}. The module does not support concurrent playback of audio feedback by design, since this would overwhelm the user. Furthermore, since feedback is topical, buffering of feedback was intentionally omitted.
-
-\section{Evaluation} {
+\section{Evaluation} 
 \label{sec:Evaluation}
-
-In this section findings from the user study are presented. The section start by describing the hardware setup used for the experiments followed by an overview of the participants' demographic. Experiments results are presented showing the resulting dataset for the laptimes and the outcome of the statistical analysis. Participants' feedback is presented and the section concludes with a discussion resulting from the findings.
-
-\subsection{Experiment Setup}
-The user study has been carried out in line with the methodology described in Section \ref{sec:Methodology}. The sim racing rig framework was custom-built, and the Logitech G25 input devices mounted on it. The display device used was a 32" LCD HD Samsung monitor also capable of outputting stereo audio from 2x10W speakers. The racing simulator used in this experiment is Assetto Corsa by Kunos Simulazioni, running in full HD resolution at 60 frames per second (fps). The hardware platform running the simulator is an Intel Core i7-940, with 8GB of RAM and an Nvidia 660Ti video card with 2GB VRAM. The machine is running the retail version of the Windows 10 Professional operating system.
+In this section findings from the user study are presented. The user study has been carried out in line with the methodology described in \S\ref{sec:Methodology}. A custom-built simulation racing rig was used for this experiment, with Logitech G25 input devices mounted on it (see Figure \ref{fig:eval-simRacingRig}). A 32" LCD HD Samsung display with 2x10W speakers was employed for visual and auditory output. The racing simulator used was Assetto Corsa by Kunos Simulazioni, running in full HD resolution at 60 frames per second (fps). The hardware platform running the simulator was an Intel Core i7-940, with 8GB of RAM and an Nvidia 660Ti video card with 2GB VRAM. The machine was running the retail version of the Windows 10 Professional operating system.
 
 \begin{figure}[!htb]
 	\centering
@@ -216,11 +203,11 @@ The user study has been carried out in line with the methodology described in Se
 		\includegraphics[width=\textwidth]{images/RacingRig}
 	\end{minipage}\hfill
 	\caption[Side view of the racing rig]{Side view of the racing rig}
-	\label{sec:eval-simRacingRig}
+	\label{fig:eval-simRacingRig}
 \end{figure}
 
 \subsection{Sample Demographic}
-During the experiments, 27 participants took part most of which were males in their early twenties. Out of 27 participants, 2 did not hold a driving license; 25 had a driving license, although most of them haven't been driving for more than a year. 22 participants claimed to play video games, from which 18 stated to have played racing video games. Out of these 18, a majority of 15 play mostly arcade sim racing games, while the remaining 3 regularly play simulation racing games. 7 out of 27 participants have previously used a racing rig. Random assignment was used to split the participants into the control and feedback/experimental group. The control group had 13 participants, while the feedback group had 14.
+27 participants took part in the user study, mostly males in their early twenties. Out of 27 participants, 2 did not hold a driving license; 25 had a driving license, although most of them haven't been driving for more than a year. 22 participants claimed to play video games, from which 18 stated to have played racing video games. Out of these 18, a majority of 15 play mostly arcade sim racing games, while the remaining 3 regularly play simulation racing games. 7 out of 27 participants have previously used a racing rig. Random assignment was used to split the participants into the control and feedback/experimental group. The control group had 13 participants, while the feedback group had 14.
 
 \subsection{Experiments Results}
 
